@@ -1,5 +1,6 @@
 ---
 title: 2026년 동계 조합론 학생 워크샵 
+description: Shilla Stay Yeosu, February 2–6, 2026
 ---
 
 조합론 학생 워크샵 (Korean Student Combinatorics Workshop; KSCW) 은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
