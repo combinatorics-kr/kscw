@@ -34,6 +34,6 @@ TBA
 
 
 # Organizers
-- Seonghyuk Im, KAIST / IBS ECOPRO
-- Hyunwoo Lee, KAIST / IBS ECOPRO
-- Jaehyeon Seo, Yonsei University
+- [Seonghyuk Im](https://seonghyukim.github.io/), KAIST / IBS ECOPRO
+- [Hyunwoo Lee](https://sites.google.com/view/hyunwoo-lee/), KAIST / IBS ECOPRO
+- [Jaehyeon Seo](https://sites.google.com/yonsei.ac.kr/jseomath), Yonsei University
