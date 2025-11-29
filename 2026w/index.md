@@ -5,7 +5,7 @@ description: Shilla Stay Yeosu, February 2–6, 2026
 
 조합론 학생 워크샵 (Korean Student Combinatorics Workshop; KSCW) 은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
 
-2025 동계 조합론 학생 워크샵(KSCW 2025 Winter)은 IBS ECOPRO의 지원을 받아 2026년 2월 2~6일 신라스테이 여수에서 진행됩니다.
+2026년 동계 조합론 학생 워크샵(KSCW 2026 Winter)은 IBS ECOPRO의 지원을 받아 2026년 2월 2~6일 신라스테이 여수에서 진행됩니다.
 
 # 프로그램 개요
 
@@ -15,9 +15,6 @@ description: Shilla Stay Yeosu, February 2–6, 2026
 # 이전 행사
 - KSCW 2025: 2025년 8월 20~24일, 더케이 호텔 경주
 - KSCW 2024: 2024년 7월 29일~8월 2일, 공주한옥마을
-
-# Invited speakers
-TBA
 
 # Program
 TBA
