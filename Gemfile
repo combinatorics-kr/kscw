@@ -14,12 +14,13 @@ source "https://rubygems.org"
 
 # gem 'faraday', '~> 2.7', '>= 2.7.11'
 
-gem "jekyll-theme-cayman"
+# gem "jekyll-theme-cayman"
 # gem "jekyll-theme-minima"
 # gem 'jekyll-multiple-languages-plugin'
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
+# gem "jekyll-include-cache", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do

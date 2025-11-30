@@ -26,13 +26,23 @@ lang: ko-KR
 # markdown: kramdown
 # theme: minima
 theme: jekyll-theme-cayman
+# remote_theme: mmistakes/minimal-mistakes
 show_downloads: false
 github:
   is_project_page: false
 
 
 # plugins:
+  # - jekyll-include-cache
 #   - jekyll-feed
+
+
+include:
+  - assets/css
+  - _includes/head-custom.html
+
+# Add custom <head> injection for Cayman theme
+head_custom: _includes/head-custom.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

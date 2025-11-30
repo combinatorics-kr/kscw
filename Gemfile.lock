@@ -275,7 +275,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-theme-cayman
+  jekyll-include-cache
   webrick (~> 1.8, >= 1.8.1)
 
 BUNDLED WITH

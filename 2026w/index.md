@@ -1,30 +1,39 @@
 ---
-layout: default
 title: 2026년 동계 조합론 학생 워크샵 
 description: 신라스테이 여수, 2026년 2월 2~6일
 ---
 
-**Navigation**\\
-[Home]({{ site.baseurl }}/) ·
-[2024]({{ site.baseurl }}/2024/) ·
-[2025]({{ site.baseurl }}/2025/) ·
-[2026년 동계]({{ site.baseurl }}/2026w/)
+<!-- <div class="cayman-buttons">
+  <a class="cb-btn cb-btn-primary" href="#registration">등록하기</a>
+  <a class="cb-btn cb-btn-outline" href="#program">프로그램 보기</a>
+</div> -->
+
+<!-- Simple navigation between years -->
+<nav class="page-nav">
+  <!-- <strong>탐색:</strong> -->
+  <a href="{{ site.baseurl }}/">Home</a> ·
+  <a href="{{ site.baseurl }}/2024/">2024</a> ·
+  <a href="{{ site.baseurl }}/2025/">2025</a> ·
+  <span style="font-weight:bold;">2026년 동계</span>
+</nav>
+
 
 **조합론 학생 워크샵(Korean Student Combinatorics Workshop; KSCW)**은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 연구 분야를 공유하며 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
 
 **2026년 동계 조합론 학생 워크샵(KSCW 2026 Winter)**은 [IBS ECOPRO](https://www.ibs.re.kr/ecopro/)의 지원을 받아 **2026년 2월 2~6일 신라스테이 여수**에서 진행됩니다.
 
-<!-- # 이전 행사
-- KSCW 2025: 2025년 8월 20~24일, 더케이 호텔 경주
-- KSCW 2024: 2024년 7월 29일~8월 2일, 공주한옥마을 -->
 
+<a id="program"></a>
 # 프로그램
 크게 박사후연구원들의 초청 강연, 참가자들의 기여 강연, Open problem 공유 세션으로 구성됩니다.
 
 세부사항은 추후 공지될 예정입니다.
 
+<a id="registration"></a>
 # 등록
-[등록 (Google form)](https://docs.google.com/forms/d/e/1FAIpQLScAjdwBXYlZV7-EF2zfpM6bhiM0KGCQDe1rDiB-QoVsrDyrOA/viewform)
+<p style="text-align:center;">
+  <a class="register-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScAjdwBXYlZV7-EF2zfpM6bhiM0KGCQDe1rDiB-QoVsrDyrOA/viewform">등록 (Google form)</a>
+</p>
 
 **등록 기한: 2025년 12월 31일**
 
@@ -40,6 +49,7 @@ description: 신라스테이 여수, 2026년 2월 2~6일
 ## 기타
 - 희망하실 경우 Open problem을 제출하고 이후 워크샵에서 공유하실 수 있습니다.
 
+---
 
 # 조직위원
 - [서재현](https://sites.google.com/yonsei.ac.kr/jseomath), 연세대학교
@@ -47,4 +57,4 @@ description: 신라스테이 여수, 2026년 2월 2~6일
 - [임성혁](https://seonghyukim.github.io/), KAIST / IBS ECOPRO
 
 # 후원
-![IBS ECOPRO Logo]({{ site.baseurl }}/images/ibs-ecopro-logo.png){: width="300px" }
+![IBS ECOPRO Logo]({{ site.baseurl }}/images/ibs-ecopro-logo.png){: width="220px" }

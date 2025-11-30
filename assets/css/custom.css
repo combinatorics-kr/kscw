@@ -1,0 +1,82 @@
+.page-nav {
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+.page-nav a {
+  color: #666;
+  text-decoration: none;
+}
+.page-nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Section headings */
+.main-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.55rem;
+  color: #125a44; /* matches Cayman’s green tone */
+}
+
+/* Paragraph spacing */
+.main-content p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Lists spacing */
+.main-content ul {
+  margin-bottom: 1.5rem;
+}
+
+
+.cayman-buttons {
+  margin: 1.5rem auto 2rem;
+  text-align: center;
+}
+
+.cb-btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  margin: 0 0.4rem;
+  border-radius: 999px;
+  border: 1px solid #157878;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.cb-btn-primary {
+  background-color: #157878;
+  color: white;
+}
+
+.cb-btn-outline {
+  background-color: transparent;
+  color: #157878;
+}
+
+.cb-btn:hover {
+  background-color: #157878;
+  color: white;
+}
+
+
+.register-btn {
+  padding: 0.6rem 1.6rem;
+  background-color: #15935c;
+  border-radius: 999px;
+  color: white !important;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+  margin-bottom: 1rem;
+}
+.register-btn:hover {
+  background-color: #157878;
+}

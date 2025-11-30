@@ -1,11 +1,20 @@
 ---
-title: 조합론 학생 워크샵 
+title: 조합론 학생 워크샵
+description: Korean Students Combinatorics Workshop
 ---
-# 조합론 학생 워크샵 
 
+<!-- Simple navigation between years -->
+<nav class="page-nav">
+  <span style="font-weight:bold;">Home</span> ·
+  <a href="{{ site.baseurl }}/2024/">2024</a> ·
+  <a href="{{ site.baseurl }}/2025/">2025</a> ·
+  <a href="{{ site.baseurl }}/2026w/">2026년 동계</a>
+</nav>
 
-- [2024년](2024/): 8월 20~24일, 더케이 호텔 경주
-- [2025년](2025/): 7월 29일~8월 2일, 공주한옥마을
+**조합론 학생 워크샵(Korean Student Combinatorics Workshop; KSCW)**은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 연구 분야를 공유하며 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
+
+- [2024년](2024/): 7월 29일~8월 2일, 공주한옥마을
+- [2025년](2025/): 8월 20~24일, 더케이 호텔 경주
 - [2026년 겨울](2026w/): 2월 2~6일, 신라스테이 여수
 
 홈페이지 제작 지원: [엄상일](https://dimag.ibs.re.kr/home/sangil/) (IBS DIMAG)
