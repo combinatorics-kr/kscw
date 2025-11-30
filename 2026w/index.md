@@ -57,4 +57,4 @@ description: 신라스테이 여수, 2026년 2월 2~6일
 - [임성혁](https://seonghyukim.github.io/), KAIST / IBS ECOPRO
 
 # 후원
-![IBS ECOPRO Logo]({{ site.baseurl }}/images/ibs-ecopro-logo.png){: width="220px" }
+![IBS ECOPRO Logo]({{ site.baseurl }}/assets/images/ibs-ecopro-logo.png){: width="220px" }

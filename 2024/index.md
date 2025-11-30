@@ -38,4 +38,4 @@ description: 공주한옥마을, 2024년 7월 29일~8월 2일
 - [임성혁](https://seonghyukim.github.io/), KAIST / IBS ECOPRO
 
 # 후원
-![IBS DIMAG Logo]({{ site.baseurl }}/images/ibs-dimag-logo.svg){: width="220px" }
+![IBS DIMAG Logo]({{ site.baseurl }}/assets/images/ibs-dimag-logo.svg){: width="220px" }

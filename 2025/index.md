@@ -38,4 +38,4 @@ description: 더케이 호텔 경주, 2025년 8월 20~24일
 - [조경진](https://jkj8944.github.io/), POSTECH
 
 # 후원
-![IBS DIMAG Logo]({{ site.baseurl }}/images/ibs-dimag-logo.svg){: width="220px" }
+![IBS DIMAG Logo]({{ site.baseurl }}/assets/images/ibs-dimag-logo.svg){: width="220px" }
