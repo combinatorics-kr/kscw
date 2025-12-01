@@ -18,6 +18,9 @@ description: 더케이 호텔 경주, 2025년 8월 20~24일
 **2025년 조합론 학생 워크샵(KSCW 2025)**은 [IBS DIMAG](https://dimag.ibs.re.kr/)의 지원을 받아 **8월 20~24일 더케이 호텔 경주**에서 진행됩니다.
 
 
+![KSCW 2025 photo]({{ site.baseurl }}/assets/images/photos/kscw2025.jpg){: .align-center}
+
+
 <a id="program"></a>
 # 프로그램
 

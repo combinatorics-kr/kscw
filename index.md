@@ -15,7 +15,5 @@ description: Korean Students Combinatorics Workshop
 
 - [2024년](2024/): 7월 29일~8월 2일, 공주한옥마을
 - [2025년](2025/): 8월 20~24일, 더케이 호텔 경주
-- [2026년 겨울](2026w/): 2월 2~6일, 신라스테이 여수
-
-홈페이지 제작 지원: [엄상일](https://dimag.ibs.re.kr/home/sangil/) (IBS DIMAG)
+- [2026년 동계](2026w/): 2월 2~6일, 신라스테이 여수
 

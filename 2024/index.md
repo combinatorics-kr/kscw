@@ -18,6 +18,9 @@ description: 공주한옥마을, 2024년 7월 29일~8월 2일
 **2024년 조합론 학생 워크샵(KSCW 2025)**은 [IBS DIMAG](https://dimag.ibs.re.kr/)의 지원을 받아 **7월 29일~8월 2일 공주한옥마을**에서 진행됩니다.
 
 
+![KSCW 2024 photo]({{ site.baseurl }}/assets/images/photos/kscw2024.jpg){: .align-center}
+
+
 <a id="program"></a>
 # 프로그램
 

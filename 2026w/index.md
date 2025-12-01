@@ -3,11 +3,6 @@ title: 2026년 동계 조합론 학생 워크샵
 description: 신라스테이 여수, 2026년 2월 2~6일
 ---
 
-<!-- <div class="cayman-buttons">
-  <a class="cb-btn cb-btn-primary" href="#registration">등록하기</a>
-  <a class="cb-btn cb-btn-outline" href="#program">프로그램 보기</a>
-</div> -->
-
 <!-- Simple navigation between years -->
 <nav class="page-nav">
   <!-- <strong>탐색:</strong> -->
