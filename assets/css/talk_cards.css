@@ -108,8 +108,14 @@
 
 /* Slightly tighter on mobile */
 @media (max-width: 700px) {
+  .talks-section {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
   .talk-card {
     padding: 0.9rem 1rem;
+    /* margin-left: 0;
+    margin-right: 0; */
   }
   .talk-title {
     font-size: 1rem;
