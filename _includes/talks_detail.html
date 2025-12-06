@@ -1,0 +1,103 @@
+{%- comment -%}
+  talks_detail.html
+
+  Usage (recommended):
+    {% include talks_detail.html data=site.data.schedule.talk_details_2025 %}
+
+  Expected data format (each item):
+    - id: "it-seunghunlee"
+      date: "Aug 21 (Thu)"
+      time: "11:00–11:50"
+      type: "invited-talk"
+      title: "Oriented Matroids: Scope & Perspectives"
+      speaker: "Seunghun Lee"
+      affiliation: "IBS DIMAG"
+      abstract: "..."
+
+  The CSS classes used here:
+    .talks-section
+    .talk-card
+    .talk-meta
+    .talk-type, .talk-type-invited, .talk-type-contributed, .talk-type-special, ...
+    .talk-datetime
+    .talk-title
+    .talk-speaker
+    .talk-affiliation
+    .talk-abstract
+{%- endcomment -%}
+
+{%- assign talks = include.data -%}
+
+{%- assign type_order = "invited-talk,contributed-talk,special-session" | split: "," -%}
+
+<div class="talks-section">
+  {%- for type_key in type_order -%}
+    {%- assign group = talks | where: "type", type_key -%}
+    {%- if group and group.size > 0 -%}
+
+      {%- comment -%}
+        Map type_key to human-readable heading and badge class.
+      {%- endcomment -%}
+      {%- assign type_label = type_key -%}
+      {%- assign type_class = "talk-type-default" -%}
+
+      {%- assign type_lc = type_key | downcase -%}
+      {%- case type_lc -%}
+        {%- when "invited-talk" -%}
+          {%- assign type_label = "Invited talks" -%}
+          {%- assign type_class = "talk-type-invited" -%}
+        {%- when "contributed-talk" -%}
+          {%- assign type_label = "Contributed talks" -%}
+          {%- assign type_class = "talk-type-contributed" -%}
+        {%- when "special-session" -%}
+          {%- assign type_label = "Special sessions" -%}
+          {%- assign type_class = "talk-type-special" -%}
+        {%- else -%}
+          {%- assign type_label = "Other" -%}
+          {%- assign type_class = "talk-type-default" -%}
+      {%- endcase -%}
+
+      <h3 class="talks-type-heading">{{ type_label }}</h3>
+
+      {%- for talk in group -%}
+        <div class="talk-card" id="{{ talk.id }}">
+          <div class="talk-meta">
+            <span class="talk-type {{ type_class }}">{{ type_label }}</span>
+            <span class="talk-datetime">
+              {{ talk.date }}{% if talk.time %}, {{ talk.time }}{% endif %}
+            </span>
+          </div>
+
+          {%- if talk.title -%}
+            <div class="talk-title">
+              {{ talk.title }}
+            </div>
+          {%- endif -%}
+
+          {%- if talk.speaker -%}
+            <div class="talk-speaker">
+              {%- if talk.homepage -%}
+                <a href="{{ talk.homepage }}">{{ talk.speaker }}</a>
+              {%- else -%}
+                {{ talk.speaker }}
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+
+          {%- if talk.affiliation -%}
+            <div class="talk-affiliation">
+              {{ talk.affiliation }}
+            </div>
+          {%- endif -%}
+
+          {%- if talk.abstract -%}
+            <div class="talk-abstract">
+              {{ talk.abstract | markdownify }}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+
+    {%- endif -%}
+  {%- endfor -%}
+</div>

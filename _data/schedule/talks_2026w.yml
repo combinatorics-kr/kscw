@@ -1,0 +1,96 @@
+- id: it-1
+  type: invited-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: it-2
+  type: invited-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+
+- id: ct-1
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: ct-2
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: ct-3
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: ct-4
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: ct-5
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: ct-6
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: ct-7
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: ct-8
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: ct-9
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA
+
+- id: ct-10
+  type: contributed-talk
+  title: TBA
+  speaker: TBA
+  affiliation: TBA
+  abstract: |
+    TBA

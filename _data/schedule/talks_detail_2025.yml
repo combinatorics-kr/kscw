@@ -1,0 +1,130 @@
+- id: it-seunghunlee
+  date: Aug 21 (Thu)
+  time: 11:00–11:50
+  type: invited-talk
+  title: 'Oriented Matroids: Scope & Perspectives'
+  speaker: Seunghun Lee
+  affiliation: IBS DIMAG
+  homepage: https://sites.google.com/view/sh-lee/
+  abstract: This is a very brief introduction to oriented matroids based on personal
+    recollection, with hope that the theory gets wider attention from younger generation
+    of mathematics in Korea.
+- id: ct-gunwookim
+  date: Aug 22 (Fri)
+  time: 09:30–10:20
+  type: contributed-talk
+  title: Unifying Islands of Tractability for Maximum Independent Set
+  speaker: Gunwoo Kim
+  affiliation: KAIST / IBS DIMAG
+  abstract: "The Maximum Independent Set (MIS) problem is NP-complete and remains\
+    \ so for every minor-closed graph class that includes all planar graphs (Garey\
+    \ and Johnson [SIAM J. Appl. Math.'77]). On the other hand, due to the Grid Theorem\
+    \ of Robertson and Seymour [JCTB'95], every minor-closed graph class that excludes\
+    \ a planar graph has bounded treewidth, and MIS can be solved in polynomial time\
+    \ on such graph classes. A drawback of this result is that such graph classes\
+    \ are necessarily sparse. Since MIS can be efficiently solved on dense bipartite\
+    \ graphs, there has been interest in extending the tractability of MIS to larger\
+    \ graph classes. \nI will provide an overview of these attempts and introduce\
+    \ a new parameter called *odd cycle packing (OCP-treewidth)*, which unifies the\
+    \ tractability of MIS on the classes of bounded *odd cycle packing (OCP number)*\
+    \ and bounded *bipartite treewidth*.\n\nThis is based on joint work with Mujin\
+    \ Choi, Maximilian Gorsky, Caleb McFarland, Sebastian Wiederrecht."
+- id: it-hojinchu
+  date: Aug 22 (Fri)
+  time: 13:30–14:20
+  type: invited-talk
+  title: Things I worry about as a Postdoc
+  speaker: Hojin Chu
+  affiliation: KIAS
+  homepage: https://www.hojinchu.com/
+  abstract: In this talk, I'll share a few of these thoughts, from research focus
+    to future planning, in the hope that they resonate with others in similar stages.
+    There won't be any magic answers, but maybe a few ideas that help make the uncertainty
+    a bit more manageable.
+- id: ct-shinwooan
+  date: Aug 23 (Sat)
+  time: 09:30–10:20
+  type: contributed-talk
+  title: Approximation Algorithm for the Geometric Multimatching Problem
+  speaker: Shinwoo An
+  affiliation: POSTECH
+  homepage: https://www.shinwooan.com/
+  abstract: 'Matching is one of the most fundamental combinatorial objects in both
+    graph theory and combinatorial optimization. Moreover, a lot of variants of have
+    been studied in both exact and approximation settings. In the first part of my
+    talk, I will present several classical graph matching algorithms and illustrate
+    some intuitions and techniques behind them.
+
+
+    Then I will focus on the geometric setting. Suppose we are given a set of points
+    in a metric space, and we are asked to find a matching between them. Here, our
+    underlying graph can be defined as a complete graph. This geometric matching problem
+    provides both theoretical insights and real-world applications. In the second
+    part of my talk, I will cover geometric variants of the aforementioned matching-like
+    problems. This part shows that geometric tools can significantly improve the running
+    time of the classical graph matching algorithms.'
+- id: ct-homoonryu
+  date: Aug 23 (Sat)
+  time: 13:30–14:20
+  type: contributed-talk
+  title: Linear-Time Computation of the Frobenius Normal Form for Symmetric Toeplitz
+    Matrices via Graph-Theoretic Decomposition
+  speaker: Homoon Ryu
+  affiliation: Ajou University
+  homepage: https://hmryu.com/
+  abstract: 'We introduce a linear-time algorithm for computing the Frobenius normal
+    form (FNF) of symmetric Toeplitz matrices by utilizing their inherent structural
+    properties through a graph-theoretic approach. Previous results of the authors
+    established that the FNF of a symmetric Toeplitz matrix is explicitly represented
+    as a direct sum of symmetric irreducible Toeplitz matrices, each corresponding
+    to connected components in an associated weighted Toeplitz graph. Conventional
+    matrix decomposition algorithms, such as Storjohann''s method (1998), typically
+    have cubic-time complexity. Moreover, standard graph component identification
+    algorithms, such as breadth-first or depth-first search, operate linearly with
+    respect to vertices and edges, translating to quadratic-time complexity solely
+    in terms of vertices for dense graphs like weighted Toeplitz graphs. Our method
+    uniquely leverages the structural regularities of weighted Toeplitz graphs, achieving
+    linear-time complexity strictly with respect to vertices through two novel reductions:
+    the $\alpha$-type reduction, which eliminates isolated vertices, and the $\beta$-type
+    reduction, applying residue class contractions to achieve rapid structural simplifications
+    while preserving component structure. These reductions facilitate an efficient
+    recursive decomposition process that yields linear-time performance for both graph
+    component identification and the resulting FNF computation. This work highlights
+    how structured combinatorial representations can lead to significant computational
+    gains in symbolic linear algebra.'
+- id: ct-jeewonkim
+  date: Aug 24 (Sun)
+  time: 09:30–10:00
+  type: contributed-talk
+  title: Progress on Covering a Hexagon with Seven Unit Triangles
+  speaker: Jeewon Kim
+  affiliation: KAIST
+  abstract: 'John Conway and Alexander Soifer showed that an equilateral triangle
+    $T$ with side length $n + \epsilon$ can be covered using $n^2 + 2$ unit equilateral
+    triangles. They also conjectured that using $n^2 + 1$ triangles is not enough.
+
+
+    As a more approachable version of this problem, we ask: Can a regular hexagon
+    with side length $1 + \epsilon$ be covered by just 7 unit equilateral triangles?
+    This simplified question reflects core aspects of the Conway--Soifer conjecture.
+
+
+    In this talk, I will present our progress on this problem, including our use of
+    computer-assisted search and the insights it led to. This is joint work with Jineon
+    Baek.'
+- id: ct-jihyochae
+  date: Aug 24 (Sun)
+  time: 10:10–10:40
+  type: contributed-talk
+  title: 'Capturing Additive Structures via Gowers Norms: From Arithmetic Progression
+    Counts to Inverse Theorems'
+  speaker: Jihyo Chae
+  affiliation: Yonsei University
+  homepage: https://sites.google.com/yonsei.ac.kr/jihyochae
+  abstract: The Gowers uniformity norm has played a significant role in additive combinatorics
+    as a measure of randomness associated with solution sets of certain linear configurations.
+    In this talk, I introduce the notion of Gowers uniformity norms and demonstrate
+    how they capture additive structures in a given set of integers. Gowers norms
+    capture additive structures both through $k$-term arithmetic progression counts
+    and through their connection to polynomial Freiman--Ruzsa via Gowers inverse theorems.
+    I present applications of Gowers norms in both directions.

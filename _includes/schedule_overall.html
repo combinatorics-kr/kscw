@@ -1,4 +1,4 @@
-{%- assign slots = site.data.schedule.slots -%}
+{%- assign slots = include.slots -%}
 {%- assign days  = include.data -%}
 
 <table class="schedule-grid">
@@ -18,10 +18,10 @@
       {%- comment -%}
         TIME COLUMN LOGIC (60-min merged blocks)
         ----------------------------------------
-        • slots.yml now begins at 10:00
+        <!-- • slots.yml now begins at 10:00 -->
         • Each hour consists of 6 × 10-minute rows
         • We merge them into one header cell
-        • Display label: 10 AM, 11 AM, 12 PM, 1 PM, ...
+        • Display label: 10:00, 11:00, 12:00, 13:00, ...
       {%- endcomment -%}
 
       {%- assign time_label = "" -%}
@@ -67,12 +67,27 @@
               {%- assign etype = s.type | default: "default" -%}
               <td class="slot event event-type-{{ etype }}" rowspan="{{ s.rowspan }}">
                 <div class="slot-inner">
-                  <div class="slot-title">{{ s.title }}</div>
+                  <div class="slot-title">
+                    {%- if s.id -%}
+                      <a href="#{{ s.id }}">{{ s.title }}</a>
+                    {%- else -%}
+                      {{ s.title }}
+                    {%- endif -%}
+                  </div>
                   {%- if s.time -%}
                     <div class="slot-time">{{ s.time }}</div>
                   {%- endif -%}
                   {%- if s.speaker -%}
-                    <div class="slot-speaker">{{ s.speaker }}</div>
+                    <div class="slot-speaker">
+                      {%- if s.homepage -%}
+                        <a href="{{ s.homepage }}">{{ s.speaker }}</a>
+                      {%- else -%}
+                        {{ s.speaker }}
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                  {%- if s.affiliation -%}
+                    <div class="slot-affiliation">{{ s.affiliation }}</div>
                   {%- endif -%}
                 </div>
               </td>

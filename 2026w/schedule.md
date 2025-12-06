@@ -21,4 +21,8 @@ description: 신라스테이 여수, 2026년 2월 2~6일
 
 # 일정
 
-{% include schedule_overall.html data = site.data.schedule.schedule_overall_2026w %}
+{% include schedule_overall.html
+   data = site.data.schedule.schedule_overall_2026w
+   slots = site.data.schedule.slots_2026w %}
+
+## 강연 세부 정보

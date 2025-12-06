@@ -1,0 +1,164 @@
+/* Schedule tables */
+.schedule-grid {
+  width: 100%;
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.schedule-grid th,
+.schedule-grid td {
+  border: 1px solid #ddd;
+  padding: 0.2rem 0.35rem;
+}
+
+.schedule-grid thead th {
+  background-color: #f4f7f8;
+  text-align: center;
+  font-weight: 600;
+}
+
+.schedule-grid .time-col {
+  width: 4.5rem;
+  white-space: nowrap;
+  background-color: #f9fbfc;
+  text-align: center;
+  font-weight: 600;
+}
+
+.schedule-grid .day-col {
+  text-align: center;
+}
+
+.schedule-grid .slot {
+  vertical-align: top;
+  min-width: 7rem;
+}
+
+.schedule-grid .slot.empty {
+  background-color: #fff;
+}
+
+.schedule-grid .slot-inner {
+  padding: 0.1rem 0.2rem;
+}
+
+.schedule-grid .slot-title {
+  font-weight: 600;
+}
+
+.schedule-grid .slot-title a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.schedule-grid .slot-title a:hover {
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.schedule-grid .slot-time {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.schedule-grid .slot-speaker {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.schedule-grid .slot-speaker a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.schedule-grid .slot-speaker a:hover {
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.schedule-grid .slot-affiliation {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+/* Base event cell */
+.schedule-grid .event {
+  background-color: #f5fbff;
+}
+
+/* Type-specific colors */
+.schedule-grid .event-type-registration {
+  background-color: #e3f2fd;
+  border-left: 3px solid #1976d2;
+}
+
+.schedule-grid .event-type-plenary {
+  background-color: #e8f5e9;
+  border-left: 3px solid #2e7d32;
+}
+
+.schedule-grid .event-type-invited,
+.schedule-grid .event-type-invited-talk {
+  background-color: #fff3e0;
+  border-left: 3px solid #ef6c00;
+}
+
+.schedule-grid .event-type-contributed,
+.schedule-grid .event-type-contributed-talk {
+  background-color: #f5f5e5;
+  border-left: 3px solid #a2831f;
+}
+
+.schedule-grid .event-type-break,
+.schedule-grid .event-type-coffee {
+  background-color: #ffffff;
+  border-left: 3px solid #000000;
+}
+
+.schedule-grid .event-type-meal {
+  background-color: #ffffff;
+  border-left: 3px solid #c62828;
+}
+
+.schedule-grid .event-type-problem {
+  background-color: #e0f7fa;
+  border-left: 3px solid #00838f;
+}
+
+.schedule-grid .event-type-excursion {
+  background-color: #dcf4ff;
+  border-left: 3px solid #0277bd;
+}
+
+.schedule-grid .event-type-special,
+.schedule-grid .event-type-special-session {
+  background-color: #ddeefa;
+  border-left: 3px solid #69a5c5;
+}
+
+/* Fallback */
+.schedule-grid .event-type-default {
+  background-color: #f5fbff;
+  border-left: 3px solid #90a4ae;
+}
+
+@media (max-width: 700px) {
+  .schedule-grid th,
+  .schedule-grid td {
+    padding: 0.2rem 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .schedule-grid .slot-time,
+  .schedule-grid .slot-speaker {
+    font-size: 0.7rem;
+  }
+
+  .schedule-grid .time-col {
+    width: 3.2rem;
+  }
+}

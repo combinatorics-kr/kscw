@@ -1,0 +1,120 @@
+.talks-section {
+  max-width: 900px;
+  margin: 2.5rem auto 3rem;
+  padding: 0 1rem;
+}
+
+/* Optional section title */
+.talks-section > h2,
+.talks-section > h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual talk card */
+.talk-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+/* Top meta line: type + date/time */
+.talk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+}
+
+/* Type badge */
+.talk-type {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+/* Type-specific colors */
+.talk-type-invited {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.talk-type-contributed {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.talk-type-special {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+/* Date & time text */
+.talk-datetime {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Title */
+.talk-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0.3rem 0 0.1rem;
+}
+
+/* Speaker + affiliation line */
+.talk-speaker {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.talk-speaker a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.talk-speaker a:hover {
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.talk-affiliation {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Abstract body */
+.talk-abstract {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+/* Make sure long math lines wrap decently */
+.talk-abstract p {
+  margin: 0.3rem 0;
+}
+
+/* Slightly tighter on mobile */
+@media (max-width: 700px) {
+  .talk-card {
+    padding: 0.9rem 1rem;
+  }
+  .talk-title {
+    font-size: 1rem;
+  }
+  .talk-abstract {
+    font-size: 0.88rem;
+  }
+}

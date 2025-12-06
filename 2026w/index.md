@@ -15,7 +15,7 @@ description: 신라스테이 여수, 2026년 2월 2~6일
 <nav class="page-nav">
   <span>(행사)</span>
   <span style="font-weight:bold;">Home</span> ·
-  <a href="{{ site.baseurl }}/2026w/schedule">일정</a>
+  <a href="./schedule">일정</a>
 </nav>
 
 
@@ -26,9 +26,11 @@ description: 신라스테이 여수, 2026년 2월 2~6일
 
 <a id="program"></a>
 # 일정
-시간표 및 세부사항을 [일정](/2026w/schedule) 페이지에서 확인하실 수 있습니다. 추후 변경될 수 있습니다.
+시간표 및 세부사항을 [일정](./schedule) 페이지에서 확인하실 수 있습니다. 추후 변경될 수 있습니다.
 
-크게 박사후연구원들의 초청 강연, 참가자들의 기여 강연, Open problem 공유 세션으로 구성됩니다.
+- 박사후연구원들의 초청 강연
+- 참가자들의 기여 강연과 특별 세션
+- Open problem 공유 세션
 
 
 <a id="registration"></a>

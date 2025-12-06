@@ -12,6 +12,12 @@ description: 더케이 호텔 경주, 2025년 8월 20~24일
   <a href="{{ site.baseurl }}/2026w/">2026년 동계</a>
 </nav>
 
+<nav class="page-nav">
+  <span>(행사)</span>
+  <span style="font-weight:bold;">Home</span> ·
+  <a href="./schedule">일정</a>
+</nav>
+
 
 **조합론 학생 워크샵(Korean Student Combinatorics Workshop; KSCW)**은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 연구 분야를 공유하며 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
 
@@ -22,7 +28,13 @@ description: 더케이 호텔 경주, 2025년 8월 20~24일
 
 
 <a id="program"></a>
-# 프로그램
+# 일정
+시간표 및 세부사항을 [일정](./schedule) 페이지에서 확인하실 수 있습니다.
+
+- 박사후연구원들의 초청 강연
+- 참가자들의 기여 강연
+- Open problem 공유 및 토의 세션
+
 
 <a id="registration"></a>
 # 등록

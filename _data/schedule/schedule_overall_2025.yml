@@ -1,0 +1,166 @@
+- date: Aug 20 (Wed)
+  sessions:
+  - slot: 49
+    rowspan: 3
+    time: 17:00–17:30
+    title: Registration
+    type: registration
+  - slot: 52
+    rowspan: 8
+    time: 17:30–18:50
+    title: Welcome remarks
+    type: plenary
+  - slot: 61
+    rowspan: 12
+    time: 19:00–21:00
+    title: Dinner
+    type: meal
+- date: Aug 21 (Thu)
+  sessions:
+  - slot: 4
+    rowspan: 8
+    time: 09:30–10:50
+    title: Opening, Introduction
+    type: plenary
+  - slot: 13
+    rowspan: 5
+    time: 11:00–11:50
+    title: Invited talk
+    type: invited-talk
+    id: it-seunghunlee
+    speaker: Seunghun Lee
+    affiliation: IBS DIMAG
+    homepage: https://sites.google.com/view/sh-lee/
+  - slot: 19
+    rowspan: 9
+    time: 12:00–13:30
+    title: Lunch
+    type: meal
+  - slot: 28
+    rowspan: 17
+    time: 13:30–16:20
+    title: Open problem session
+    type: problem
+  - slot: 46
+    rowspan: 14
+    time: 16:30–18:50
+    title: Group discussion
+    type: default
+  - slot: 61
+    rowspan: 12
+    time: 19:00–21:00
+    title: Dinner
+    type: meal
+- date: Aug 22 (Fri)
+  sessions:
+  - slot: 4
+    rowspan: 5
+    time: 09:30–10:20
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-gunwookim
+    speaker: Gunwoo Kim
+    affiliation: KAIST / IBS DIMAG
+  - slot: 10
+    rowspan: 9
+    time: 10:30–12:00
+    title: Group discussion
+    type: default
+  - slot: 19
+    rowspan: 9
+    time: 12:00–13:30
+    title: Lunch
+    type: meal
+  - slot: 28
+    rowspan: 5
+    time: 13:30–14:20
+    title: Invited talk
+    type: invited-talk
+    id: it-hojinchu
+    speaker: Hojin Chu
+    affiliation: KIAS
+    homepage: https://www.hojinchu.com/
+  - slot: 34
+    rowspan: 9
+    time: 14:30–16:00
+    title: Group discussion
+    type: default
+  - slot: 43
+    rowspan: 17
+    time: 16:00–18:50
+    title: Excursion
+    type: excursion
+  - slot: 61
+    rowspan: 12
+    time: 19:00–21:00
+    title: Dinner
+    type: meal
+- date: Aug 23 (Sat)
+  sessions:
+  - slot: 4
+    rowspan: 5
+    time: 09:30–10:20
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-shinwooan
+    speaker: Shinwoo An
+    affiliation: POSTECH
+    homepage: https://www.shinwooan.com/
+  - slot: 10
+    rowspan: 9
+    time: 10:30–12:00
+    title: Group discussion
+    type: default
+  - slot: 19
+    rowspan: 9
+    time: 12:00–13:30
+    title: Lunch
+    type: meal
+  - slot: 28
+    rowspan: 5
+    time: 13:30–14:20
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-homoonryu
+    speaker: Homoon Ryu
+    affiliation: Ajou University
+    homepage: https://hmryu.com/
+  - slot: 34
+    rowspan: 27
+    time: 14:30–19:00
+    title: Group discussion
+    type: default
+  - slot: 61
+    rowspan: 12
+    time: 19:00–21:00
+    title: Dinner
+    type: meal
+- date: Aug 24 (Sun)
+  sessions:
+  - slot: 4
+    rowspan: 3
+    time: 09:30–10:00
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-jeewonkim
+    speaker: Jeewon Kim
+    affiliation: KAIST
+  - slot: 8
+    rowspan: 3
+    time: 10:10–10:40
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-jihyochae
+    speaker: Jihyo Chae
+    affiliation: Yonsei University
+    homepage: https://sites.google.com/yonsei.ac.kr/jihyochae
+  - slot: 12
+    rowspan: 7
+    time: 10:50–12:00
+    title: Final discussion, Progress report
+    type: default
+  - slot: 19
+    rowspan: 9
+    time: 12:00–13:30
+    title: Lunch
+    type: meal
