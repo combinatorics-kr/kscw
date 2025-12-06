@@ -24,9 +24,13 @@ description: 신라스테이 여수, 2026년 2월 2~6일
 **2026년 동계 조합론 학생 워크샵(KSCW 2026 Winter)**은 [IBS ECOPRO](https://www.ibs.re.kr/ecopro/)의 지원을 받아 **2026년 2월 2~6일 신라스테이 여수**에서 진행됩니다.
 
 
+![Odong-do]({{ site.baseurl }}/assets/images/photos/odong-do.jpg){: .align-center}
+*여수관광청 제공*
+
+
 <a id="program"></a>
 # 일정
-시간표 및 세부사항을 [일정](./schedule) 페이지에서 확인하실 수 있습니다. 추후 변경될 수 있습니다.
+[일정](./schedule) 페이지에서 시간표 및 강연 정보를 확인하실 수 있습니다. 추후 변경될 수 있습니다.
 
 - 박사후연구원들의 초청 강연
 - 참가자들의 기여 강연과 특별 세션

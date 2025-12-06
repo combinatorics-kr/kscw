@@ -29,11 +29,13 @@ description: 더케이 호텔 경주, 2025년 8월 20~24일
 
 <a id="program"></a>
 # 일정
-시간표 및 세부사항을 [일정](./schedule) 페이지에서 확인하실 수 있습니다.
+[일정](./schedule) 페이지에서 시간표 및 강연 정보를 확인하실 수 있습니다.
 
 - 박사후연구원들의 초청 강연
 - 참가자들의 기여 강연
 - Open problem 공유 및 토의 세션
+
+[워크샵 책자](../assets/booklets/KSCW_2025_booklet.pdf)에서 세부 사항 및 공유된 open problem들을 확인하실 수 있습니다.
 
 
 <a id="registration"></a>
