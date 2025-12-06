@@ -223,13 +223,7 @@
     title: Break
     type: break
   - slot: 5
-    rowspan: 2
-    time: 10:40–11:00
-    title: Closing remarks
-    type: plenary
-    speaker: Seog-Jin Kim
-  - slot: 7
-    rowspan: 6
-    time: 11:00–12:00
+    rowspan: 8
+    time: 10:40–12:00
     title: Closing remarks
     type: plenary
