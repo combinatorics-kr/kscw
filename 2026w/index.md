@@ -12,6 +12,12 @@ description: 신라스테이 여수, 2026년 2월 2~6일
   <span style="font-weight:bold;">2026년 동계</span>
 </nav>
 
+<nav class="page-nav">
+  <span>(행사)</span>
+  <span style="font-weight:bold;">Home</span> ·
+  <a href="{{ site.baseurl }}/2026w/schedule">일정</a>
+</nav>
+
 
 **조합론 학생 워크샵(Korean Student Combinatorics Workshop; KSCW)**은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 연구 분야를 공유하며 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
 
@@ -19,10 +25,11 @@ description: 신라스테이 여수, 2026년 2월 2~6일
 
 
 <a id="program"></a>
-# 프로그램
+# 일정
+시간표 및 세부사항을 [일정](/2026w/schedule) 페이지에서 확인하실 수 있습니다. 추후 변경될 수 있습니다.
+
 크게 박사후연구원들의 초청 강연, 참가자들의 기여 강연, Open problem 공유 세션으로 구성됩니다.
 
-세부사항은 추후 공지될 예정입니다.
 
 <a id="registration"></a>
 # 등록

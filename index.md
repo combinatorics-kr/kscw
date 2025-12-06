@@ -1,6 +1,6 @@
 ---
 title: 조합론 학생 워크샵
-description: Korean Students Combinatorics Workshop
+description: Korean Student Combinatorics Workshop
 ---
 
 <!-- Simple navigation between years -->
