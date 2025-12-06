@@ -1,12 +1,9 @@
+import sys
 import yaml
 from pathlib import Path
 
-# Paths (assuming this file is in _scripts/ under the repo root)
+# repo root: one level up from _scripts/
 ROOT = Path(__file__).resolve().parent.parent
-
-SRC_SCHEDULE = ROOT / "_data" / "schedule" / "source_overall_2025.yml"
-SRC_TALKS    = ROOT / "_data" / "schedule" / "talks_2025.yml"
-DST_DETAILS  = ROOT / "_data" / "schedule" / "talks_detail_2025.yml"
 
 
 def load_yaml(path: Path):
@@ -16,29 +13,33 @@ def load_yaml(path: Path):
         return yaml.safe_load(f)
 
 
-def main():
-    print(f"ROOT:        {ROOT}")
-    print(f"SCHEDULE:    {SRC_SCHEDULE}")
-    print(f"TALKS:       {SRC_TALKS}")
-    print(f"DESTINATION: {DST_DETAILS}")
+def build_for_year(year: str):
+    src_schedule_path = ROOT / "_data" / "schedule" / f"source_overall_{year}.yml"
+    src_talks_path    = ROOT / "_data" / "schedule" / f"talks_{year}.yml"
+    dst_details_path  = ROOT / "_data" / "schedule" / f"talk_details_{year}.yml"
 
-    schedule = load_yaml(SRC_SCHEDULE)
-    talks = load_yaml(SRC_TALKS)
+    print(f"ROOT:              {ROOT}")
+    print(f"SRC_SCHEDULE:      {src_schedule_path}")
+    print(f"SRC_TALKS:         {src_talks_path}")
+    print(f"DST_TALK_DETAILS:  {dst_details_path}")
+
+    schedule = load_yaml(src_schedule_path)
+    talks = load_yaml(src_talks_path)
 
     # Build index of talks by id
     talk_by_id = {}
-    for talk in talks:
+    for talk in talks or []:
         tid = talk.get("id")
         if not tid:
             continue
         if tid in talk_by_id:
-            print(f"WARNING: duplicate talk id '{tid}' in talks_2025.yml, overriding previous.")
+            print(f"WARNING: duplicate talk id '{tid}' in talks_{year}.yml, overriding previous.")
         talk_by_id[tid] = talk
 
     details = []
 
     # Go through all sessions in the schedule, pick ones with an 'id'
-    for day in schedule:
+    for day in schedule or []:
         date = day.get("date", "")
         for sess in day.get("sessions", []):
             tid = sess.get("id")
@@ -52,7 +53,6 @@ def main():
                 print(f"WARNING: session with id '{tid}' on date '{date}' missing start/end.")
                 continue
 
-            # Format time with an en dash
             time_str = f"{start}–{end}"
 
             talk = talk_by_id.get(tid)
@@ -60,32 +60,38 @@ def main():
                 print(f"WARNING: no talk meta found for id '{tid}' (date {date}, {time_str}). Skipping.")
                 continue
 
-            # Build output record
             rec = {
                 "id": tid,
                 "date": date,
                 "time": time_str,
             }
 
-            # Copy all other fields from talk (type, title, speaker, affiliation, abstract, etc.)
+            # Copy other fields from talk (type, title, speaker, affiliation, abstract, etc.)
             for key, value in talk.items():
                 if key == "id":
                     continue
+
+                # Clean trailing whitespace on abstract
                 if key == "abstract" and isinstance(value, str):
                     value = value.rstrip()
+
                 rec[key] = value
 
             details.append(rec)
 
-    # Ensure destination directory exists
-    DST_DETAILS.parent.mkdir(parents=True, exist_ok=True)
+    dst_details_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Write YAML
-    with DST_DETAILS.open("w", encoding="utf-8", newline="\n") as f:
+    with dst_details_path.open("w", encoding="utf-8", newline="\n") as f:
         yaml.dump(details, f, sort_keys=False, allow_unicode=True)
 
-    print(f"Wrote {len(details)} records to {DST_DETAILS}")
+    print(f"Wrote {len(details)} records to {dst_details_path}")
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1:
+        year_arg = sys.argv[1]
+        build_for_year(year_arg)
+    else:
+        print("Please provide a year key as an argument, e.g.:")
+        print("  python _scripts/build_talk_details.py 2025")
+        print("  python _scripts/build_talk_details.py 2026w")
