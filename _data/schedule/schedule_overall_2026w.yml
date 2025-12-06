@@ -169,8 +169,8 @@
   - slot: 22
     rowspan: 3
     time: 13:30–14:00
-    title: Invited talk
-    type: invited
+    title: Contributed talk
+    type: contributed
     speaker: TBA
   - slot: 25
     rowspan: 1
