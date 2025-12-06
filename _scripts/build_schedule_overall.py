@@ -71,7 +71,7 @@ def infer_type(title: str) -> str:
     if "lunch" in t or "dinner" in t or "banquet" in t:
         return "meal"
 
-    if "open problem" in t or "problem session" in t:
+    if "open problem" in t or "problem session" in t or "group discussion" in t:
         return "problem"
 
     if "excursion" in t or "social event" in t:

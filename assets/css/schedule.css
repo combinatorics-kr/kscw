@@ -1,4 +1,7 @@
-/* Schedule tables */
+/* =========================================
+   Schedule tables – layout & typography
+   ========================================= */
+
 .schedule-grid {
   width: 100%;
   max-width: 1000px;
@@ -9,12 +12,12 @@
 
 .schedule-grid th,
 .schedule-grid td {
-  border: 1px solid #ddd;
-  padding: 0.2rem 0.35rem;
+  border: 1px solid #d5d5d5;
+  padding: 0.25rem 0.35rem;
 }
 
 .schedule-grid thead th {
-  background-color: #f4f7f8;
+  background-color: #f2f4f5;
   text-align: center;
   font-weight: 600;
 }
@@ -22,7 +25,7 @@
 .schedule-grid .time-col {
   width: 4.5rem;
   white-space: nowrap;
-  background-color: #f9fbfc;
+  background-color: #f7f9fa;
   text-align: center;
   font-weight: 600;
 }
@@ -37,11 +40,12 @@
 }
 
 .schedule-grid .slot.empty {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .schedule-grid .slot-inner {
-  padding: 0.1rem 0.2rem;
+  padding: 0.15rem 0.25rem;
+  /* line-height: 1.28; */
 }
 
 .schedule-grid .slot-title {
@@ -51,7 +55,7 @@
 .schedule-grid .slot-title a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
 }
 
 .schedule-grid .slot-title a:hover {
@@ -59,20 +63,17 @@
   border-bottom-style: solid;
 }
 
-.schedule-grid .slot-time {
+.schedule-grid .slot-time,
+.schedule-grid .slot-speaker,
+.schedule-grid .slot-affiliation {
   font-size: 0.75rem;
-  color: #555;
-}
-
-.schedule-grid .slot-speaker {
-  font-size: 0.75rem;
-  color: #555;
+  color: #444444;
 }
 
 .schedule-grid .slot-speaker a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
 }
 
 .schedule-grid .slot-speaker a:hover {
@@ -80,71 +81,90 @@
   border-bottom-style: solid;
 }
 
-.schedule-grid .slot-affiliation {
-  font-size: 0.75rem;
-  color: #555;
+/* =========================================
+   Base event styles + hover
+   ========================================= */
+
+.schedule-grid .event,
+.schedule-grid [class^="event-type-"],
+.schedule-grid [class*=" event-type-"] {
+  background-color: #f7fbff;
+  border-left: 3px solid #9ea5b3;
+  position: relative;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
-/* Base event cell */
-.schedule-grid .event {
-  background-color: #f5fbff;
-}
+/* =========================================
+   Type-specific color palette
+   ========================================= */
 
-/* Type-specific colors */
+/* Registration / admin */
 .schedule-grid .event-type-registration {
-  background-color: #e3f2fd;
-  border-left: 3px solid #1976d2;
+  background-color: #e4f3e47a;
+  border-left-color: #2e7d327a;
 }
 
+/* Plenary / opening / closing / remarks */
 .schedule-grid .event-type-plenary {
-  background-color: #e8f5e9;
-  border-left: 3px solid #2e7d32;
+  background-color: #e4f3e4;
+  border-left-color: #2e7d32;
 }
 
+/* Invited talks */
 .schedule-grid .event-type-invited,
 .schedule-grid .event-type-invited-talk {
-  background-color: #fff3e0;
-  border-left: 3px solid #ef6c00;
+  background-color: #f9e3b3;
+  border-left-color: #d88a00;
 }
 
+/* Contributed talks */
 .schedule-grid .event-type-contributed,
 .schedule-grid .event-type-contributed-talk {
-  background-color: #f5f5e5;
-  border-left: 3px solid #a2831f;
+  background-color: #ebe6ff;   /* periwinkle */
+  border-left-color: #5c6bc0;  /* indigo */
 }
 
+/* Coffee / short breaks */
 .schedule-grid .event-type-break,
 .schedule-grid .event-type-coffee {
-  background-color: #ffffff;
-  border-left: 3px solid #000000;
+  background-color: #f4f4f4;
+  border-left-color: #757575;
 }
 
+/* Meals (lunch / dinner) */
 .schedule-grid .event-type-meal {
-  background-color: #ffffff;
-  border-left: 3px solid #c62828;
+  background-color: #fdf6f6;   /* very light warm tint */
+  border-left-color: #c62828;
 }
 
+/* Open problem session */
 .schedule-grid .event-type-problem {
-  background-color: #e0f7fa;
-  border-left: 3px solid #00838f;
+  background-color: #e0f4f6;
+  border-left-color: #00838f;
 }
 
+/* Excursion / social events */
 .schedule-grid .event-type-excursion {
-  background-color: #dcf4ff;
-  border-left: 3px solid #0277bd;
+  background-color: #f0ebff;   /* softer lavender */
+  border-left-color: #7e57c2;
 }
 
+/* Special sessions */
 .schedule-grid .event-type-special,
 .schedule-grid .event-type-special-session {
-  background-color: #ddeefa;
-  border-left: 3px solid #69a5c5;
+  background-color: #d3e5f7;   /* clearer blue */
+  border-left-color: #4d8ec0;
 }
 
 /* Fallback */
 .schedule-grid .event-type-default {
   background-color: #f5fbff;
-  border-left: 3px solid #90a4ae;
+  border-left-color: #90a4ae;
 }
+
+/* =========================================
+   Responsive tweaks
+   ========================================= */
 
 @media (max-width: 700px) {
   .schedule-grid th,
@@ -154,7 +174,8 @@
   }
 
   .schedule-grid .slot-time,
-  .schedule-grid .slot-speaker {
+  .schedule-grid .slot-speaker,
+  .schedule-grid .slot-affiliation {
     font-size: 0.7rem;
   }
 

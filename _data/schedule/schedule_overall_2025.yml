@@ -45,7 +45,7 @@
     rowspan: 14
     time: 16:30–18:50
     title: Group discussion
-    type: default
+    type: problem
   - slot: 61
     rowspan: 12
     time: 19:00–21:00
@@ -65,7 +65,7 @@
     rowspan: 9
     time: 10:30–12:00
     title: Group discussion
-    type: default
+    type: problem
   - slot: 19
     rowspan: 9
     time: 12:00–13:30
@@ -84,7 +84,7 @@
     rowspan: 9
     time: 14:30–16:00
     title: Group discussion
-    type: default
+    type: problem
   - slot: 43
     rowspan: 17
     time: 16:00–18:50
@@ -110,7 +110,7 @@
     rowspan: 9
     time: 10:30–12:00
     title: Group discussion
-    type: default
+    type: problem
   - slot: 19
     rowspan: 9
     time: 12:00–13:30
@@ -129,7 +129,7 @@
     rowspan: 27
     time: 14:30–19:00
     title: Group discussion
-    type: default
+    type: problem
   - slot: 61
     rowspan: 12
     time: 19:00–21:00
@@ -157,8 +157,8 @@
   - slot: 12
     rowspan: 7
     time: 10:50–12:00
-    title: Final discussion, Progress report
-    type: default
+    title: Progress report, Closing remark
+    type: plenary
   - slot: 19
     rowspan: 9
     time: 12:00–13:30
