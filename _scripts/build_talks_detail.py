@@ -16,7 +16,7 @@ def load_yaml(path: Path):
 def build_for_year(year: str):
     src_schedule_path = ROOT / "_data" / "schedule" / f"source_overall_{year}.yml"
     src_talks_path    = ROOT / "_data" / "schedule" / f"talks_{year}.yml"
-    dst_details_path  = ROOT / "_data" / "schedule" / f"talk_details_{year}.yml"
+    dst_details_path  = ROOT / "_data" / "schedule" / f"talks_detail_{year}.yml"
 
     print(f"ROOT:              {ROOT}")
     print(f"SRC_SCHEDULE:      {src_schedule_path}")

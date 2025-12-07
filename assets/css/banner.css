@@ -1,0 +1,243 @@
+/* =============================
+   Page hero / banner
+   ============================= */
+
+.page-hero {
+  margin: 0 0 2.5rem;
+  padding: 2.5rem 1.75rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #1e88e5 0%, #8e24aa 100%);
+  color: #e9f4ff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 0%, rgba(255, 255, 255, 0.2), transparent 55%),
+    radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 0.15), transparent 55%);
+  pointer-events: none;
+}
+
+
+.page-hero .hero-title {
+  font-size: 1.7rem;
+  color: #ffffff;
+  font-weight: 800;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45); /* optional, helps on bright gradients */
+  margin: 0 0 0.3rem;
+}
+
+
+.page-hero .hero-kicker,
+.page-hero .hero-meta {
+  color: #f0f6ff; /* slightly stronger than before */
+  font-weight: 550;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.page-hero .hero-kicker {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin: 0 0 0.4rem;
+}
+
+.page-hero .hero-meta {
+  margin: 0 0 1.2rem;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.page-hero .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+
+/* Buttons */
+
+.page-hero .hero-current,
+.page-hero .hero-cta,
+.page-hero .hero-secondary {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-hero .hero-cta {
+  background: #ffffff;
+  color: #1e88e5;
+}
+
+.page-hero .hero-cta:hover {
+  background: #f5f5f5;
+}
+
+.page-hero .hero-cta.is-active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.page-hero .hero-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.page-hero .hero-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* ==== Style for each year ==== */
+/* 2024 */
+.hero-2024 {
+  background: linear-gradient(
+    135deg,
+    #1aac8e 0%,   /* neon mint */
+    #60d133 100% /* deep jade */
+  );
+}
+
+.hero-2024 .hero-cta {
+  background: #ffffff;
+  color: #0c816a;
+}
+
+.hero-2024 .hero-cta.is-active {
+  background: #0c816a;
+  color: #ffffff;
+}
+
+
+/* 2025 */
+.hero-2025 {
+  background: linear-gradient(
+    135deg,
+    #ff956b 0%,   
+    #e2a82a 100% 
+  );
+}
+
+.hero-2025 .hero-cta {
+  background: #ffffff;
+  color: #e25f2a;
+}
+
+.hero-2025 .hero-cta.is-active {
+  background: #e25f2a;
+  color: #ffffff;
+}
+
+
+/* 2026w */
+.hero-2026w {
+  background: linear-gradient(
+    135deg,
+    #8e78e8 0%,   /* deeper lavender */
+    #5daee0 100%  /* deeper sky blue */
+  );
+}
+
+.hero-2026w .hero-cta.is-active {
+  background: #6b63ff;  /* deep indigo-violet */
+  color: #ffffff;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+  .page-hero {
+    padding: 1.75rem 1.25rem;
+    border-radius: 14px;
+  }
+  .page-hero .hero-title {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+/* =======================
+   Breadcrumb navigation
+   ======================= */
+
+.breadcrumbs {
+  margin: 0.8rem 0 2.2rem;
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Separator dot */
+.breadcrumbs li + li::before {
+  content: "•";
+  margin: 0 0.35rem 0 0;
+  font-size: 0.75rem;
+  color: #d1d5db;
+}
+
+/* Links */
+.breadcrumbs a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* Current item */
+.breadcrumbs .current {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Year breadcrumb variant – center and add soft pill */
+.breadcrumbs-years {
+  text-align: center;
+}
+
+.breadcrumbs-years ol {
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  background: #f3f4f6;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+}
+
+/* Page breadcrumb variant – lighter, below the years */
+.breadcrumbs-page {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.breadcrumbs-page ol {
+  background: transparent;
+  box-shadow: none;
+}

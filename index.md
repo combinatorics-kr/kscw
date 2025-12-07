@@ -1,15 +1,34 @@
 ---
 title: 조합론 학생 워크샵
 description: Korean Student Combinatorics Workshop
+hero_kicker: Korean Student Combinatorics Workshop
+hero_title: 조합론 학생 워크샵
 ---
 
-<!-- Simple navigation between years -->
-<nav class="page-nav">
-  <span style="font-weight:bold;">Home</span> ·
-  <a href="{{ site.baseurl }}/2024/">2024</a> ·
-  <a href="{{ site.baseurl }}/2025/">2025</a> ·
-  <a href="{{ site.baseurl }}/2026w/">2026년 동계</a>
+<div class="page-hero hero-{{ page.hero_year_key | default: 'default' }}">
+  {% if page.hero_kicker %}
+    <p class="hero-kicker">{{ page.hero_kicker }}</p>
+  {% endif %}
+
+  {% if page.hero_title %}
+    <h1 class="hero-title">{{ page.hero_title }}</h1>
+  {% endif %}
+</div>
+
+<nav class="breadcrumbs breadcrumbs-years">
+  <ol>
+    <li class="current">Home</li>
+
+    {%- for y in site.data.kscw_years -%}
+      {% if y.key == page.hero_year_key %}
+        <li class="current">{{ y.label }}</li>
+      {% else %}
+        <li><a href="{{ y.key | relative_url }}">{{ y.label }}</a></li>
+      {% endif %}
+    {%- endfor -%}
+  </ol>
 </nav>
+
 
 **조합론 학생 워크샵(Korean Student Combinatorics Workshop; KSCW)**은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 연구 분야를 공유하며 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
 

@@ -1,0 +1,55 @@
+<div class="page-hero hero-{{ page.hero_year_key | default: 'default' }}">
+  {% if page.hero_kicker %}
+    <p class="hero-kicker">{{ page.hero_kicker }}</p>
+  {% endif %}
+
+  {% if page.hero_title %}
+    <h1 class="hero-title">{{ page.hero_title }}</h1>
+  {% endif %}
+
+  {% if page.hero_meta %}
+    <p class="hero-meta">{{ page.hero_meta }}</p>
+  {% endif %}
+
+  <p class="hero-actions">
+    {%- assign base = page.hero_year_key | default: page.url | replace: 'schedule.html','' -%}
+    {%- assign base_rel = base | relative_url -%}
+    {%- assign registration_id = 'registration' -%}
+
+    {%- comment -%} Overview button {%- endcomment -%}
+    {% if page.hero_tab == 'overview' %}
+      <span class="hero-cta is-active">개요</span>
+    {% else %}
+      <a class="hero-cta" href="{{ base_rel }}">개요</a>
+    {% endif %}
+
+    {%- comment -%} Schedule button {%- endcomment -%}
+    {% if page.hero_tab == 'schedule' %}
+      <span class="hero-cta is-active">일정</span>
+    {% else %}
+      <a class="hero-cta" href="{{ base_rel }}/schedule">일정</a>
+    {% endif %}
+
+    {%- comment -%} Registration section button {%- endcomment -%}
+    {% if page.hero_tab == 'overview' %}
+      <a class="hero-secondary" href="#{{ registration_id }}">등록 안내</a>
+    {% else %}
+      <a class="hero-secondary" href="{{ base_rel }}#{{ registration_id }}">등록 안내</a>
+    {% endif %}
+  </p>
+</div>
+
+<nav class="breadcrumbs breadcrumbs-years">
+  <ol>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+
+    {%- for y in site.data.kscw_years -%}
+      {% if y.key == page.hero_year_key %}
+        <li class="current">{{ y.label }}</li>
+      {% else %}
+        <li><a href="{{ y.key | relative_url }}">{{ y.label }}</a></li>
+      {% endif %}
+    {%- endfor -%}
+  </ol>
+</nav>
+

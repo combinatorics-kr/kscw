@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # CONFIG: grid start hour per year-key
 YEAR_BASE_TIME = {
+    "2024": 9,
     "2025": 9,    # grid starts at 09:00
     "2026w": 10,  # grid starts at 10:00
 }
@@ -71,7 +72,7 @@ def infer_type(title: str) -> str:
     if "lunch" in t or "dinner" in t or "banquet" in t:
         return "meal"
 
-    if "open problem" in t or "problem session" in t or "group discussion" in t:
+    if "open problem" in t or "problem session" in t or "group discussion" in t or "working" in t or "progress report" in t:
         return "problem"
 
     if "excursion" in t or "social event" in t:

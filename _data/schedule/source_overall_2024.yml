@@ -1,0 +1,100 @@
+- date: Jul 29 (Mon)
+  sessions:
+    - start: "13:00"
+      end:   "14:00"
+      title: "Registration"
+    - start: "14:00"
+      end:   "14:20"
+      title: "Welcome remarks"
+    - start: "14:20"
+      end:   "16:20"
+      title: "Self-introduction"
+    - start: "16:30"
+      end: "17:30"
+      title: Invited talk
+      id: it-seminyoo
+    - start: "17:30"
+      end: "18:20"
+      title: Oprn problem session
+    - start: "18:30"
+      end: "20:00"
+      title: Dinner
+  
+- date: Jul 30 (Tue)
+  sessions:
+    - start: '09:30'
+      end: '10:30'
+      title: Contributed talk
+      id: ct-dohyeonlee
+    - start: '11:00'
+      end: '12:00'
+      title: Contributed talk
+      id: ct-jaehyeonseo
+    - start: '12:00'
+      end: '14:00'
+      title: Lunch
+    - start: '14:00'
+      end: '15:00'
+      title: Open problem session
+    - start: '15:30'
+      end: '18:00'
+      title: Working session
+    - start: '18:00'
+      end: '20:00'
+      title: Dinner
+
+- date: Jul 31 (Wed)
+  sessions:
+    - start: '09:30'
+      end: '10:30'
+      title: Contributed talk
+      id: ct-homoonryu
+    - start: '11:00'
+      end: '12:00'
+      title: Working session
+    - start: '12:00'
+      end: '14:00'
+      title: Lunch
+    - start: '14:00'
+      end: '15:00'
+      title: Progress report
+    - start: '15:00'
+      end: '16:00'
+      title: Invited talk
+      id: it-junghoahn
+    - start: '16:15'
+      end: '18:00'
+      title: Working session
+    - start: '18:00'
+      end: '20:00'
+      title: Dinner
+
+- date: Aug 1 (Thu)
+  sessions:
+    - start: '09:00'
+      end: '12:00'
+      title: Excursion
+    - start: '12:00'
+      end: '14:00'
+      title: Lunch
+    - start: '14:00'
+      end: '15:00'
+      title: Progress report
+    - start: '15:15'
+      end: '18:00'
+      title: Working session
+    - start: '18:00'
+      end: '20:00'
+      title: Dinner
+
+- date: Aug 2 (Fri)
+  sessions:
+    - start: '09:00'
+      end: '10:00'
+      title: Working session
+    - start: '10:00'
+      end: '11:30'
+      title: Progress report
+    - start: '11:30'
+      end: '12:00'
+      title: Closing remark

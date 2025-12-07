@@ -1,22 +1,14 @@
 ---
-title: 2025년 조합론 학생 워크샵 
-description: 더케이 호텔 경주, 2025년 8월 20~24일
+layout: default
+title: 2025년 조합론 학생 워크샵
+show_hero: true
+hero_kicker: Korean Student Combinatorics Workshop 2025
+hero_title: 2025년 조합론 학생 워크샵
+hero_meta: 더케이 호텔 경주 · 2025년 8월 20~24일
+hero_year_key: 2025
+hero_tab: schedule
 ---
 
-<!-- Simple navigation between years -->
-<nav class="page-nav">
-  <!-- <strong>탐색:</strong> -->
-  <a href="{{ site.baseurl }}/">Home</a> ·
-  <a href="{{ site.baseurl }}/2024/">2024</a> ·
-  <span style="font-weight:bold;">2025</span> ·
-  <a href="{{ site.baseurl }}/2026w/">2026년 동계</a>
-</nav>
-
-<nav class="page-nav">
-  <span>(행사)</span>
-  <a href="{{ site.baseurl }}/2025/">Home</a> ·
-  <span style="font-weight:bold;">일정</span>
-</nav>
 
 # 일정
 

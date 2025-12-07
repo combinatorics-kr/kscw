@@ -1,0 +1,51 @@
+- id: "it-seminyoo"
+  type: "invited-talk"
+  title: "A postdoc life in Korea"
+  speaker: "Semin Yoo"
+  affiliation: "IBS DIMAG"
+  homepage: https://sites.google.com/site/seminmathematics/
+  abstract: |
+    In this talk, I will talk about my experience of being a postdoc in Korea. In addition, I will discuss how the job process in Korea is going and share some useful advice to increase the possibility of getting a tenure-track job even though I have not made it yet.
+
+- id: it-junghoahn
+  type: invited-talk
+  title: 학술적 자기 PR 방법
+  speaker: Jungho Ahn
+  affiliation: KIAS
+  homepage: https://www.junghoahn.com/
+  abstract: |
+    이 발표에서는 학술적 성취를 효과적으로 표현하고 홍보하기 위한 방법들을 소개합니다. 학술적 웹사이트 생성 방법, CV와 Research statement 작성 및 유의점, 학회에서의 네트워킹 및 학술적 발표 구성 방법 등을 다룹니다.
+
+
+- id: ct-dohyeonlee
+  type: contributed-talk
+  title: Colorful Intersections and Tverberg Partitions
+  speaker: Dohyeon Lee
+  affiliation: KAIST / IBS DIMAG
+  homepage: https://www.mathloveguy.com/
+  abstract: |
+    In this talk, I will introduce fundamental theorems in convexity problems of discrete geometry, including Radon's theorem, Tverberg's theorem, Carathéodory's theorem along Helly's theorem along with their colorful versions. I will cover some proofs and techniques such as linear dependency, Sarkaria's tensor product method, configuration space/test map scheme and discrete Morse theory. I will also discuss some transversal theorems, including our own result and the ideas of proof, if time permits.
+
+- id: ct-jaehyeonseo
+  type: contributed-talk
+  title: 
+  speaker: Jaehyeon Seo
+  affiliation: Yonsei University
+  homepage: https://sites.google.com/yonsei.ac.kr/jseomath
+  abstract: |
+    It is well-known that a tournament always contains a directed Hamilton path. Rosenfeld conjectured that if a tournament is sufficiently large, it contains a Hamilton path of any given orientation. This conjecture was approved by Thomason, and Havet and Thomassé completely resolved it by showing there are exactly three exceptions.
+    
+    We generalized this result into a transversal setting. Let $\mathbf{T} = \\{T_1,\dots,T_{n-1}\\}$ be a collection of tournaments on a common vertex set $V$ of size $n$. We showed that if $n$ is sufficiently large, there is a Hamilton path on $V$ of any given orientation which is obtained by collecting exactly one arc from each $T_i$. Such a path is said to be *transversal*.
+    
+    It is also a folklore that a strongly connected tournament always contains a directed Hamilton cycle. Rosenfeld made a conjecture for arbitrarily oriented Hamilton cycles in tournaments as well, which was approved by Thomason (for sufficiently large tournaments) and Zein (by specifying all the exceptions). We also showed a transversal version of this result. Together with the aforementioned result, it extends our previous research, which is on transversal generalizations of existence of directed paths and cycles in tournaments.
+    
+    This is a joint work with Debsoumya Chakraborti, Jaehoon Kim, and Hyunwoo Lee.
+
+- id: ct-homoonryu
+  type: contributed-talk
+  title: How to determine a graph is Toeplitz?
+  speaker: Homoon Ryu
+  affiliation: Seoul National University
+  homepage: https://hmryu.com/
+  abstract: |
+    A given graph is called Toeplitz if it has the Toeplitz matrix as its adjacency matrix. I proposed a problem that how can we determine a given graph is a Toeplitz graph or not. For this purpose, I give a talk about Toeplitz graphs that might be related to this problem. Some simple observations and some previous results about Toeplitz graphs will be covered.

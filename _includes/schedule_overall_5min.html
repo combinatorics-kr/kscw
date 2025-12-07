@@ -1,0 +1,120 @@
+{%- assign slots = include.slots -%}
+{%- assign days  = include.data -%}
+
+<table class="schedule-grid">
+  <thead>
+    <tr>
+      <th class="time-col">Time</th>
+      {%- for day in days -%}
+        <th class="day-col">{{ day.date }}</th>
+      {%- endfor -%}
+    </tr>
+  </thead>
+  <tbody>
+    {%- for slot_time in slots -%}
+      {%- assign row_index0 = forloop.index0 -%}
+      {%- assign row_index  = forloop.index -%}
+
+      {%- comment -%}
+        TIME COLUMN LOGIC (60-min merged blocks)
+        ----------------------------------------
+        <!-- • slots.yml now begins at 10:00 -->
+        • Each hour consists of 12 × 5-minute rows
+        • We merge them into one header cell
+        • Display label: 10:00, 11:00, 12:00, 13:00, ...
+      {%- endcomment -%}
+
+      {%- assign time_label = "" -%}
+      {%- assign time_rowspan = 0 -%}
+
+      {%- comment -%}
+        Trigger merged block whenever slot_time ends with ":00"
+      {%- endcomment -%}
+      {%- if slot_time contains ":00" -%}
+
+        {%- assign group_size = 12 -%}
+
+        {%- comment -%}
+          Compute ending index (slots may stop before full hour)
+        {%- endcomment -%}
+        {%- assign label_end_index = row_index | plus: group_size -%}
+        {%- assign max_index = slots.size -%}
+
+        {%- if label_end_index > max_index -%}
+          {%- assign label_end_index = max_index -%}
+          {%- assign group_size = label_end_index | minus: row_index | plus: 1 -%}
+        {%- endif -%}
+
+        {%- assign time_label = slot_time -%}
+        {%- assign time_rowspan = group_size -%}
+
+      {%- endif -%}
+
+      <tr>
+        {%- if time_label != "" -%}
+          <th class="time-col" rowspan="{{ time_rowspan }}">{{ time_label }}</th>
+        {%- endif -%}
+
+        {%- for day in days -%}
+          {%- assign cell_printed = 'false' -%}
+          {%- assign cell_covered = 'false' -%}
+
+          {%- comment -%}
+            Does some session START at this row?
+          {%- endcomment -%}
+          {%- for s in day.sessions -%}
+            {%- if s.slot == row_index -%}
+              {%- assign etype = s.type | default: "default" -%}
+              <td class="slot event event-type-{{ etype }}" rowspan="{{ s.rowspan }}">
+                <div class="slot-inner">
+                  <div class="slot-title">
+                    {%- if s.id -%}
+                      <a href="#{{ s.id }}">{{ s.title }}</a>
+                    {%- else -%}
+                      {{ s.title }}
+                    {%- endif -%}
+                  </div>
+                  {%- if s.time -%}
+                    <div class="slot-time">{{ s.time }}</div>
+                  {%- endif -%}
+                  {%- if s.speaker -%}
+                    <div class="slot-speaker">
+                      {%- if s.homepage -%}
+                        <a href="{{ s.homepage }}">{{ s.speaker }}</a>
+                      {%- else -%}
+                        {{ s.speaker }}
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                  {%- if s.affiliation -%}
+                    <div class="slot-affiliation">{{ s.affiliation }}</div>
+                  {%- endif -%}
+                </div>
+              </td>
+              {%- assign cell_printed = 'true' -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if cell_printed == 'false' -%}
+            {%- comment -%}
+              If nothing starts here, is this row inside an existing rowspan?
+            {%- endcomment -%}
+            {%- for s in day.sessions -%}
+              {%- assign start = s.slot -%}
+              {%- assign end   = s.slot | plus: s.rowspan -%}
+              {%- if start < row_index and row_index < end -%}
+                {%- assign cell_covered = 'true' -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+
+          {%- unless cell_printed == 'true' or cell_covered == 'true' -%}
+            <td class="slot empty"></td>
+          {%- endunless -%}
+        {%- endfor -%}
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>

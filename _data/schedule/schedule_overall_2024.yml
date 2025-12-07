@@ -1,0 +1,165 @@
+- date: Jul 29 (Mon)
+  sessions:
+  - slot: 49
+    rowspan: 12
+    time: 13:00–14:00
+    title: Registration
+    type: registration
+  - slot: 61
+    rowspan: 4
+    time: 14:00–14:20
+    title: Welcome remarks
+    type: plenary
+  - slot: 65
+    rowspan: 24
+    time: 14:20–16:20
+    title: Self-introduction
+    type: plenary
+  - slot: 91
+    rowspan: 12
+    time: 16:30–17:30
+    title: Invited talk
+    type: invited-talk
+    id: it-seminyoo
+    speaker: Semin Yoo
+    affiliation: IBS DIMAG
+    homepage: https://sites.google.com/site/seminmathematics/
+  - slot: 103
+    rowspan: 10
+    time: 17:30–18:20
+    title: Oprn problem session
+    type: problem
+  - slot: 115
+    rowspan: 18
+    time: 18:30–20:00
+    title: Dinner
+    type: meal
+- date: Jul 30 (Tue)
+  sessions:
+  - slot: 7
+    rowspan: 12
+    time: 09:30–10:30
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-dohyeonlee
+    speaker: Dohyeon Lee
+    affiliation: KAIST / IBS DIMAG
+    homepage: https://www.mathloveguy.com/
+  - slot: 25
+    rowspan: 12
+    time: 11:00–12:00
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-jaehyeonseo
+    speaker: Jaehyeon Seo
+    affiliation: Yonsei University
+    homepage: https://sites.google.com/yonsei.ac.kr/jseomath
+  - slot: 37
+    rowspan: 24
+    time: 12:00–14:00
+    title: Lunch
+    type: meal
+  - slot: 61
+    rowspan: 12
+    time: 14:00–15:00
+    title: Open problem session
+    type: problem
+  - slot: 79
+    rowspan: 30
+    time: 15:30–18:00
+    title: Working session
+    type: problem
+  - slot: 109
+    rowspan: 24
+    time: 18:00–20:00
+    title: Dinner
+    type: meal
+- date: Jul 31 (Wed)
+  sessions:
+  - slot: 7
+    rowspan: 12
+    time: 09:30–10:30
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-homoonryu
+    speaker: Homoon Ryu
+    affiliation: Seoul National University
+    homepage: https://hmryu.com/
+  - slot: 25
+    rowspan: 12
+    time: 11:00–12:00
+    title: Working session
+    type: problem
+  - slot: 37
+    rowspan: 24
+    time: 12:00–14:00
+    title: Lunch
+    type: meal
+  - slot: 61
+    rowspan: 12
+    time: 14:00–15:00
+    title: Progress report
+    type: problem
+  - slot: 73
+    rowspan: 12
+    time: 15:00–16:00
+    title: Invited talk
+    type: invited-talk
+    id: it-junghoahn
+    speaker: Jungho Ahn
+    affiliation: KIAS
+    homepage: https://www.junghoahn.com/
+  - slot: 88
+    rowspan: 21
+    time: 16:15–18:00
+    title: Working session
+    type: problem
+  - slot: 109
+    rowspan: 24
+    time: 18:00–20:00
+    title: Dinner
+    type: meal
+- date: Aug 1 (Thu)
+  sessions:
+  - slot: 1
+    rowspan: 36
+    time: 09:00–12:00
+    title: Excursion
+    type: excursion
+  - slot: 37
+    rowspan: 24
+    time: 12:00–14:00
+    title: Lunch
+    type: meal
+  - slot: 61
+    rowspan: 12
+    time: 14:00–15:00
+    title: Progress report
+    type: problem
+  - slot: 76
+    rowspan: 33
+    time: 15:15–18:00
+    title: Working session
+    type: problem
+  - slot: 109
+    rowspan: 24
+    time: 18:00–20:00
+    title: Dinner
+    type: meal
+- date: Aug 2 (Fri)
+  sessions:
+  - slot: 1
+    rowspan: 12
+    time: 09:00–10:00
+    title: Working session
+    type: problem
+  - slot: 13
+    rowspan: 18
+    time: 10:00–11:30
+    title: Progress report
+    type: problem
+  - slot: 31
+    rowspan: 6
+    time: 11:30–12:00
+    title: Closing remark
+    type: plenary

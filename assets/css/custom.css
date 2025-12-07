@@ -80,3 +80,32 @@
 .register-btn:hover {
   background-color: #157878;
 }
+
+
+/* ==== Style for each year ==== */
+/* 2024 */
+.page-year-2024 .register-btn {
+  background-color: #0c816a;
+}
+
+.page-year-2024 .register-btn:hover {
+  background-color: #106655;
+}
+
+/* 2025 */
+.page-year-2025 .register-btn {
+  background-color: #e25f2a;
+}
+
+.page-year-2025 .register-btn:hover {
+  background-color: #c45427;
+}
+
+/* 2026w */
+.page-year-2026w .register-btn {
+  background-color: #6b63ff;
+}
+
+.page-year-2026w .register-btn:hover {
+  background-color: #5c56d8;
+}

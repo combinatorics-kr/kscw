@@ -1,22 +1,14 @@
 ---
-title: 2024년 조합론 학생 워크샵 
-description: 공주한옥마을, 2024년 7월 29일~8월 2일
+layout: default
+title: 2024년 조합론 학생 워크샵
+show_hero: true
+hero_kicker: Korean Student Combinatorics Workshop 2024
+hero_title: 2024년 조합론 학생 워크샵
+hero_meta: 공주한옥마을 · 2024년 7월 29일~8월 2일
+hero_year_key: 2024
+hero_tab: overview
 ---
 
-<!-- Simple navigation between years -->
-<nav class="page-nav">
-  <!-- <strong>탐색:</strong> -->
-  <a href="{{ site.baseurl }}/">Home</a> ·
-  <span style="font-weight:bold;">2024</span> ·
-  <a href="{{ site.baseurl }}/2025/">2025</a> ·
-  <a href="{{ site.baseurl }}/2026w/">2026년 동계</a>
-</nav>
-
-<nav class="page-nav">
-  <span>(행사)</span>
-  <span style="font-weight:bold;">Home</span> ·
-  <a href="./schedule">일정</a>
-</nav>
 
 
 **조합론 학생 워크샵(Korean Student Combinatorics Workshop; KSCW)**은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 연구 분야를 공유하며 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
@@ -34,6 +26,8 @@ description: 공주한옥마을, 2024년 7월 29일~8월 2일
 - 박사후연구원들의 초청 강연
 - 참가자들의 기여 강연
 - Open problem 공유 및 토의 세션
+
+[워크샵 책자](../assets/booklets/KSCW2024_booklet.pdf)에서 세부 사항 및 공유된 open problem들을 확인하실 수 있습니다.
 
 
 <a id="registration"></a>
