@@ -145,7 +145,7 @@
 
 /* Excursion / social events */
 .schedule-grid .event-type-excursion {
-  background-color: #f0ebff;   /* softer lavender */
+  background-color: #f0ebff88;   /* softer lavender */
   border-left-color: #7e57c2;
 }
 
