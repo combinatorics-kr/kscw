@@ -27,7 +27,6 @@
     time: 11:00–12:00
     title: Invited talks
     type: invited-talk
-    speaker: TBA
   - slot: 13
     rowspan: 9
     time: 12:00–13:30
@@ -38,13 +37,11 @@
     time: 13:30–14:30
     title: Special session
     type: special-session
-    speaker: TBA
   - slot: 29
     rowspan: 3
     time: 14:40–15:10
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
   - slot: 32
     rowspan: 3
     time: 15:10–15:40
@@ -67,19 +64,16 @@
     time: 10:00–10:30
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
   - slot: 5
     rowspan: 3
     time: 10:40–11:10
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
   - slot: 9
     rowspan: 3
     time: 11:20–11:50
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
   - slot: 13
     rowspan: 9
     time: 12:00–13:30
@@ -90,13 +84,11 @@
     time: 13:30–14:30
     title: Invited talk
     type: invited-talk
-    speaker: TBA
   - slot: 29
     rowspan: 3
     time: 14:40–15:10
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
   - slot: 32
     rowspan: 3
     time: 15:10–15:40
@@ -119,13 +111,11 @@
     time: 10:00–11:00
     title: Special session
     type: special-session
-    speaker: TBA
   - slot: 8
     rowspan: 3
     time: 11:10–11:40
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
   - slot: 13
     rowspan: 9
     time: 12:00–13:30
@@ -136,22 +126,24 @@
     time: 13:30–14:00
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
   - slot: 26
     rowspan: 3
     time: 14:10–14:40
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
-  - slot: 30
+  - slot: 29
     rowspan: 3
-    time: 14:50–15:20
+    time: 14:40–15:10
+    title: Coffee break
+    type: coffee
+  - slot: 32
+    rowspan: 3
+    time: 15:10–15:40
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
-  - slot: 34
-    rowspan: 15
-    time: 15:30–18:00
+  - slot: 35
+    rowspan: 14
+    time: 15:40–18:00
     title: Free discussion
     type: default
   - slot: 49
@@ -166,7 +158,6 @@
     time: 10:00–10:30
     title: Contributed talk
     type: contributed-talk
-    speaker: TBA
   - slot: 5
     rowspan: 8
     time: 10:40–12:00
