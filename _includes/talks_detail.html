@@ -33,13 +33,59 @@
 <!-- \emph{...}, \textsc{...} -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".talk-abstract").forEach(el => {
-    el.innerHTML = el.innerHTML.replace(
-      /\\(emph|textsc)\{([^}]*)\}/g,
-      (_, cmd, content) => cmd === "emph"
-        ? `<em>${content}</em>`
-        : `<span class="textsc">${content}</span>`
-    );
+  const SKIP = "code,pre,script,style,textarea,mjx-container";
+
+  const findClose = (s, open) => {
+    let d = 0;
+    for (let i = open; i < s.length; i++) {
+      if (s[i] === "{") d++;
+      else if (s[i] === "}") {
+        d--;
+        if (d === 0) return i;
+      }
+    }
+    return -1;
+  };
+
+  const parse = (text) => {
+    const frag = document.createDocumentFragment();
+    let i = 0;
+
+    while (i < text.length) {
+      const sub = text.slice(i);
+      const m = /\\(emph|textsc)\{/.exec(sub);
+      if (!m) { frag.appendChild(document.createTextNode(sub)); break; }
+
+      const start = i + m.index;
+      if (start > i) frag.appendChild(document.createTextNode(text.slice(i, start)));
+
+      const cmd = m[1];
+      const open = start + m[0].length - 1;       // points to "{"
+      const close = findClose(text, open);        // matches nested braces
+      if (close === -1) { frag.appendChild(document.createTextNode(text.slice(start))); break; }
+
+      const inner = text.slice(open + 1, close);
+
+      const el = (cmd === "emph")
+        ? document.createElement("em")
+        : Object.assign(document.createElement("span"), { className: "textsc" });
+
+      el.appendChild(parse(inner));               // recursion handles nesting
+      frag.appendChild(el);
+
+      i = close + 1;
+    }
+    return frag;
+  };
+
+  document.querySelectorAll(".talk-abstract").forEach(root => {
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    for (let n; (n = w.nextNode()); ) {
+      if (n.parentElement && n.parentElement.closest(SKIP)) continue;
+      if (n.nodeValue.includes("\\emph{") || n.nodeValue.includes("\\textsc{")) nodes.push(n);
+    }
+    nodes.forEach(n => n.parentNode.replaceChild(parse(n.nodeValue), n));
   });
 });
 </script>
