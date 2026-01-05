@@ -73,16 +73,16 @@
       title: "Invited talk"
       id: it-jaebaeklee
 
-    - start: "14:40"
-      end:   "15:10"
+    - start: "14:30"
+      end:   "15:00"
+      title: "Coffee break"
+
+    - start: "15:00"
+      end:   "15:30"
       title: "Contributed talk"
       id: ct-seongbinpark
 
-    - start: "15:10"
-      end:   "15:40"
-      title: "Coffee break"
-
-    - start: "15:40"
+    - start: "15:30"
       end:   "18:00"
       title: "Excursion"
 

@@ -117,22 +117,22 @@
     speaker: Jae-baek Lee
     affiliation: Yonsei University
     homepage: https://sites.google.com/view/jae-baeklee
-  - slot: 29
+  - slot: 28
     rowspan: 3
-    time: 14:40–15:10
+    time: 14:30–15:00
+    title: Coffee break
+    type: coffee
+  - slot: 31
+    rowspan: 3
+    time: 15:00–15:30
     title: Contributed talk
     type: contributed-talk
     id: ct-seongbinpark
     speaker: Seongbin Park
     affiliation: POSTECH
-  - slot: 32
-    rowspan: 3
-    time: 15:10–15:40
-    title: Coffee break
-    type: coffee
-  - slot: 35
-    rowspan: 14
-    time: 15:40–18:00
+  - slot: 34
+    rowspan: 15
+    time: 15:30–18:00
     title: Excursion
     type: excursion
   - slot: 49
