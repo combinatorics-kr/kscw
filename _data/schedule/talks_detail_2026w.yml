@@ -1,1 +1,377 @@
-[]
+- id: it-minhocho
+  date: Feb 3 (Tue)
+  time: 11:00–12:00
+  type: invited-talk
+  title: TBA
+  speaker: Minho Cho
+  affiliation: KIAS
+  homepage: https://sites.google.com/view/minhocho-math/
+  abstract: TBA
+- id: ct-yeonsuchang
+  date: Feb 3 (Tue)
+  time: 13:30–14:00
+  type: contributed-talk
+  title: Structural and Algorithmic properties of Reduced Component Max-Leaf
+  speaker: Yeonsu Chang
+  affiliation: Hanyang University
+  homepage: https://yeonsuchang.com/
+  abstract: 'Bonnet, Kwon, and Wood (arXiv:2202.11858) introduced reduced bandwidth,
+    where every class of bounded reduced bandwidth has bounded twin-width, but not
+    conversely. They separated two classes using expanders, and conjectured that 3-dimensional
+    grids also separate two classes. We verify this conjecture.
+
+
+    We introduce reduced component max-leaf, a new graph parameter defined via contraction
+    sequence, and show that this parameter lies strictly between reduced bandwidth
+    and rank-width. Moreover, we prove that it is incomparable with both stretch-width
+    and mim-width. In particular, we show that 2-dimensional grids have unbounded
+    reduced component max-leaf, which motivates us to find algorithmic applications
+    of this parameter.
+
+
+    Given a finite set $\sigma \subseteq \mathbb{N}\cup \{0\}$, the $\sigma$-\textsc{Problem}
+    asks for a subset $S \subseteq V(G)$ of maximum size of a graph $G = (V, E)$ such
+    that $|N_G(v) \cap S| \in \sigma$ for every $v \in S$. This problem naturally
+    captures \textsc{Maximum Independent Set}, \textsc{Maximum Induced Matching} and
+    \textsc{Maximum Induced Subgraph of Max Degree at most $d$}. We show that $\sigma$-\textsc{Problem}
+    can be solved in polynomial time on classes of bounded reduced component max-leaf,
+    when a certifying contraction sequence is given. Furthermore, since the reduced
+    component max-leaf is preserved under graph complementation, \textsc{Maximum Clique}
+    is also solvable in polynomial time on these classes.'
+- id: ct-jigangchoi
+  date: Feb 3 (Tue)
+  time: 14:10–14:40
+  type: contributed-talk
+  title: On Lower Bounds for Color-Avoiding Ramsey Numbers of Tight Monotone Paths
+  speaker: Jigang Choi
+  affiliation: KAIST & IBS DIMAG
+  homepage: ''
+  abstract: "We consider the color-avoiding Ramsey number $A_k(n; r, s)$, defined\
+    \ as the least integer $N$ such that every $r$-coloring of the $k$-uniform hypergraph\
+    \ on the vertex set $[N]$ contains a tight monotone path of length $n$ utilizing\
+    \ at most $s$ colors. \n\nRecent work by Mulrenin, Pohoata, and Zakharov established\
+    \ upper bounds for $A_k(n; r, s)$. However, the lower bounds for this number remain\
+    \ unknown.  \n\nIn this talk, I will present why it is difficult to find the lower\
+    \ bound of this number and what the biggest obstruction is."
+- id: ct-chanhosong
+  date: Feb 3 (Tue)
+  time: 15:10–15:40
+  type: contributed-talk
+  title: Matching Theory and Matching in Planar Graphs
+  speaker: Chanho Song
+  affiliation: POSTECH
+  homepage: ''
+  abstract: 'Matching is a fundamental concept in graph theory.
+
+    Given a graph $G=(V,E)$, a matching is a set of pairwise non-adjacent edges, and
+    the most basic optimization problem asks for a matching of maximum size,
+
+    $$
+
+    \max_{M \subseteq E} |M| \quad \text{subject to } M \text{ is a matching}.
+
+    $$
+
+    In many applications, edges carry weights representing costs or benefits, leading
+    to the weighted matching problem,
+
+    $$
+
+    \max_{M \subseteq E} \sum_{e\in M} w(e),
+
+    $$
+
+    which plays a central role in combinatorial optimization.
+
+
+    While matching in bipartite graphs admits a clean and efficient theory, the situation
+    becomes significantly more complex in general graphs due to the presence of odd
+    cycles.
+
+    The classical solution, Edmonds’ algorithm, resolves this difficulty by introducing
+    blossoms, which are odd-length alternating cycles that must be treated as single
+    units.
+
+    From a linear programming perspective, this corresponds to adding odd-set constraints
+    and considering a primal--dual formulation.
+
+    In this framework, dual variables are assigned not only to vertices but also to
+    certain odd vertex sets, and an edge $e=uv$ is evaluated by a dual expression
+    of the form
+
+    $$
+
+    yz(e) = y(u) + y(v) + \sum_{B} z(B),
+
+    $$
+
+    where the sum ranges over active blossoms containing both endpoints.
+
+
+    Modern implementations often rely on relaxed notions such as 1-feasibility, where
+    the dual dominance condition is weakened to
+
+    $$
+
+    yz(e) \ge w(e) - 2 \quad \text{for all } e\in E.
+
+    $$
+
+    This relaxation enables efficient scaling-based algorithms while still guaranteeing
+    near-optimality.
+
+
+    In planar graphs, additional geometric structure can be exploited.
+
+    A key idea underlying my work is to combine Edmonds’ primal--dual framework with
+    planar $r$-division, decomposing the graph into small pieces with limited boundary
+    interaction.
+
+    By localizing computations within pieces and carefully managing blossoms and dual
+    updates across boundaries, one can reconcile the global nature of matching with
+    the locality induced by planarity.'
+- id: ct-jihyochae
+  date: Feb 4 (Wed)
+  time: 10:00–10:30
+  type: contributed-talk
+  title: Random Cayley Hypergraphs and Iterated Sumsets
+  speaker: Jihyo Chae
+  affiliation: Yonsei University
+  homepage: https://sites.google.com/yonsei.ac.kr/jihyochae
+  abstract: TBA
+- id: ct-myounghwanlee
+  date: Feb 4 (Wed)
+  time: 10:40–11:10
+  type: contributed-talk
+  title: An efficient algorithm for $\mathcal{F}$-subgraph-free Edge Deletion on graphs
+    having a product structure
+  speaker: Myounghwan Lee
+  affiliation: Hanyang University
+  homepage: ''
+  abstract: 'Given a family $\mathcal{F}$ of graphs, a graph is \emph{$\mathcal{F}$-subgraph-free}
+    if it has no subgraph isomorphic to a member of $\mathcal{F}$.
+
+    We present a fixed-parameter linear-time algorithm that decides whether a planar
+    graph can be made $\mathcal{F}$-subgraph-free by deleting at most $k$ vertices
+    or $k$ edges, where the parameters are $k$, $\lvert \mathcal{F} \rvert$, and the
+    maximum number of vertices in a member of $\mathcal{F}$.
+
+    The running time of our algorithm is double-exponential in the parameters, which
+    is faster than the algorithm obtained by applying the first-order model checking
+    result for graphs of bounded twin-width.
+
+
+    To obtain this result, we develop a unified framework for designing algorithms
+    for this problem on graphs with a ``product structure.''''
+
+    Using this framework, we also design algorithms for other graph classes that generalize
+    planar graphs.
+
+    Specifically, the problem admits a fixed-parameter linear time algorithm on disk
+    graphs of bounded local radius, and a fixed-parameter almost-linear time algorithm
+    on graphs of bounded genus.
+
+
+    Finally, we show that our result gives a tight fixed-parameter algorithm in the
+    following sense:
+
+    Even when $\mathcal{F}$ consists of a single graph $F$ and the input is restricted
+    to planar graphs, it is unlikely to drop any parameters $k$ and $\lvert V(F) \rvert$
+    while preserving fixed-parameter tractability, unless the Exponential-Time Hypothesis
+    fails.
+
+
+    This is a joint work with Shinwoo An, Seonghyuk Im, Seokbeom Kim.'
+- id: ct-minseokim
+  date: Feb 4 (Wed)
+  time: 11:20–11:50
+  type: contributed-talk
+  title: On Universal Graphs for Trees and Tree-Like Graphs
+  speaker: Minseo Kim
+  affiliation: KAIST
+  homepage: ''
+  abstract: "Chung and Graham [J. London Math. Soc., 1983] claimed to prove that there\
+    \ exists an $n$-vertex graph $G$ with $ \\frac{5}{2}n \\log_2 n + O(n)$ edges\
+    \ that contains every $n$-vertex tree as a subgraph. Frati, Hoffmann and T\\'oth\
+    \ [Combin. Probab. Comput., 2023] discovered an error in the proof. By adding\
+    \ more edges to $G$ the error can be corrected, bringing the number of edges in\
+    \ $G$ to $\\frac{7}{2}n \\log_2 n + O(n). $ \n\nWe make the first improvement\
+    \ to Chung and Graham's bound in over four decades by showing that there exists\
+    \ an $n$-vertex graph with $\\frac{14}{5}n \\log_2 n + O(n) $ edges that contains\
+    \ every $n$-vertex tree as a subgraph.\n\nFurthermore, we generalise this bound\
+    \ for treewidth-$k$ graphs by showing that there exists a graph with $O(kn\\log\
+    \ n)$ edges that contains every $n$-vertex treewidth-$k$ graph as a subgraph.\
+    \ This is best possible in the sense that $\\Omega(kn\\log{n})$ edges are required.\n\
+    \nThis is based on joint work with Neel Kaul, Jaehoon Kim, and David Wood."
+- id: it-jaebaeklee
+  date: Feb 4 (Wed)
+  time: 13:30–14:30
+  type: invited-talk
+  title: TBA
+  speaker: Jae-baek Lee
+  affiliation: Yonsei University
+  homepage: https://sites.google.com/view/jae-baeklee
+  abstract: TBA
+- id: ct-seongbinpark
+  date: Feb 4 (Wed)
+  time: 14:40–15:10
+  type: contributed-talk
+  title: An Exact Algorithm for the Minimum-Cost Edge Cover of Planar Points with
+    Bounded Integer Coordinates
+  speaker: Seongbin Park
+  affiliation: POSTECH
+  homepage: ''
+  abstract: "We present an exact algorithm for the \\emph{minimum-cost edge cover}\
+    \ problem on the Euclidean bipartite graphs defined on the integer grid in the\
+    \ plane. \nLet $R, B \\subset [\\Delta]^2$, with $|R| + |B| = n$, be two finite\
+    \ sets of points with integer coordinates bounded by $\\Delta$.\nLet $G = (V,\
+    \ E)$ be a complete bipartite graph of $R$ and $B$, where $V = R \\cup B$ and\
+    \ $E = R \\times B$.\nThe cost of an edge $(r, b) \\in E$ is defined as the Euclidean\
+    \ distance between $r$ and $b$, i.e., $\\|rb\\|$.\nAn \\emph{edge cover} of $G$\
+    \ is a subset of $E$ such that every vertex of $V$ is incident to at least one\
+    \ edge of it. \nThe goal of the problem is to find an edge cover of $G$ with the\
+    \ minimum cost.\nOur main contribution is an exact algorithm that computes a minimum-cost\
+    \ edge cover of $G$ in $\\tilde O\\!\\left(n^{1.5}\\log\\Delta\\right)$ time,\
+    \ where $n=|R|+|B|$, exploiting the planar geometry and bounded-coordinate structure\
+    \ to avoid enumerating the quadratic-sized edge set."
+- id: ss-seokbeomkim
+  date: Feb 5 (Thu)
+  time: 10:00–11:00
+  type: special-session
+  title: TBA
+  speaker: Seokbeom Kim
+  affiliation: KAIST & IBS DIMAG
+  homepage: https://dimag.ibs.re.kr/home/seokbeom/
+  abstract: TBA
+- id: ct-jeonginlee
+  date: Feb 5 (Thu)
+  time: 11:10–11:40
+  type: contributed-talk
+  title: Erd\H{o}s-P\'osa property of induced subdivisions
+  speaker: Jeongin Lee
+  affiliation: Hanyang University
+  homepage: ''
+  abstract: 'A class $\mathcal{F}$ of graphs has the induced Erd\H{o}s--P\''{o}sa
+    property if there exists a bounding function $f: N \to R$ such that for every
+    graph $G$ and every positive integer $k$, $G$ contains either $k$ pairwise vertex-disjoint
+    induced subgraphs that belong to $F$, or a vertex set of size at most $f(k)$ hitting
+    all induced copies of graphs in $\mathcal{F}$. Kwon and Raymond investigated whether
+    or not the class of $H$-subdivisions has the induced Erd\H{o}s-P\''osa property
+    for some graphs $H$. We provide some general condition on $H$ so that the class
+    of $H$-subdivisions does not have the induced Erd\H{o}s-P\''osa property. Furthermore,
+    we completely settle the case when $H$ is a complete tripartite graph.'
+- id: ct-mujinchoi
+  date: Feb 5 (Thu)
+  time: 13:30–14:00
+  type: contributed-talk
+  title: Finding induced minors using a strong bramble
+  speaker: Mujin Choi
+  affiliation: KAIST & IBS DIMAG
+  homepage: https://dimag.ibs.re.kr/home/mujin/
+  abstract: For a graph $G$, a strong bramble $\mathcal{B}$ is a collection of connected
+    vertex subsets such that each element intersects each other. If $G$ and $\mathcal{B}$
+    satisfies additional conditions, then we can use them to find specific graphs,
+    like wheel or ladder, as an induced minor. In this talk, I will give several known
+    examples and introduce some open problems.
+- id: ct-hyemipark
+  date: Feb 5 (Thu)
+  time: 14:10–14:40
+  type: contributed-talk
+  title: A coarse Erd\H{o}s-P\'{o}sa theorem for cycles with modulo constraints
+  speaker: Hyemi Park
+  affiliation: Hanyang University
+  homepage: ''
+  abstract: An \emph{induced packing} of cycles in a graph is a set of vertex-disjoint
+    cycles with no edges between them. We show that there exists a function $f(k)=O(k\log
+    k)$ such that for every graph $G$, $G$ contains either an induced packing of $k$
+    even cycles, or a vertex set of size $f(k)$ whose closed neighborhood hits all
+    even cycles.
+- id: ct-dohyeonlee
+  date: Feb 5 (Thu)
+  time: 15:10–15:40
+  type: contributed-talk
+  title: Towards Cutting Lemma in Abstract Convexity Space
+  speaker: Dohyeon Lee
+  affiliation: KAIST & IBS DIMAG
+  homepage: https://www.mathloveguy.com/
+  abstract: 'Suppose there are $n$ hyperplanes in $\mathbb R^d$ and let $\theta \in
+    (0,1)$. A partition of $\mathbb R^d$ is called a $\theta$-cutting if each cell
+    is intersected by at most $\theta n$ of given hyperplanes. The classical cutting
+    lemma asserts that such a partition exists with $O(\theta^{-d})$ cells, and each
+    cells can be taken to be generalized simplicies. This result admits several extensions
+    and has found numerous applications in discrete geometry, computational geometry,
+    even in graph theory and logic.
+
+
+    Independently, abstract convexity spaces provide a unifying framework for studying
+    convexity beyond the Euclidean space by axiomatizing the notion of convex sets.
+    A central theme in this area is understanding which combinatorial and geometric
+    properties persist under abstraction. For instance, the existence of small strong
+    $\varepsilon$-nets is guaranteed by bounded VC dimension of the space.
+
+
+    In this talk, we investigate whether analogues of the cutting lemma can be formulated
+    in abstract convexity spaces. We discuss necessary structural conditions under
+    which a cutting-type decomposition may exist.'
+- id: ct-sanghwahan
+  date: Feb 5 (Thu)
+  time: 15:50–16:20
+  type: contributed-talk
+  title: Range Counting Oracle for Extent problems
+  speaker: Sanghwa Han
+  affiliation: POSTECH
+  homepage: ''
+  abstract: In this talk, we investigate geometric extent problems under the Range
+    Counting Oracle model, where algorithms cannot access point coordinates directly
+    but can only query the count of points inside axis-aligned rectangles. We focus
+    on designing sublinear algorithms that approximate geometric measures such as
+    Width and Diameter without processing the entire dataset. We propose a unified
+    framework based on grid decomposition to construct a 'Compressed Extreme Set,'
+    which efficiently approximates the convex hull of the underlying point set. Using
+    this framework, we present optimal algorithms for the Width and Diameter problems.
+    Specifically, we show that the Width can be estimated with an additive error of
+    $O(\Delta/s)$ using $O(s)$ queries, while the Diameter can be approximated within
+    a factor of $(1+\epsilon)$ using $O(\log \Delta + 1/\epsilon)$ queries. Furthermore,
+    we establish matching lower bounds using Yao’s Minimax Principle and adversary
+    arguments. We demonstrate that $\Omega(s)$ queries are required for Width estimation
+    to distinguish sparse outliers, whereas $\Omega(\log \Delta)$ queries are necessary
+    for Diameter estimation to locate the point set within the coordinate universe.
+    These results confirm the optimality of our proposed algorithms.
+- id: ct-hyeonjunshin
+  date: Feb 6 (Fri)
+  time: 10:00–10:30
+  type: contributed-talk
+  title: Fully Scalable MPC algorithms for WSPD in Euclidean Spaces
+  speaker: Hyeonjun Shin
+  affiliation: POSTECH
+  homepage: ''
+  abstract: 'We recently studied the problem of constructing a \emph{$(1/\varepsilon)$-well-separated
+    pair decomposition} (WSPD) for $n$ points in the \emph{Massively Parallel Computation}
+    (MPC) model, where multiple machines work in parallel and communicate in synchronous
+    rounds.
+
+    A WSPD is a compact representation of all pairs of point subsets that are sufficiently
+    far apart, and serves as a fundamental tool for a wide range of geometric algorithms.
+
+
+    In this work, we present an $O(1)$-round MPC algorithm that constructs an $O(1/\varepsilon)$-WSPD
+    of size $(1/\varepsilon)^{O(d)} n$ for point sets in $d$-dimensional Euclidean
+    space, as well as an $O(1/\varepsilon)^{O(\textsf{ddim})}$-WSPD of size $(1/\varepsilon)^{O(\textsf{ddim})}
+    \cdot \tilde{O}(n)$ for point sets in doubling metric spaces.
+
+    This improves upon the best-known classical algorithm of~[FOCS’93], which requires
+    $O(\log n)$ rounds in the MPC model and works only in Euclidean spaces.
+
+
+    As a consequence, several fundamental geometric problems could be solved in $O(1)$
+    rounds in the MPC model, including the construction of a $(1+\varepsilon)$-spanner,
+    a $(1-\varepsilon)$-approximation of the diameter, the closest pair, and the $k$-nearest
+    neighbors ($k$-NN). While the $k$-NN algorithm is specific to Euclidean space,
+    the other three problems can be solved in both Euclidean and doubling metric spaces.
+
+
+    In this talk, although our main technical contribution lies in the algorithms
+    for doubling metric spaces, we focus on presenting the algorithms in the Euclidean
+    setting. By starting from this simpler case, we aim to clarify the basic ideas
+    underlying our MPC approach and to illustrate how simple sequential algorithms
+    can be transformed into efficient constant-round MPC algorithms.'

@@ -30,6 +30,34 @@
 
 {%- assign type_order = "invited-talk,contributed-talk,special-session" | split: "," -%}
 
+<!-- \emph{...}, \textsc{...} -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".talk-abstract").forEach(el => {
+    el.innerHTML = el.innerHTML.replace(
+      /\\(emph|textsc)\{([^}]*)\}/g,
+      (_, cmd, content) => cmd === "emph"
+        ? `<em>${content}</em>`
+        : `<span class="textsc">${content}</span>`
+    );
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  for (let n; (n = w.nextNode()); ) {
+    n.nodeValue = n.nodeValue
+      .replaceAll("\\H{o}", "ő")
+      .replaceAll("\\'{o}", "ó")
+      .replaceAll("\\'o", "ó");
+  }
+});
+</script>
+
+
+
 <div class="talks-section">
   {%- for type_key in type_order -%}
     {%- assign group = talks | where: "type", type_key -%}
@@ -90,11 +118,21 @@
             </div>
           {%- endif -%}
 
-          {%- if talk.abstract -%}
-            <div class="talk-abstract">
-              {{ talk.abstract | markdownify }}
+          {% if talk.abstract %}
+  <div class="talk-abstract">
+    {% capture dbl_nl %}
+
+{% endcapture %}
+
+              {% assign paras = talk.abstract | strip | split: dbl_nl %}
+              {% for p in paras %}
+                {% assign p = p | strip %}
+                {% if p != "" %}
+                  <p>{{ p | escape }}</p>
+                {% endif %}
+              {% endfor %}
             </div>
-          {%- endif -%}
+          {% endif %}
         </div>
       {%- endfor -%}
 

@@ -1,13 +1,13 @@
 - date: Feb 2 (Mon)
   sessions:
-  - slot: 31
-    rowspan: 9
-    time: 15:00–16:30
+  - slot: 37
+    rowspan: 6
+    time: 16:00–17:00
     title: Registration
     type: registration
-  - slot: 40
-    rowspan: 9
-    time: 16:30–18:00
+  - slot: 43
+    rowspan: 6
+    time: 17:00–18:00
     title: Welcome remarks
     type: plenary
   - slot: 49
@@ -25,31 +25,50 @@
   - slot: 7
     rowspan: 6
     time: 11:00–12:00
-    title: Invited talks
+    title: Invited talk
     type: invited-talk
+    id: it-minhocho
+    speaker: Minho Cho
+    affiliation: KIAS
+    homepage: https://sites.google.com/view/minhocho-math/
   - slot: 13
     rowspan: 9
     time: 12:00–13:30
     title: Lunch
     type: meal
   - slot: 22
-    rowspan: 6
-    time: 13:30–14:30
-    title: Special session
-    type: special-session
+    rowspan: 3
+    time: 13:30–14:00
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-yeonsuchang
+    speaker: Yeonsu Chang
+    affiliation: Hanyang University
+    homepage: https://yeonsuchang.com/
+  - slot: 26
+    rowspan: 3
+    time: 14:10–14:40
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-jigangchoi
+    speaker: Jigang Choi
+    affiliation: KAIST & IBS DIMAG
   - slot: 29
     rowspan: 3
     time: 14:40–15:10
-    title: Contributed talk
-    type: contributed-talk
+    title: Coffee break
+    type: coffee
   - slot: 32
     rowspan: 3
     time: 15:10–15:40
-    title: Coffee break
-    type: coffee
-  - slot: 35
-    rowspan: 14
-    time: 15:40–18:00
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-chanhosong
+    speaker: Chanho Song
+    affiliation: POSTECH
+  - slot: 36
+    rowspan: 13
+    time: 15:50–18:00
     title: Open problem session
     type: problem
   - slot: 49
@@ -64,16 +83,26 @@
     time: 10:00–10:30
     title: Contributed talk
     type: contributed-talk
+    id: ct-jihyochae
+    speaker: Jihyo Chae
+    affiliation: Yonsei University
+    homepage: https://sites.google.com/yonsei.ac.kr/jihyochae
   - slot: 5
     rowspan: 3
     time: 10:40–11:10
     title: Contributed talk
     type: contributed-talk
+    id: ct-myounghwanlee
+    speaker: Myounghwan Lee
+    affiliation: Hanyang University
   - slot: 9
     rowspan: 3
     time: 11:20–11:50
     title: Contributed talk
     type: contributed-talk
+    id: ct-minseokim
+    speaker: Minseo Kim
+    affiliation: KAIST
   - slot: 13
     rowspan: 9
     time: 12:00–13:30
@@ -84,11 +113,18 @@
     time: 13:30–14:30
     title: Invited talk
     type: invited-talk
+    id: it-jaebaeklee
+    speaker: Jae-baek Lee
+    affiliation: Yonsei University
+    homepage: https://sites.google.com/view/jae-baeklee
   - slot: 29
     rowspan: 3
     time: 14:40–15:10
     title: Contributed talk
     type: contributed-talk
+    id: ct-seongbinpark
+    speaker: Seongbin Park
+    affiliation: POSTECH
   - slot: 32
     rowspan: 3
     time: 15:10–15:40
@@ -111,11 +147,18 @@
     time: 10:00–11:00
     title: Special session
     type: special-session
+    id: ss-seokbeomkim
+    speaker: Seokbeom Kim
+    affiliation: KAIST & IBS DIMAG
+    homepage: https://dimag.ibs.re.kr/home/seokbeom/
   - slot: 8
     rowspan: 3
     time: 11:10–11:40
     title: Contributed talk
     type: contributed-talk
+    id: ct-jeonginlee
+    speaker: Jeongin Lee
+    affiliation: Hanyang University
   - slot: 13
     rowspan: 9
     time: 12:00–13:30
@@ -126,11 +169,18 @@
     time: 13:30–14:00
     title: Contributed talk
     type: contributed-talk
+    id: ct-mujinchoi
+    speaker: Mujin Choi
+    affiliation: KAIST & IBS DIMAG
+    homepage: https://dimag.ibs.re.kr/home/mujin/
   - slot: 26
     rowspan: 3
     time: 14:10–14:40
     title: Contributed talk
     type: contributed-talk
+    id: ct-hyemipark
+    speaker: Hyemi Park
+    affiliation: Hanyang University
   - slot: 29
     rowspan: 3
     time: 14:40–15:10
@@ -141,9 +191,21 @@
     time: 15:10–15:40
     title: Contributed talk
     type: contributed-talk
-  - slot: 35
-    rowspan: 14
-    time: 15:40–18:00
+    id: ct-dohyeonlee
+    speaker: Dohyeon Lee
+    affiliation: KAIST & IBS DIMAG
+    homepage: https://www.mathloveguy.com/
+  - slot: 36
+    rowspan: 3
+    time: 15:50–16:20
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-sanghwahan
+    speaker: Sanghwa Han
+    affiliation: POSTECH
+  - slot: 39
+    rowspan: 10
+    time: 16:20–18:00
     title: Free discussion
     type: default
   - slot: 49
@@ -158,6 +220,9 @@
     time: 10:00–10:30
     title: Contributed talk
     type: contributed-talk
+    id: ct-hyeonjunshin
+    speaker: Hyeonjun Shin
+    affiliation: POSTECH
   - slot: 5
     rowspan: 8
     time: 10:40–12:00

@@ -106,6 +106,10 @@
   margin: 0.3rem 0;
 }
 
+.talk-abstract .textsc {
+  font-variant-caps: small-caps;
+}
+
 /* Slightly tighter on mobile */
 @media (max-width: 700px) {
   .talks-section {

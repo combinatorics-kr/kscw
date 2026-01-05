@@ -1,9 +1,9 @@
 - date: "Feb 2 (Mon)"
   sessions:
-    - start: "15:00"
-      end:   "16:30"
+    - start: "16:00"
+      end:   "17:00"
       title: "Registration"
-    - start: "16:30"
+    - start: "17:00"
       end:   "18:00"
       title: "Welcome remarks"
     - start: "18:00"
@@ -17,28 +17,34 @@
       title: "Opening, Introduction"
     - start: "11:00"
       end:   "12:00"
-      title: "Invited talks"
-      speaker: "TBA"
+      title: "Invited talk"
+      id: it-minhocho
     - start: "12:00"
       end:   "13:30"
       title: "Lunch"
+
     - start: "13:30"
-      end:   "14:30"
-      title: "Special session"
-      speaker: "TBA"
-    # - start: "14:30"
-    #   end:   "14:40"
-    #   title: "Break"
+      end:   "14:00"
+      title: "Contributed talk"
+      id: ct-yeonsuchang
+    - start: "14:10"
+      end:   "14:40"
+      title: "Contributed talk"
+      id: ct-jigangchoi
+
     - start: "14:40"
       end:   "15:10"
-      title: "Contributed talk"
-      speaker: "TBA"
+      title: "Coffee break"
+    
     - start: "15:10"
       end:   "15:40"
-      title: "Coffee break"
-    - start: "15:40"
+      title: "Contributed talk"
+      id: ct-chanhosong
+
+    - start: "15:50"
       end:   "18:00"
       title: "Open problem session"
+
     - start: "18:00"
       end:   "19:00"
       title: "Dinner"
@@ -48,44 +54,38 @@
     - start: "10:00"
       end:   "10:30"
       title: "Contributed talk"
-      speaker: "TBA"
-    # - start: "10:30"
-    #   end:   "10:40"
-    #   title: "Break"
+      id: ct-jihyochae
     - start: "10:40"
       end:   "11:10"
       title: "Contributed talk"
-      speaker: "TBA"
-    # - start: "11:10"
-    #   end:   "11:20"
-    #   title: "Break"
+      id: ct-myounghwanlee
     - start: "11:20"
       end:   "11:50"
       title: "Contributed talk"
-      speaker: "TBA"
-    # - start: "11:50"
-    #   end:   "12:00"
-    #   title: "Break"
+      id: ct-minseokim
+
     - start: "12:00"
       end:   "13:30"
       title: "Lunch"
+
     - start: "13:30"
       end:   "14:30"
       title: "Invited talk"
-      speaker: "TBA"
-    # - start: "14:30"
-    #   end:   "14:40"
-    #   title: "Break"
+      id: it-jaebaeklee
+
     - start: "14:40"
       end:   "15:10"
       title: "Contributed talk"
-      speaker: "TBA"
+      id: ct-seongbinpark
+
     - start: "15:10"
       end:   "15:40"
       title: "Coffee break"
+
     - start: "15:40"
       end:   "18:00"
       title: "Excursion"
+
     - start: "18:00"
       end:   "19:00"
       title: "Dinner"
@@ -95,17 +95,12 @@
     - start: "10:00"
       end:   "11:00"
       title: "Special session"
-      speaker: "TBA"
-    # - start: "11:00"
-    #   end:   "11:10"
-    #   title: "Break"
+      id: ss-seokbeomkim
+
     - start: "11:10"
       end:   "11:40"
       title: "Contributed talk"
-      speaker: "TBA"
-    # - start: "11:40"
-    #   end:   "12:00"
-    #   title: "Break"
+      id: ct-jeonginlee
 
     - start: "12:00"
       end:   "13:30"
@@ -114,23 +109,27 @@
     - start: "13:30"
       end:   "14:00"
       title: "Contributed talk"
-      speaker: "TBA"
-    # - start: "14:00"
-    #   end:   "14:10"
-    #   title: "Break"
+      id: ct-mujinchoi
+
     - start: "14:10"
       end:   "14:40"
       title: "Contributed talk"
-      speaker: "TBA"
+      id: ct-hyemipark
+
     - start: "14:40"
       end:   "15:10"
       title: "Coffee break"
+
     - start: "15:10"
       end:   "15:40"
       title: "Contributed talk"
-      speaker: "TBA"
+      id: ct-dohyeonlee
+    - start: "15:50"
+      end:   "16:20"
+      title: "Contributed talk"
+      id: ct-sanghwahan
 
-    - start: "15:40"
+    - start: "16:20"
       end:   "18:00"
       title: "Free discussion"
 
@@ -143,10 +142,8 @@
     - start: "10:00"
       end:   "10:30"
       title: "Contributed talk"
-      speaker: "TBA"
-    # - start: "10:30"
-    #   end:   "10:40"
-    #   title: "Break"
+      id: ct-hyeonjunshin
+
     - start: "10:40"
       end:   "12:00"
       title: "Closing remarks"
