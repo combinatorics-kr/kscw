@@ -43,7 +43,7 @@
   title: An efficient algorithm for $\mathcal{F}$-subgraph-free Edge Deletion on graphs having a product structure
   speaker: Myounghwan Lee
   affiliation: Hanyang University
-  homepage: ""
+  # homepage: ""
   abstract: |
     Given a family $\mathcal{F}$ of graphs, a graph is \emph{$\mathcal{F}$-subgraph-free} if it has no subgraph isomorphic to a member of $\mathcal{F}$.
     We present a fixed-parameter linear-time algorithm that decides whether a planar graph can be made $\mathcal{F}$-subgraph-free by deleting at most $k$ vertices or $k$ edges, where the parameters are $k$, $\lvert \mathcal{F} \rvert$, and the maximum number of vertices in a member of $\mathcal{F}$.
@@ -63,7 +63,7 @@
   title: A coarse Erd\H{o}s-P\'{o}sa theorem for cycles with modulo constraints
   speaker: Hyemi Park
   affiliation: Hanyang University
-  homepage: ""
+  # homepage: ""
   abstract: |
     An \emph{induced packing} of cycles in a graph is a set of vertex-disjoint cycles with no edges between them. We show that there exists a function $f(k)=O(k\log k)$ such that for every graph $G$, $G$ contains either an induced packing of $k$ even cycles, or a vertex set of size $f(k)$ whose closed neighborhood hits all even cycles.
 
@@ -94,7 +94,7 @@
   title: On Lower Bounds for Color-Avoiding Ramsey Numbers of Tight Monotone Paths
   speaker: Jigang Choi
   affiliation: KAIST & IBS DIMAG
-  homepage: ""
+  # homepage: ""
   abstract: |
     We consider the color-avoiding Ramsey number $A_k(n; r, s)$, defined as the least integer $N$ such that every $r$-coloring of the $k$-uniform hypergraph on the vertex set $[N]$ contains a tight monotone path of length $n$ utilizing at most $s$ colors. 
 
@@ -107,7 +107,7 @@
   title: Fully Scalable MPC algorithms for WSPD in Euclidean Spaces
   speaker: Hyeonjun Shin
   affiliation: POSTECH
-  homepage: ""
+  # homepage: ""
   abstract: |
     We recently studied the problem of constructing a \emph{$(1/\varepsilon)$-well-separated pair decomposition} (WSPD) for $n$ points in the \emph{Massively Parallel Computation} (MPC) model, where multiple machines work in parallel and communicate in synchronous rounds.
     A WSPD is a compact representation of all pairs of point subsets that are sufficiently far apart, and serves as a fundamental tool for a wide range of geometric algorithms.
@@ -124,7 +124,7 @@
   title: Matching Theory and Matching in Planar Graphs
   speaker: Chanho Song
   affiliation: POSTECH
-  homepage: ""
+  # homepage: ""
   abstract: |
     Matching is a fundamental concept in graph theory.
     Given a graph $G=(V,E)$, a matching is a set of pairwise non-adjacent edges, and the most basic optimization problem asks for a matching of maximum size,
@@ -161,7 +161,7 @@
   title: An Exact Algorithm for the Minimum-Cost Edge Cover of Planar Points with Bounded Integer Coordinates
   speaker: Seongbin Park
   affiliation: POSTECH
-  homepage: ""
+  # homepage: ""
   abstract: |
     We present an exact algorithm for the \emph{minimum-cost edge cover} problem on the Euclidean bipartite graphs defined on the integer grid in the plane. 
     Let $R, B \subset [\Delta]^2$, with $|R| + |B| = n$, be two finite sets of points with integer coordinates bounded by $\Delta$.
@@ -176,7 +176,7 @@
   title: Range Counting Oracle for Extent problems
   speaker: Sanghwa Han
   affiliation: POSTECH
-  homepage: ""
+  # homepage: ""
   abstract: |
     In this talk, we investigate geometric extent problems under the Range Counting Oracle model, where algorithms cannot access point coordinates directly but can only query the count of points inside axis-aligned rectangles. We focus on designing sublinear algorithms that approximate geometric measures such as Width and Diameter without processing the entire dataset. We propose a unified framework based on grid decomposition to construct a 'Compressed Extreme Set,' which efficiently approximates the convex hull of the underlying point set. Using this framework, we present optimal algorithms for the Width and Diameter problems. Specifically, we show that the Width can be estimated with an additive error of $O(\Delta/s)$ using $O(s)$ queries, while the Diameter can be approximated within a factor of $(1+\epsilon)$ using $O(\log \Delta + 1/\epsilon)$ queries. Furthermore, we establish matching lower bounds using Yao’s Minimax Principle and adversary arguments. We demonstrate that $\Omega(s)$ queries are required for Width estimation to distinguish sparse outliers, whereas $\Omega(\log \Delta)$ queries are necessary for Diameter estimation to locate the point set within the coordinate universe. These results confirm the optimality of our proposed algorithms.
 
@@ -185,7 +185,7 @@
   title: Erd\H{o}s-P\'osa property of induced subdivisions
   speaker: Jeongin Lee
   affiliation: Hanyang University
-  homepage: ""
+  # homepage: ""
   abstract: |
     A class $\mathcal{F}$ of graphs has the induced Erd\H{o}s--P\'{o}sa property if there exists a bounding function $f: N \to R$ such that for every graph $G$ and every positive integer $k$, $G$ contains either $k$ pairwise vertex-disjoint induced subgraphs that belong to $F$, or a vertex set of size at most $f(k)$ hitting all induced copies of graphs in $\mathcal{F}$. Kwon and Raymond investigated whether or not the class of $H$-subdivisions has the induced Erd\H{o}s-P\'osa property for some graphs $H$. We provide some general condition on $H$ so that the class of $H$-subdivisions does not have the induced Erd\H{o}s-P\'osa property. Furthermore, we completely settle the case when $H$ is a complete tripartite graph.
 
@@ -194,7 +194,7 @@
   title: On Universal Graphs for Trees and Tree-Like Graphs
   speaker: Minseo Kim
   affiliation: KAIST
-  homepage: ""
+  # homepage: ""
   abstract: |
     Chung and Graham [J. London Math. Soc., 1983] claimed to prove that there exists an $n$-vertex graph $G$ with $ \frac{5}{2}n \log_2 n + O(n)$ edges that contains every $n$-vertex tree as a subgraph. Frati, Hoffmann and T\'oth [Combin. Probab. Comput., 2023] discovered an error in the proof. By adding more edges to $G$ the error can be corrected, bringing the number of edges in $G$ to $\frac{7}{2}n \log_2 n + O(n). $ 
 

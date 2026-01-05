@@ -45,7 +45,6 @@
   title: On Lower Bounds for Color-Avoiding Ramsey Numbers of Tight Monotone Paths
   speaker: Jigang Choi
   affiliation: KAIST & IBS DIMAG
-  homepage: ''
   abstract: "We consider the color-avoiding Ramsey number $A_k(n; r, s)$, defined\
     \ as the least integer $N$ such that every $r$-coloring of the $k$-uniform hypergraph\
     \ on the vertex set $[N]$ contains a tight monotone path of length $n$ utilizing\
@@ -60,7 +59,6 @@
   title: Matching Theory and Matching in Planar Graphs
   speaker: Chanho Song
   affiliation: POSTECH
-  homepage: ''
   abstract: 'Matching is a fundamental concept in graph theory.
 
     Given a graph $G=(V,E)$, a matching is a set of pairwise non-adjacent edges, and
@@ -147,7 +145,6 @@
     having a product structure
   speaker: Myounghwan Lee
   affiliation: Hanyang University
-  homepage: ''
   abstract: 'Given a family $\mathcal{F}$ of graphs, a graph is \emph{$\mathcal{F}$-subgraph-free}
     if it has no subgraph isomorphic to a member of $\mathcal{F}$.
 
@@ -189,7 +186,6 @@
   title: On Universal Graphs for Trees and Tree-Like Graphs
   speaker: Minseo Kim
   affiliation: KAIST
-  homepage: ''
   abstract: "Chung and Graham [J. London Math. Soc., 1983] claimed to prove that there\
     \ exists an $n$-vertex graph $G$ with $ \\frac{5}{2}n \\log_2 n + O(n)$ edges\
     \ that contains every $n$-vertex tree as a subgraph. Frati, Hoffmann and T\\'oth\
@@ -220,7 +216,6 @@
     Bounded Integer Coordinates
   speaker: Seongbin Park
   affiliation: POSTECH
-  homepage: ''
   abstract: "We present an exact algorithm for the \\emph{minimum-cost edge cover}\
     \ problem on the Euclidean bipartite graphs defined on the integer grid in the\
     \ plane. \nLet $R, B \\subset [\\Delta]^2$, with $|R| + |B| = n$, be two finite\
@@ -250,7 +245,6 @@
   title: Erd\H{o}s-P\'osa property of induced subdivisions
   speaker: Jeongin Lee
   affiliation: Hanyang University
-  homepage: ''
   abstract: 'A class $\mathcal{F}$ of graphs has the induced Erd\H{o}s--P\''{o}sa
     property if there exists a bounding function $f: N \to R$ such that for every
     graph $G$ and every positive integer $k$, $G$ contains either $k$ pairwise vertex-disjoint
@@ -280,7 +274,6 @@
   title: A coarse Erd\H{o}s-P\'{o}sa theorem for cycles with modulo constraints
   speaker: Hyemi Park
   affiliation: Hanyang University
-  homepage: ''
   abstract: An \emph{induced packing} of cycles in a graph is a set of vertex-disjoint
     cycles with no edges between them. We show that there exists a function $f(k)=O(k\log
     k)$ such that for every graph $G$, $G$ contains either an induced packing of $k$
@@ -320,7 +313,6 @@
   title: Range Counting Oracle for Extent problems
   speaker: Sanghwa Han
   affiliation: POSTECH
-  homepage: ''
   abstract: In this talk, we investigate geometric extent problems under the Range
     Counting Oracle model, where algorithms cannot access point coordinates directly
     but can only query the count of points inside axis-aligned rectangles. We focus
@@ -344,7 +336,6 @@
   title: Fully Scalable MPC algorithms for WSPD in Euclidean Spaces
   speaker: Hyeonjun Shin
   affiliation: POSTECH
-  homepage: ''
   abstract: 'We recently studied the problem of constructing a \emph{$(1/\varepsilon)$-well-separated
     pair decomposition} (WSPD) for $n$ points in the \emph{Massively Parallel Computation}
     (MPC) model, where multiple machines work in parallel and communicate in synchronous
