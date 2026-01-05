@@ -33,62 +33,79 @@
 <!-- \emph{...}, \textsc{...} -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  const ROOTS = document.querySelectorAll(".talk-abstract"); // change to "body" if you want everywhere
   const SKIP = "code,pre,script,style,textarea,mjx-container";
 
-  const findClose = (s, open) => {
-    let d = 0;
-    for (let i = open; i < s.length; i++) {
-      if (s[i] === "{") d++;
-      else if (s[i] === "}") {
-        d--;
-        if (d === 0) return i;
+  function findMatchingBrace(s, openIdx) {
+    // openIdx points at the '{'
+    let depth = 0;
+    for (let i = openIdx; i < s.length; i++) {
+      const ch = s[i];
+      const prev = i > 0 ? s[i - 1] : "";
+
+      if (ch === "{" && prev !== "\\") depth++;
+      else if (ch === "}" && prev !== "\\") {
+        depth--;
+        if (depth === 0) return i;
       }
     }
     return -1;
-  };
+  }
 
-  const parse = (text) => {
+  function parseToFragment(text) {
     const frag = document.createDocumentFragment();
     let i = 0;
 
     while (i < text.length) {
-      const sub = text.slice(i);
-      const m = /\\(emph|textsc)\{/.exec(sub);
-      if (!m) { frag.appendChild(document.createTextNode(sub)); break; }
-
-      const start = i + m.index;
-      if (start > i) frag.appendChild(document.createTextNode(text.slice(i, start)));
+      // find next \emph{ or \textsc{ with optional spaces before {
+      const m = text.slice(i).match(/\\(emph|textsc)\s*\{/);
+      if (!m) {
+        frag.appendChild(document.createTextNode(text.slice(i)));
+        break;
+      }
 
       const cmd = m[1];
-      const open = start + m[0].length - 1;       // points to "{"
-      const close = findClose(text, open);        // matches nested braces
-      if (close === -1) { frag.appendChild(document.createTextNode(text.slice(start))); break; }
+      const start = i + m.index;
+
+      // emit text before the command
+      if (start > i) frag.appendChild(document.createTextNode(text.slice(i, start)));
+
+      // locate the actual '{' (after optional spaces)
+      const open = text.indexOf("{", start);
+      const close = findMatchingBrace(text, open);
+      if (open === -1 || close === -1) {
+        // unmatched brace -> stop safely
+        frag.appendChild(document.createTextNode(text.slice(start)));
+        break;
+      }
 
       const inner = text.slice(open + 1, close);
 
-      const el = (cmd === "emph")
-        ? document.createElement("em")
-        : Object.assign(document.createElement("span"), { className: "textsc" });
+      const el = cmd === "emph" ? document.createElement("em") : document.createElement("span");
+      if (cmd === "textsc") el.className = "textsc";
 
-      el.appendChild(parse(inner));               // recursion handles nesting
+      // recurse so nested \emph{...} / \textsc{...} works
+      el.appendChild(parseToFragment(inner));
       frag.appendChild(el);
 
       i = close + 1;
     }
-    return frag;
-  };
 
-  document.querySelectorAll(".talk-abstract").forEach(root => {
-    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    return frag;
+  }
+
+  ROOTS.forEach(root => {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
     const nodes = [];
-    for (let n; (n = w.nextNode()); ) {
+    for (let n; (n = walker.nextNode()); ) {
       if (n.parentElement && n.parentElement.closest(SKIP)) continue;
-      if (n.nodeValue.includes("\\emph{") || n.nodeValue.includes("\\textsc{")) nodes.push(n);
+      if (n.nodeValue.includes("\\emph") || n.nodeValue.includes("\\textsc")) nodes.push(n);
     }
-    nodes.forEach(n => n.parentNode.replaceChild(parse(n.nodeValue), n));
+    nodes.forEach(n => n.parentNode.replaceChild(parseToFragment(n.nodeValue), n));
   });
 });
 </script>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
