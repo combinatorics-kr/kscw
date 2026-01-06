@@ -156,6 +156,82 @@
     for some graphs $H$. We provide some general condition on $H$ so that the class
     of $H$-subdivisions does not have the induced Erd\H{o}s-P\''osa property. Furthermore,
     we completely settle the case when $H$ is a complete tripartite graph.'
+- id: ct-chanhosong
+  date: Feb 5 (Thu)
+  time: 13:30–14:00
+  type: contributed-talk
+  title: Matching Theory and Matching in Planar Graphs
+  speaker: Chanho Song
+  affiliation: POSTECH
+  abstract: 'Matching is a fundamental concept in graph theory.
+
+    Given a graph $G=(V,E)$, a matching is a set of pairwise non-adjacent edges, and
+    the most basic optimization problem asks for a matching of maximum size,
+
+    $$
+
+    \max_{M \subseteq E} |M| \quad \text{subject to } M \text{ is a matching}.
+
+    $$
+
+    In many applications, edges carry weights representing costs or benefits, leading
+    to the weighted matching problem,
+
+    $$
+
+    \max_{M \subseteq E} \sum_{e\in M} w(e),
+
+    $$
+
+    which plays a central role in combinatorial optimization.
+
+
+    While matching in bipartite graphs admits a clean and efficient theory, the situation
+    becomes significantly more complex in general graphs due to the presence of odd
+    cycles.
+
+    The classical solution, Edmonds’ algorithm, resolves this difficulty by introducing
+    blossoms, which are odd-length alternating cycles that must be treated as single
+    units.
+
+    From a linear programming perspective, this corresponds to adding odd-set constraints
+    and considering a primal--dual formulation.
+
+    In this framework, dual variables are assigned not only to vertices but also to
+    certain odd vertex sets, and an edge $e=uv$ is evaluated by a dual expression
+    of the form
+
+    $$
+
+    yz(e) = y(u) + y(v) + \sum_{B} z(B),
+
+    $$
+
+    where the sum ranges over active blossoms containing both endpoints.
+
+
+    Modern implementations often rely on relaxed notions such as 1-feasibility, where
+    the dual dominance condition is weakened to
+
+    $$
+
+    yz(e) \ge w(e) - 2 \quad \text{for all } e\in E.
+
+    $$
+
+    This relaxation enables efficient scaling-based algorithms while still guaranteeing
+    near-optimality.
+
+
+    In planar graphs, additional geometric structure can be exploited.
+
+    A key idea underlying my work is to combine Edmonds’ primal--dual framework with
+    planar $r$-division, decomposing the graph into small pieces with limited boundary
+    interaction.
+
+    By localizing computations within pieces and carefully managing blossoms and dual
+    updates across boundaries, one can reconcile the global nature of matching with
+    the locality induced by planarity.'
 - id: ct-hyemipark
   date: Feb 5 (Thu)
   time: 14:10–14:40

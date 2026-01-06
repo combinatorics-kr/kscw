@@ -161,7 +161,9 @@
     time: 13:30–14:00
     title: Contributed talk
     type: contributed-talk
-    id: ct-mujinchoi
+    id: ct-chanhosong
+    speaker: Chanho Song
+    affiliation: POSTECH
   - slot: 26
     rowspan: 3
     time: 14:10–14:40
