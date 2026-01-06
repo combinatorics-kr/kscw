@@ -15,33 +15,31 @@
     - start: "10:00"
       end:   "11:00"
       title: "Opening, Introduction"
+
     - start: "11:00"
       end:   "12:00"
       title: "Invited talk"
       id: it-minhocho
+
     - start: "12:00"
       end:   "13:30"
       title: "Lunch"
 
     - start: "13:30"
-      end:   "14:00"
-      title: "Contributed talk"
-      id: ct-yeonsuchang
-    - start: "14:10"
-      end:   "14:40"
+      end:   "14:30"
+      title: "Special session"
+      id: ss-seokbeomkim
+
+    - start: "14:30"
+      end:   "15:00"
+      title: "Coffee break"
+
+    - start: "15:00"
+      end:   "15:30"
       title: "Contributed talk"
       id: ct-jigangchoi
 
-    - start: "14:40"
-      end:   "15:10"
-      title: "Coffee break"
-    
-    - start: "15:10"
-      end:   "15:40"
-      title: "Contributed talk"
-      id: ct-chanhosong
-
-    - start: "15:50"
+    - start: "15:40"
       end:   "18:00"
       title: "Open problem session"
 
@@ -95,7 +93,7 @@
     - start: "10:00"
       end:   "11:00"
       title: "Special session"
-      id: ss-seokbeomkim
+      id: ss-mujinchoi
 
     - start: "11:10"
       end:   "11:40"

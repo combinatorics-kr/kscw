@@ -25,6 +25,15 @@
   abstract: |
     TBA
 
+- id: ss-mujinchoi
+  type: special-session
+  title: TBA
+  speaker: Mujin Choi
+  affiliation: KAIST & IBS DIMAG
+  homepage: https://dimag.ibs.re.kr/home/mujin/
+  abstract: |
+    TBA
+
 - id: ct-yeonsuchang
   type: contributed-talk
   title: Structural and Algorithmic properties of Reduced Component Max-Leaf
@@ -66,15 +75,6 @@
   # homepage: ""
   abstract: |
     An \emph{induced packing} of cycles in a graph is a set of vertex-disjoint cycles with no edges between them. We show that there exists a function $f(k)=O(k\log k)$ such that for every graph $G$, $G$ contains either an induced packing of $k$ even cycles, or a vertex set of size $f(k)$ whose closed neighborhood hits all even cycles.
-
-- id: ct-mujinchoi
-  type: contributed-talk
-  title: Finding induced minors using a strong bramble
-  speaker: Mujin Choi
-  affiliation: KAIST & IBS DIMAG
-  homepage: https://dimag.ibs.re.kr/home/mujin/
-  abstract: |
-    For a graph $G$, a strong bramble $\mathcal{B}$ is a collection of connected vertex subsets such that each element intersects each other. If $G$ and $\mathcal{B}$ satisfies additional conditions, then we can use them to find specific graphs, like wheel or ladder, as an induced minor. In this talk, I will give several known examples and introduce some open problems.
 
 - id: ct-dohyeonlee
   type: contributed-talk

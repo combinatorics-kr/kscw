@@ -7,40 +7,18 @@
   affiliation: KIAS
   homepage: https://sites.google.com/view/minhocho-math/
   abstract: TBA
-- id: ct-yeonsuchang
+- id: ss-seokbeomkim
   date: Feb 3 (Tue)
-  time: 13:30–14:00
-  type: contributed-talk
-  title: Structural and Algorithmic properties of Reduced Component Max-Leaf
-  speaker: Yeonsu Chang
-  affiliation: Hanyang University
-  homepage: https://yeonsuchang.com/
-  abstract: 'Bonnet, Kwon, and Wood (arXiv:2202.11858) introduced reduced bandwidth,
-    where every class of bounded reduced bandwidth has bounded twin-width, but not
-    conversely. They separated two classes using expanders, and conjectured that 3-dimensional
-    grids also separate two classes. We verify this conjecture.
-
-
-    We introduce reduced component max-leaf, a new graph parameter defined via contraction
-    sequence, and show that this parameter lies strictly between reduced bandwidth
-    and rank-width. Moreover, we prove that it is incomparable with both stretch-width
-    and mim-width. In particular, we show that 2-dimensional grids have unbounded
-    reduced component max-leaf, which motivates us to find algorithmic applications
-    of this parameter.
-
-
-    Given a finite set $\sigma \subseteq \mathbb{N}\cup \{0\}$, the $\sigma$-\textsc{Problem}
-    asks for a subset $S \subseteq V(G)$ of maximum size of a graph $G = (V, E)$ such
-    that $|N_G(v) \cap S| \in \sigma$ for every $v \in S$. This problem naturally
-    captures \textsc{Maximum Independent Set}, \textsc{Maximum Induced Matching} and
-    \textsc{Maximum Induced Subgraph of Max Degree at most $d$}. We show that $\sigma$-\textsc{Problem}
-    can be solved in polynomial time on classes of bounded reduced component max-leaf,
-    when a certifying contraction sequence is given. Furthermore, since the reduced
-    component max-leaf is preserved under graph complementation, \textsc{Maximum Clique}
-    is also solvable in polynomial time on these classes.'
+  time: 13:30–14:30
+  type: special-session
+  title: TBA
+  speaker: Seokbeom Kim
+  affiliation: KAIST & IBS DIMAG
+  homepage: https://dimag.ibs.re.kr/home/seokbeom/
+  abstract: TBA
 - id: ct-jigangchoi
   date: Feb 3 (Tue)
-  time: 14:10–14:40
+  time: 15:00–15:30
   type: contributed-talk
   title: On Lower Bounds for Color-Avoiding Ramsey Numbers of Tight Monotone Paths
   speaker: Jigang Choi
@@ -52,82 +30,6 @@
     \ upper bounds for $A_k(n; r, s)$. However, the lower bounds for this number remain\
     \ unknown.  \n\nIn this talk, I will present why it is difficult to find the lower\
     \ bound of this number and what the biggest obstruction is."
-- id: ct-chanhosong
-  date: Feb 3 (Tue)
-  time: 15:10–15:40
-  type: contributed-talk
-  title: Matching Theory and Matching in Planar Graphs
-  speaker: Chanho Song
-  affiliation: POSTECH
-  abstract: 'Matching is a fundamental concept in graph theory.
-
-    Given a graph $G=(V,E)$, a matching is a set of pairwise non-adjacent edges, and
-    the most basic optimization problem asks for a matching of maximum size,
-
-    $$
-
-    \max_{M \subseteq E} |M| \quad \text{subject to } M \text{ is a matching}.
-
-    $$
-
-    In many applications, edges carry weights representing costs or benefits, leading
-    to the weighted matching problem,
-
-    $$
-
-    \max_{M \subseteq E} \sum_{e\in M} w(e),
-
-    $$
-
-    which plays a central role in combinatorial optimization.
-
-
-    While matching in bipartite graphs admits a clean and efficient theory, the situation
-    becomes significantly more complex in general graphs due to the presence of odd
-    cycles.
-
-    The classical solution, Edmonds’ algorithm, resolves this difficulty by introducing
-    blossoms, which are odd-length alternating cycles that must be treated as single
-    units.
-
-    From a linear programming perspective, this corresponds to adding odd-set constraints
-    and considering a primal--dual formulation.
-
-    In this framework, dual variables are assigned not only to vertices but also to
-    certain odd vertex sets, and an edge $e=uv$ is evaluated by a dual expression
-    of the form
-
-    $$
-
-    yz(e) = y(u) + y(v) + \sum_{B} z(B),
-
-    $$
-
-    where the sum ranges over active blossoms containing both endpoints.
-
-
-    Modern implementations often rely on relaxed notions such as 1-feasibility, where
-    the dual dominance condition is weakened to
-
-    $$
-
-    yz(e) \ge w(e) - 2 \quad \text{for all } e\in E.
-
-    $$
-
-    This relaxation enables efficient scaling-based algorithms while still guaranteeing
-    near-optimality.
-
-
-    In planar graphs, additional geometric structure can be exploited.
-
-    A key idea underlying my work is to combine Edmonds’ primal--dual framework with
-    planar $r$-division, decomposing the graph into small pieces with limited boundary
-    interaction.
-
-    By localizing computations within pieces and carefully managing blossoms and dual
-    updates across boundaries, one can reconcile the global nature of matching with
-    the locality induced by planarity.'
 - id: ct-jihyochae
   date: Feb 4 (Wed)
   time: 10:00–10:30
@@ -229,14 +131,14 @@
     \ edge cover of $G$ in $\\tilde O\\!\\left(n^{1.5}\\log\\Delta\\right)$ time,\
     \ where $n=|R|+|B|$, exploiting the planar geometry and bounded-coordinate structure\
     \ to avoid enumerating the quadratic-sized edge set."
-- id: ss-seokbeomkim
+- id: ss-mujinchoi
   date: Feb 5 (Thu)
   time: 10:00–11:00
   type: special-session
   title: TBA
-  speaker: Seokbeom Kim
+  speaker: Mujin Choi
   affiliation: KAIST & IBS DIMAG
-  homepage: https://dimag.ibs.re.kr/home/seokbeom/
+  homepage: https://dimag.ibs.re.kr/home/mujin/
   abstract: TBA
 - id: ct-jeonginlee
   date: Feb 5 (Thu)
@@ -254,19 +156,6 @@
     for some graphs $H$. We provide some general condition on $H$ so that the class
     of $H$-subdivisions does not have the induced Erd\H{o}s-P\''osa property. Furthermore,
     we completely settle the case when $H$ is a complete tripartite graph.'
-- id: ct-mujinchoi
-  date: Feb 5 (Thu)
-  time: 13:30–14:00
-  type: contributed-talk
-  title: Finding induced minors using a strong bramble
-  speaker: Mujin Choi
-  affiliation: KAIST & IBS DIMAG
-  homepage: https://dimag.ibs.re.kr/home/mujin/
-  abstract: For a graph $G$, a strong bramble $\mathcal{B}$ is a collection of connected
-    vertex subsets such that each element intersects each other. If $G$ and $\mathcal{B}$
-    satisfies additional conditions, then we can use them to find specific graphs,
-    like wheel or ladder, as an induced minor. In this talk, I will give several known
-    examples and introduce some open problems.
 - id: ct-hyemipark
   date: Feb 5 (Thu)
   time: 14:10–14:40
