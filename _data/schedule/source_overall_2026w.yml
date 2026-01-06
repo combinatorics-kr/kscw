@@ -38,8 +38,13 @@
       end:   "15:30"
       title: "Contributed talk"
       id: ct-jigangchoi
-
+    
     - start: "15:40"
+      end:   "16:10"
+      title: "Contributed talk"
+      id: ct-yeonsuchang
+
+    - start: "16:20"
       end:   "18:00"
       title: "Open problem session"
 

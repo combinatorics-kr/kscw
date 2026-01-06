@@ -59,8 +59,17 @@
     speaker: Jigang Choi
     affiliation: KAIST & IBS DIMAG
   - slot: 35
-    rowspan: 14
-    time: 15:40–18:00
+    rowspan: 3
+    time: 15:40–16:10
+    title: Contributed talk
+    type: contributed-talk
+    id: ct-yeonsuchang
+    speaker: Yeonsu Chang
+    affiliation: Hanyang University
+    homepage: https://yeonsuchang.com/
+  - slot: 39
+    rowspan: 10
+    time: 16:20–18:00
     title: Open problem session
     type: problem
   - slot: 49
