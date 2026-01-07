@@ -10,6 +10,7 @@
     In addition, I will discuss how the job process in Korea is going and share some
     useful advice to increase the possibility of getting a tenure-track job even though
     I have not made it yet.
+  counter: 1
 - id: ct-dohyeonlee
   date: Jul 30 (Tue)
   time: 09:30–10:30
@@ -25,6 +26,7 @@
     method, configuration space/test map scheme and discrete Morse theory. I will
     also discuss some transversal theorems, including our own result and the ideas
     of proof, if time permits.
+  counter: 1
 - id: ct-jaehyeonseo
   date: Jul 30 (Tue)
   time: 11:00–12:00
@@ -44,7 +46,7 @@
     be a collection of tournaments on a common vertex set $V$ of size $n$. We showed
     that if $n$ is sufficiently large, there is a Hamilton path on $V$ of any given
     orientation which is obtained by collecting exactly one arc from each $T_i$. Such
-    a path is said to be *transversal*.
+    a path is said to be \emph{transversal}.
 
 
     It is also a folklore that a strongly connected tournament always contains a directed
@@ -57,6 +59,7 @@
 
 
     This is a joint work with Debsoumya Chakraborti, Jaehoon Kim, and Hyunwoo Lee.'
+  counter: 2
 - id: ct-homoonryu
   date: Jul 31 (Wed)
   time: 09:30–10:30
@@ -70,6 +73,7 @@
     is a Toeplitz graph or not. For this purpose, I give a talk about Toeplitz graphs
     that might be related to this problem. Some simple observations and some previous
     results about Toeplitz graphs will be covered.
+  counter: 3
 - id: it-junghoahn
   date: Jul 31 (Wed)
   time: 15:00–16:00
@@ -80,3 +84,4 @@
   homepage: https://www.junghoahn.com/
   abstract: 이 발표에서는 학술적 성취를 효과적으로 표현하고 홍보하기 위한 방법들을 소개합니다. 학술적 웹사이트 생성 방법, CV와 Research
     statement 작성 및 유의점, 학회에서의 네트워킹 및 학술적 발표 구성 방법 등을 다룹니다.
+  counter: 2

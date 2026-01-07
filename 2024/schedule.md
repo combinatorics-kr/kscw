@@ -7,6 +7,7 @@ hero_title: 2024년 조합론 학생 워크샵
 hero_meta: 공주한옥마을 · 2024년 7월 29일~8월 2일
 hero_year_key: 2024
 hero_tab: schedule
+mathjax_manual: true
 ---
 
 

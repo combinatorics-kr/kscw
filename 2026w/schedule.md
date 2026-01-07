@@ -7,6 +7,7 @@ hero_title: 2026년 동계 조합론 학생 워크샵
 hero_meta: 신라스테이 여수 · 2026년 2월 2~6일
 hero_year_key: 2026w
 hero_tab: schedule
+mathjax_manual: true
 ---
 
 

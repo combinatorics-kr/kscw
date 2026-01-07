@@ -7,6 +7,7 @@
   affiliation: KIAS
   homepage: https://sites.google.com/view/minhocho-math/
   abstract: TBA
+  counter: 1
 - id: ss-seokbeomkim
   date: Feb 3 (Tue)
   time: 13:30–14:30
@@ -16,6 +17,7 @@
   affiliation: KAIST & IBS DIMAG
   homepage: https://dimag.ibs.re.kr/home/seokbeom/
   abstract: TBA
+  counter: 1
 - id: ct-jigangchoi
   date: Feb 3 (Tue)
   time: 15:00–15:30
@@ -30,6 +32,7 @@
     \ upper bounds for $A_k(n; r, s)$. However, the lower bounds for this number remain\
     \ unknown.  \n\nIn this talk, I will present why it is difficult to find the lower\
     \ bound of this number and what the biggest obstruction is."
+  counter: 1
 - id: ct-yeonsuchang
   date: Feb 3 (Tue)
   time: 15:40–16:10
@@ -61,6 +64,7 @@
     when a certifying contraction sequence is given. Furthermore, since the reduced
     component max-leaf is preserved under graph complementation, \textsc{Maximum Clique}
     is also solvable in polynomial time on these classes.'
+  counter: 2
 - id: ct-jihyochae
   date: Feb 4 (Wed)
   time: 10:00–10:30
@@ -70,6 +74,7 @@
   affiliation: Yonsei University
   homepage: https://sites.google.com/yonsei.ac.kr/jihyochae
   abstract: TBA
+  counter: 3
 - id: ct-myounghwanlee
   date: Feb 4 (Wed)
   time: 10:40–11:10
@@ -112,6 +117,7 @@
 
 
     This is a joint work with Shinwoo An, Seonghyuk Im, Seokbeom Kim.'
+  counter: 4
 - id: ct-minseokim
   date: Feb 4 (Wed)
   time: 11:20–11:50
@@ -137,6 +143,7 @@
     \ Devlin, and Schacht, who established the result for the case where $H$ is a\
     \ complete $r$-uniform hypergraph.\n\nThis is based on joint work with Seonghyuk\
     \ Im."
+  counter: 5
 - id: it-jaebaeklee
   date: Feb 4 (Wed)
   time: 13:30–14:30
@@ -146,6 +153,7 @@
   affiliation: Yonsei University
   homepage: https://sites.google.com/view/jae-baeklee
   abstract: TBA
+  counter: 2
 - id: ct-seongbinpark
   date: Feb 4 (Wed)
   time: 15:00–15:30
@@ -167,6 +175,7 @@
     \ edge cover of $G$ in $\\tilde O\\!\\left(n^{1.5}\\log\\Delta\\right)$ time,\
     \ where $n=|R|+|B|$, exploiting the planar geometry and bounded-coordinate structure\
     \ to avoid enumerating the quadratic-sized edge set."
+  counter: 6
 - id: ss-mujinchoi
   date: Feb 5 (Thu)
   time: 10:00–11:00
@@ -176,6 +185,7 @@
   affiliation: KAIST & IBS DIMAG
   homepage: https://dimag.ibs.re.kr/home/mujin/
   abstract: TBA
+  counter: 2
 - id: ct-jeonginlee
   date: Feb 5 (Thu)
   time: 11:10–11:40
@@ -192,6 +202,7 @@
     for some graphs $H$. We provide some general condition on $H$ so that the class
     of $H$-subdivisions does not have the induced Erd\H{o}s-P\''osa property. Furthermore,
     we completely settle the case when $H$ is a complete tripartite graph.'
+  counter: 7
 - id: ct-chanhosong
   date: Feb 5 (Thu)
   time: 13:30–14:00
@@ -268,6 +279,7 @@
     By localizing computations within pieces and carefully managing blossoms and dual
     updates across boundaries, one can reconcile the global nature of matching with
     the locality induced by planarity.'
+  counter: 8
 - id: ct-hyemipark
   date: Feb 5 (Thu)
   time: 14:10–14:40
@@ -280,6 +292,7 @@
     k)$ such that for every graph $G$, $G$ contains either an induced packing of $k$
     even cycles, or a vertex set of size $f(k)$ whose closed neighborhood hits all
     even cycles.
+  counter: 9
 - id: ct-dohyeonlee
   date: Feb 5 (Thu)
   time: 15:10–15:40
@@ -307,6 +320,7 @@
     In this talk, we investigate whether analogues of the cutting lemma can be formulated
     in abstract convexity spaces. We discuss necessary structural conditions under
     which a cutting-type decomposition may exist.'
+  counter: 10
 - id: ct-sanghwahan
   date: Feb 5 (Thu)
   time: 15:50–16:20
@@ -330,6 +344,7 @@
     to distinguish sparse outliers, whereas $\Omega(\log \Delta)$ queries are necessary
     for Diameter estimation to locate the point set within the coordinate universe.
     These results confirm the optimality of our proposed algorithms.
+  counter: 11
 - id: ct-hyeonjunshin
   date: Feb 6 (Fri)
   time: 10:00–10:30
@@ -367,3 +382,4 @@
     setting. By starting from this simpler case, we aim to clarify the basic ideas
     underlying our MPC approach and to illustrate how simple sequential algorithms
     can be transformed into efficient constant-round MPC algorithms.'
+  counter: 12

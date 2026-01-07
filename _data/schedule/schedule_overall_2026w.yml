@@ -27,6 +27,8 @@
     time: 11:00–12:00
     title: Invited talk
     type: invited-talk
+    short-title: IT
+    counter: 1
     id: it-minhocho
     speaker: Minho Cho
     affiliation: KIAS
@@ -41,6 +43,8 @@
     time: 13:30–14:30
     title: Special session
     type: special-session
+    short-title: SS
+    counter: 1
     id: ss-seokbeomkim
     speaker: Seokbeom Kim
     affiliation: KAIST & IBS DIMAG
@@ -55,6 +59,8 @@
     time: 15:00–15:30
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 1
     id: ct-jigangchoi
     speaker: Jigang Choi
     affiliation: KAIST & IBS DIMAG
@@ -63,6 +69,8 @@
     time: 15:40–16:10
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 2
     id: ct-yeonsuchang
     speaker: Yeonsu Chang
     affiliation: Hanyang University
@@ -84,6 +92,8 @@
     time: 10:00–10:30
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 3
     id: ct-jihyochae
     speaker: Jihyo Chae
     affiliation: Yonsei University
@@ -93,6 +103,8 @@
     time: 10:40–11:10
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 4
     id: ct-myounghwanlee
     speaker: Myounghwan Lee
     affiliation: Hanyang University
@@ -101,6 +113,8 @@
     time: 11:20–11:50
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 5
     id: ct-minseokim
     speaker: Minseo Kim
     affiliation: KAIST
@@ -114,6 +128,8 @@
     time: 13:30–14:30
     title: Invited talk
     type: invited-talk
+    short-title: IT
+    counter: 2
     id: it-jaebaeklee
     speaker: Jae-baek Lee
     affiliation: Yonsei University
@@ -128,6 +144,8 @@
     time: 15:00–15:30
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 6
     id: ct-seongbinpark
     speaker: Seongbin Park
     affiliation: POSTECH
@@ -148,6 +166,8 @@
     time: 10:00–11:00
     title: Special session
     type: special-session
+    short-title: SS
+    counter: 2
     id: ss-mujinchoi
     speaker: Mujin Choi
     affiliation: KAIST & IBS DIMAG
@@ -157,6 +177,8 @@
     time: 11:10–11:40
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 7
     id: ct-jeonginlee
     speaker: Jeongin Lee
     affiliation: Hanyang University
@@ -170,6 +192,8 @@
     time: 13:30–14:00
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 8
     id: ct-chanhosong
     speaker: Chanho Song
     affiliation: POSTECH
@@ -178,6 +202,8 @@
     time: 14:10–14:40
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 9
     id: ct-hyemipark
     speaker: Hyemi Park
     affiliation: Hanyang University
@@ -191,6 +217,8 @@
     time: 15:10–15:40
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 10
     id: ct-dohyeonlee
     speaker: Dohyeon Lee
     affiliation: KAIST & IBS DIMAG
@@ -200,6 +228,8 @@
     time: 15:50–16:20
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 11
     id: ct-sanghwahan
     speaker: Sanghwa Han
     affiliation: POSTECH
@@ -220,6 +250,8 @@
     time: 10:00–10:30
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 12
     id: ct-hyeonjunshin
     speaker: Hyeonjun Shin
     affiliation: POSTECH
