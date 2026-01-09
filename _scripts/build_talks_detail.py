@@ -5,6 +5,9 @@ from pathlib import Path
 # repo root: one level up from _scripts/
 ROOT = Path(__file__).resolve().parent.parent
 
+# Types that get counters, grouped by category
+COUNTER_CATEGORIES = ["invited-talk", "contributed-talk", "special-session"]
+
 
 def load_yaml(path: Path):
     if not path.exists():
@@ -36,6 +39,8 @@ def build_for_year(year: str):
             print(f"WARNING: duplicate talk id '{tid}' in talks_{year}.yml, overriding previous.")
         talk_by_id[tid] = talk
 
+    counters = {k: 0 for k in COUNTER_CATEGORIES}
+    
     details = []
 
     # Go through all sessions in the schedule, pick ones with an 'id'
@@ -76,6 +81,11 @@ def build_for_year(year: str):
                     value = value.rstrip()
 
                 rec[key] = value
+            
+            etype = talk["type"]
+            if etype in COUNTER_CATEGORIES:
+                counters[etype] += 1
+                rec["counter"] = counters[etype]
 
             details.append(rec)
 

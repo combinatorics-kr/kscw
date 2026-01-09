@@ -23,10 +23,10 @@
   speaker: Gunwoo Kim
   affiliation: 'KAIST / IBS DIMAG'
   abstract: |
-    The Maximum Independent Set (MIS) problem is NP-complete and remains so for every minor-closed graph class that includes all planar graphs (Garey and Johnson [SIAM J. Appl. Math.'77]). On the other hand, due to the Grid Theorem of Robertson and Seymour [JCTB'95], every minor-closed graph class that excludes a planar graph has bounded treewidth, and MIS can be solved in polynomial time on such graph classes. A drawback of this result is that such graph classes are necessarily sparse. Since MIS can be efficiently solved on dense bipartite graphs, there has been interest in extending the tractability of MIS to larger graph classes. 
-    I will provide an overview of these attempts and introduce a new parameter called *odd cycle packing (OCP-treewidth)*, which unifies the tractability of MIS on the classes of bounded *odd cycle packing (OCP number)* and bounded *bipartite treewidth*.
+    The \textsc{Maximum Independent Set} (MIS) problem is $\mathsf{NP}$-complete and remains so for every minor-closed graph class that includes all planar graphs (Garey and Johnson [SIAM J.\ Appl.\ Math.'77]). On the other hand, due to the Grid Theorem of Robertson and Seymour [JCTB'95], every minor-closed graph class that excludes a planar graph has bounded treewidth, and MIS can be solved in polynomial time on such graph classes. A drawback of this result is that such graph classes are necessarily sparse. Since MIS can be efficiently solved on dense bipartite graphs, there has been interest in extending the tractability of MIS to larger graph classes. 
+    I will provide an overview of these attempts and introduce a new parameter called \emph{odd cycle packing ($\mathsf{OCP}$)-treewidth}, which unifies the tractability of MIS on the classes of bounded \emph{odd cycle packing ($\mathsf{OCP}$) number} and bounded \emph{bipartite treewidth}.
 
-    This is based on joint work with Mujin Choi, Maximilian Gorsky, Caleb McFarland, Sebastian Wiederrecht.
+    This is based on joint work with Mujin Choi, Maximilian Gorsky, Caleb McFarland, Sebastian Wiederrecht. 
 
 - id: ct-shinwooan
   type: contributed-talk

@@ -34,29 +34,30 @@
 /* Type badge */
 .talk-type {
   display: inline-block;
-  padding: 0.1rem 0.5rem;
+  padding: 0.12rem 0.53rem;
   border-radius: 999px;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 520;
   text-transform: uppercase;
   letter-spacing: 0.07em;
 }
 
-/* Type-specific colors */
+/* Type-specific colors (higher-contrast text) */
 .talk-type-invited {
-  background-color: #e8f5e9;
-  color: #2e7d32;
+  background-color: #f9e3b3;
+  color: #6b4a00;  /* darker amber/brown */
 }
 
 .talk-type-contributed {
-  background-color: #f3e5f5;
-  color: #6a1b9a;
+  background-color: #ebe6ff;
+  color: #232a6d;  /* darker indigo */
 }
 
 .talk-type-special {
-  background-color: #fff3e0;
-  color: #ef6c00;
+  background-color: #d3e5f7;
+  color: #0f3e5a;  /* darker blue */
 }
+
 
 /* Date & time text */
 .talk-datetime {

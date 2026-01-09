@@ -1,13 +1,53 @@
+/* Full-bleed section that is centered to the viewport (works inside Cayman .main-content) */
+/* .schedule-breakout {
+  position: relative;
+  --width: min(120%, 90vw);
+  width: var(--width);
+  margin-left: calc(50% - var(--width)/2);
+  margin-right: calc(50% - var(--width)/2);
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.schedule-breakout-inner {
+  display: inline-block;
+  width: min(1200px, 100%);
+  margin: 0;
+}
+
+.schedule-breakout .schedule-grid {
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.85rem;
+  text-align: left;
+} */
+
+
 /* =========================================
    Schedule tables – layout & typography
    ========================================= */
 
 .schedule-grid {
   width: 100%;
-  max-width: 1000px;
-  margin: 1.5rem auto;
-  border-collapse: collapse;
+  margin: 1.5rem 0;
   font-size: 0.85rem;
+  text-align: left;
+}
+
+/* 1 row = 10 minutes (your slots.yml granularity) */
+.schedule-grid {
+  --row-h: 26px;            /* adjust: 24–32px */
+}
+
+/* Force equal-height rows */
+.schedule-grid tbody tr {
+  height: var(--row-h);
+}
+
+.schedule-grid tbody th,
+.schedule-grid tbody td {
+  height: var(--row-h);     /* important: tables honor cell height better than tr */
 }
 
 .schedule-grid th,
@@ -36,7 +76,7 @@
 
 .schedule-grid .slot {
   vertical-align: top;
-  min-width: 7rem;
+  min-width: 8rem;
 }
 
 .schedule-grid .slot.empty {
@@ -120,20 +160,23 @@
 /* Contributed talks */
 .schedule-grid .event-type-contributed,
 .schedule-grid .event-type-contributed-talk {
-  background-color: #ebe6ff;   /* periwinkle */
-  border-left-color: #5c6bc0;  /* indigo */
+  background-color: #ebe6ff;
+  /* periwinkle */
+  border-left-color: #5c6bc0;
+  /* indigo */
 }
 
 /* Coffee / short breaks */
 .schedule-grid .event-type-break,
 .schedule-grid .event-type-coffee {
-  background-color: #f4f4f4;
+  background-color: #fcfcfc;
   border-left-color: #757575;
 }
 
 /* Meals (lunch / dinner) */
 .schedule-grid .event-type-meal {
-  background-color: #fdf6f6;   /* very light warm tint */
+  background-color: #fdf6f6;
+  /* very light warm tint */
   border-left-color: #c62828;
 }
 
@@ -145,14 +188,16 @@
 
 /* Excursion / social events */
 .schedule-grid .event-type-excursion {
-  background-color: #f3f1f7;   /* softer lavender */
+  background-color: #f3f1f7;
+  /* softer lavender */
   border-left-color: #7e57c2;
 }
 
 /* Special sessions */
 .schedule-grid .event-type-special,
 .schedule-grid .event-type-special-session {
-  background-color: #d3e5f7;   /* clearer blue */
+  background-color: #d3e5f7;
+  /* clearer blue */
   border-left-color: #4d8ec0;
 }
 
@@ -162,11 +207,36 @@
   border-left-color: #90a4ae;
 }
 
+
+.schedule-legend {
+  max-width: 1350px;   /* match your breakout-inner if you want */
+  margin: 0.5rem auto 0;
+  font-size: 0.9rem;
+  color: #1f2328;
+}
+
+.legend-item {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin: 0 6px 0 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  font-weight: 700;
+}
+
+.legend-it { background: #f9e3b3; color: #6b4a00; }
+.legend-ct { background: #ebe6ff; color: #232a6d; }
+.legend-ss { background: #d3e5f7; color: #0f3e5a; }
+.legend-op { background: #e0f4f6; color: #0f3e5a; } /* optional */
+
+
+
 /* =========================================
    Responsive tweaks
    ========================================= */
 
 @media (max-width: 700px) {
+
   .schedule-grid th,
   .schedule-grid td {
     padding: 0.2rem 0.25rem;

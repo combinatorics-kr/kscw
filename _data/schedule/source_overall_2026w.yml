@@ -62,8 +62,13 @@
       end:   "11:10"
       title: "Contributed talk"
       id: ct-myounghwanlee
-    - start: "11:20"
-      end:   "11:50"
+    
+    - start: "11:10"
+      end:   "11:30"
+      title: "Coffee break"
+
+    - start: "11:30"
+      end:   "12:00"
       title: "Contributed talk"
       id: ct-minseokim
 
@@ -99,9 +104,13 @@
       end:   "11:00"
       title: "Special session"
       id: ss-mujinchoi
+    
+    - start: "11:00"
+      end:   "11:30"
+      title: "Coffee break"
 
-    - start: "11:10"
-      end:   "11:40"
+    - start: "11:30"
+      end:   "12:00"
       title: "Contributed talk"
       id: ct-jeonginlee
 

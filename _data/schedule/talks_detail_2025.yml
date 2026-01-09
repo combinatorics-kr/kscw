@@ -9,6 +9,7 @@
   abstract: This is a very brief introduction to oriented matroids based on personal
     recollection, with hope that the theory gets wider attention from younger generation
     of mathematics in Korea.
+  counter: 1
 - id: ct-gunwookim
   date: Aug 22 (Fri)
   time: 09:30–10:20
@@ -16,19 +17,21 @@
   title: Unifying Islands of Tractability for Maximum Independent Set
   speaker: Gunwoo Kim
   affiliation: KAIST / IBS DIMAG
-  abstract: "The Maximum Independent Set (MIS) problem is NP-complete and remains\
-    \ so for every minor-closed graph class that includes all planar graphs (Garey\
-    \ and Johnson [SIAM J. Appl. Math.'77]). On the other hand, due to the Grid Theorem\
-    \ of Robertson and Seymour [JCTB'95], every minor-closed graph class that excludes\
-    \ a planar graph has bounded treewidth, and MIS can be solved in polynomial time\
-    \ on such graph classes. A drawback of this result is that such graph classes\
-    \ are necessarily sparse. Since MIS can be efficiently solved on dense bipartite\
-    \ graphs, there has been interest in extending the tractability of MIS to larger\
-    \ graph classes. \nI will provide an overview of these attempts and introduce\
-    \ a new parameter called *odd cycle packing (OCP-treewidth)*, which unifies the\
-    \ tractability of MIS on the classes of bounded *odd cycle packing (OCP number)*\
-    \ and bounded *bipartite treewidth*.\n\nThis is based on joint work with Mujin\
-    \ Choi, Maximilian Gorsky, Caleb McFarland, Sebastian Wiederrecht."
+  abstract: "The \\textsc{Maximum Independent Set} (MIS) problem is $\\mathsf{NP}$-complete\
+    \ and remains so for every minor-closed graph class that includes all planar graphs\
+    \ (Garey and Johnson [SIAM J.\\ Appl.\\ Math.'77]). On the other hand, due to\
+    \ the Grid Theorem of Robertson and Seymour [JCTB'95], every minor-closed graph\
+    \ class that excludes a planar graph has bounded treewidth, and MIS can be solved\
+    \ in polynomial time on such graph classes. A drawback of this result is that\
+    \ such graph classes are necessarily sparse. Since MIS can be efficiently solved\
+    \ on dense bipartite graphs, there has been interest in extending the tractability\
+    \ of MIS to larger graph classes. \nI will provide an overview of these attempts\
+    \ and introduce a new parameter called \\emph{odd cycle packing ($\\mathsf{OCP}$)-treewidth},\
+    \ which unifies the tractability of MIS on the classes of bounded \\emph{odd cycle\
+    \ packing ($\\mathsf{OCP}$) number} and bounded \\emph{bipartite treewidth}.\n\
+    \nThis is based on joint work with Mujin Choi, Maximilian Gorsky, Caleb McFarland,\
+    \ Sebastian Wiederrecht."
+  counter: 1
 - id: it-hojinchu
   date: Aug 22 (Fri)
   time: 13:30–14:20
@@ -41,6 +44,7 @@
     to future planning, in the hope that they resonate with others in similar stages.
     There won't be any magic answers, but maybe a few ideas that help make the uncertainty
     a bit more manageable.
+  counter: 2
 - id: ct-shinwooan
   date: Aug 23 (Sat)
   time: 09:30–10:20
@@ -63,6 +67,7 @@
     part of my talk, I will cover geometric variants of the aforementioned matching-like
     problems. This part shows that geometric tools can significantly improve the running
     time of the classical graph matching algorithms.'
+  counter: 2
 - id: ct-homoonryu
   date: Aug 23 (Sat)
   time: 13:30–14:20
@@ -92,6 +97,7 @@
     component identification and the resulting FNF computation. This work highlights
     how structured combinatorial representations can lead to significant computational
     gains in symbolic linear algebra.'
+  counter: 3
 - id: ct-jeewonkim
   date: Aug 24 (Sun)
   time: 09:30–10:00
@@ -112,6 +118,7 @@
     In this talk, I will present our progress on this problem, including our use of
     computer-assisted search and the insights it led to. This is joint work with Jineon
     Baek.'
+  counter: 4
 - id: ct-jihyochae
   date: Aug 24 (Sun)
   time: 10:10–10:40
@@ -128,3 +135,4 @@
     capture additive structures both through $k$-term arithmetic progression counts
     and through their connection to polynomial Freiman--Ruzsa via Gowers inverse theorems.
     I present applications of Gowers norms in both directions.
+  counter: 5

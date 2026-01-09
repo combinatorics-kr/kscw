@@ -27,6 +27,8 @@
     time: 11:00–11:50
     title: Invited talk
     type: invited-talk
+    short-title: IT
+    counter: 1
     id: it-seunghunlee
     speaker: Seunghun Lee
     affiliation: IBS DIMAG
@@ -58,6 +60,8 @@
     time: 09:30–10:20
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 1
     id: ct-gunwookim
     speaker: Gunwoo Kim
     affiliation: KAIST / IBS DIMAG
@@ -76,6 +80,8 @@
     time: 13:30–14:20
     title: Invited talk
     type: invited-talk
+    short-title: IT
+    counter: 2
     id: it-hojinchu
     speaker: Hojin Chu
     affiliation: KIAS
@@ -102,6 +108,8 @@
     time: 09:30–10:20
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 2
     id: ct-shinwooan
     speaker: Shinwoo An
     affiliation: POSTECH
@@ -121,6 +129,8 @@
     time: 13:30–14:20
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 3
     id: ct-homoonryu
     speaker: Homoon Ryu
     affiliation: Ajou University
@@ -142,6 +152,8 @@
     time: 09:30–10:00
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 4
     id: ct-jeewonkim
     speaker: Jeewon Kim
     affiliation: KAIST
@@ -150,14 +162,21 @@
     time: 10:10–10:40
     title: Contributed talk
     type: contributed-talk
+    short-title: CT
+    counter: 5
     id: ct-jihyochae
     speaker: Jihyo Chae
     affiliation: Yonsei University
     homepage: https://sites.google.com/yonsei.ac.kr/jihyochae
   - slot: 12
-    rowspan: 7
-    time: 10:50–12:00
-    title: Progress report, Closing remark
+    rowspan: 5
+    time: 10:50–11:40
+    title: Progress report
+    type: problem
+  - slot: 17
+    rowspan: 2
+    time: 11:40–12:00
+    title: Closing remarks
     type: plenary
   - slot: 19
     rowspan: 9

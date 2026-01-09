@@ -94,9 +94,13 @@
       end:   "10:40"
       title: "Contributed talk"
       id: "ct-jihyochae"
+
     - start: "10:50"
+      end: "11:40"
+      title: Progress report
+    - start: "11:40"
       end: "12:00"
-      title: Progress report, Closing remark
+      title: Closing remarks
 
     - start: "12:00"
       end:   "13:30"

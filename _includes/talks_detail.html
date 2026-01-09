@@ -1,48 +1,47 @@
 {%- comment -%}
-  talks_detail.html
+talks_detail.html
 
-  Usage (recommended):
-    {% include talks_detail.html data=site.data.schedule.talk_details_2025 %}
+Usage (recommended):
+{% include talks_detail.html data=site.data.schedule.talk_details_2025 %}
 
-  Expected data format (each item):
-    - id: "it-seunghunlee"
-      date: "Aug 21 (Thu)"
-      time: "11:00–11:50"
-      type: "invited-talk"
-      title: "Oriented Matroids: Scope & Perspectives"
-      speaker: "Seunghun Lee"
-      affiliation: "IBS DIMAG"
-      abstract: "..."
+Expected data format (each item):
+- id: "it-seunghunlee"
+date: "Aug 21 (Thu)"
+time: "11:00–11:50"
+type: "invited-talk"
+title: "Oriented Matroids: Scope & Perspectives"
+speaker: "Seunghun Lee"
+affiliation: "IBS DIMAG"
+abstract: "..."
 
-  The CSS classes used here:
-    .talks-section
-    .talk-card
-    .talk-meta
-    .talk-type, .talk-type-invited, .talk-type-contributed, .talk-type-special, ...
-    .talk-datetime
-    .talk-title
-    .talk-speaker
-    .talk-affiliation
-    .talk-abstract
+The CSS classes used here:
+.talks-section
+.talk-card
+.talk-meta
+.talk-type, .talk-type-invited, .talk-type-contributed, .talk-type-special, ...
+.talk-datetime
+.talk-title
+.talk-speaker
+.talk-affiliation
+.talk-abstract
 {%- endcomment -%}
 
 {%- assign talks = include.data -%}
 
 {%- assign type_order = "invited-talk,contributed-talk,special-session" | split: "," -%}
 
-<!-- \emph{...}, \textsc{...} -->
+<!-- treat \emph and \textsc -->
+{%- if page.mathjax_manual -%}
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const ROOTS = document.querySelectorAll(".talk-abstract"); // change to "body" if you want everywhere
+window.addEventListener("load", async () => {
+  const ROOTS = document.querySelectorAll(".talk-abstract");
   const SKIP = "code,pre,script,style,textarea,mjx-container";
 
   function findMatchingBrace(s, openIdx) {
-    // openIdx points at the '{'
     let depth = 0;
     for (let i = openIdx; i < s.length; i++) {
       const ch = s[i];
       const prev = i > 0 ? s[i - 1] : "";
-
       if (ch === "{" && prev !== "\\") depth++;
       else if (ch === "}" && prev !== "\\") {
         depth--;
@@ -57,43 +56,33 @@ document.addEventListener("DOMContentLoaded", () => {
     let i = 0;
 
     while (i < text.length) {
-      // find next \emph{ or \textsc{ with optional spaces before {
       const m = text.slice(i).match(/\\(emph|textsc)\s*\{/);
-      if (!m) {
-        frag.appendChild(document.createTextNode(text.slice(i)));
-        break;
-      }
+      if (!m) { frag.appendChild(document.createTextNode(text.slice(i))); break; }
 
       const cmd = m[1];
       const start = i + m.index;
-
-      // emit text before the command
       if (start > i) frag.appendChild(document.createTextNode(text.slice(i, start)));
 
-      // locate the actual '{' (after optional spaces)
       const open = text.indexOf("{", start);
       const close = findMatchingBrace(text, open);
       if (open === -1 || close === -1) {
-        // unmatched brace -> stop safely
         frag.appendChild(document.createTextNode(text.slice(start)));
         break;
       }
 
       const inner = text.slice(open + 1, close);
-
       const el = cmd === "emph" ? document.createElement("em") : document.createElement("span");
       if (cmd === "textsc") el.className = "textsc";
 
-      // recurse so nested \emph{...} / \textsc{...} works
       el.appendChild(parseToFragment(inner));
       frag.appendChild(el);
 
       i = close + 1;
     }
-
     return frag;
   }
 
+  // Rewrite only in .talk-abstract text nodes
   ROOTS.forEach(root => {
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
     const nodes = [];
@@ -103,102 +92,117 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     nodes.forEach(n => n.parentNode.replaceChild(parseToFragment(n.nodeValue), n));
   });
+
+  // Now typeset math (whole main content, not just .talk-abstract)
+  const main = document.querySelector(".main-content") || document.body;
+  if (window.MathJax && MathJax.startup && MathJax.startup.promise) {
+    await MathJax.startup.promise;
+  }
+  if (window.MathJax && typeof MathJax.typesetPromise === "function") {
+    await MathJax.typesetPromise([main]);
+  }
 });
 </script>
+{%- endif -%}
 
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-  for (let n; (n = w.nextNode()); ) {
-    n.nodeValue = n.nodeValue
-      .replaceAll("\\H{o}", "ő")
-      .replaceAll("\\'{o}", "ó")
-      .replaceAll("\\'o", "ó");
-  }
-});
+  document.addEventListener("DOMContentLoaded", () => {
+    const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    for (let n; (n = w.nextNode());) {
+      n.nodeValue = n.nodeValue
+        .replaceAll("\\H{o}", "ő")
+        .replaceAll("\\'{o}", "ó")
+        .replaceAll("\\'o", "ó")
+        .replaceAll("\\'e", "é")
+        .replaceAll("\\'a", "á");
+    }
+  });
 </script>
 
 
 
 <div class="talks-section">
   {%- for type_key in type_order -%}
-    {%- assign group = talks | where: "type", type_key -%}
-    {%- if group and group.size > 0 -%}
+  {%- assign group = talks | where: "type", type_key -%}
+  {%- if group and group.size > 0 -%}
 
-      {%- comment -%}
-        Map type_key to human-readable heading and badge class.
-      {%- endcomment -%}
-      {%- assign type_label = type_key -%}
-      {%- assign type_class = "talk-type-default" -%}
+  {%- comment -%}
+  Map type_key to human-readable heading and badge class.
+  {%- endcomment -%}
+  {%- assign type_label = type_key -%}
+  {%- assign type_class = "talk-type-default" -%}
 
-      {%- assign type_lc = type_key | downcase -%}
-      {%- case type_lc -%}
-        {%- when "invited-talk" -%}
-          {%- assign type_label = "Invited talks" -%}
-          {%- assign type_class = "talk-type-invited" -%}
-        {%- when "contributed-talk" -%}
-          {%- assign type_label = "Contributed talks" -%}
-          {%- assign type_class = "talk-type-contributed" -%}
-        {%- when "special-session" -%}
-          {%- assign type_label = "Special sessions" -%}
-          {%- assign type_class = "talk-type-special" -%}
-        {%- else -%}
-          {%- assign type_label = "Other" -%}
-          {%- assign type_class = "talk-type-default" -%}
-      {%- endcase -%}
+  {%- assign type_lc = type_key | downcase -%}
+  {%- case type_lc -%}
+  {%- when "invited-talk" -%}
+  {%- assign type_label = "Invited talks" -%}
+  {%- assign type_label_singular = "Invited talk" -%}
+  {%- assign type_class = "talk-type-invited" -%}
+  {%- when "contributed-talk" -%}
+  {%- assign type_label = "Contributed talks" -%}
+  {%- assign type_label_singular = "Contributed talk" -%}
+  {%- assign type_class = "talk-type-contributed" -%}
+  {%- when "special-session" -%}
+  {%- assign type_label = "Special sessions" -%}
+  {%- assign type_label_singular = "Special session" -%}
+  {%- assign type_class = "talk-type-special" -%}
+  {%- else -%}
+  {%- assign type_label = "Other" -%}
+  {%- assign type_class = "talk-type-default" -%}
+  {%- endcase -%}
 
-      <h3 class="talks-type-heading">{{ type_label }}</h3>
+  <h3 class="talks-type-heading">{{ type_label }}</h3>
 
-      {%- for talk in group -%}
-        <div class="talk-card" id="{{ talk.id }}">
-          <div class="talk-meta">
-            <span class="talk-type {{ type_class }}">{{ type_label }}</span>
-            <span class="talk-datetime">
-              {{ talk.date }}{% if talk.time %}, {{ talk.time }}{% endif %}
-            </span>
-          </div>
+  {%- for talk in group -%}
+  <div class="talk-card" id="{{ talk.id }}">
+    <div class="talk-meta">
+      <span class="talk-type {{ type_class }}">{{ type_label_singular | append: " #" | append: talk.counter }}</span>
+      <span class="talk-datetime">
+        {{ talk.date }}{% if talk.time %}, {{ talk.time }}{% endif %}
+      </span>
+    </div>
 
-          {%- if talk.title -%}
-            <div class="talk-title">
-              {{ talk.title }}
-            </div>
-          {%- endif -%}
+    {%- if talk.title -%}
+    <div class="talk-title">
+      {{ talk.title }}
+    </div>
+    {%- endif -%}
 
-          {%- if talk.speaker -%}
-            <div class="talk-speaker">
-              {%- if talk.homepage -%}
-                <a href="{{ talk.homepage }}">{{ talk.speaker }}</a>
-              {%- else -%}
-                {{ talk.speaker }}
-              {%- endif -%}
-            </div>
-          {%- endif -%}
+    {%- if talk.speaker -%}
+    <div class="talk-speaker">
+      {%- if talk.homepage -%}
+      <a href="{{ talk.homepage }}">{{ talk.speaker }}</a>
+      {%- else -%}
+      {{ talk.speaker }}
+      {%- endif -%}
+    </div>
+    {%- endif -%}
 
-          {%- if talk.affiliation -%}
-            <div class="talk-affiliation">
-              {{ talk.affiliation }}
-            </div>
-          {%- endif -%}
+    {%- if talk.affiliation -%}
+    <div class="talk-affiliation">
+      {{ talk.affiliation }}
+    </div>
+    {%- endif -%}
 
-          {% if talk.abstract %}
-  <div class="talk-abstract">
-    {% capture dbl_nl %}
+    {% if talk.abstract %}
+    <div class="talk-abstract">
+      {% capture dbl_nl %}
 
 {% endcapture %}
 
-              {% assign paras = talk.abstract | strip | split: dbl_nl %}
-              {% for p in paras %}
-                {% assign p = p | strip %}
-                {% if p != "" %}
-                  <p>{{ p | escape }}</p>
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-        </div>
-      {%- endfor -%}
+      {% assign paras = talk.abstract | strip | split: dbl_nl %}
+      {% for p in paras %}
+      {% assign p = p | strip %}
+      {% if p != "" %}
+      <p>{{ p | escape }}</p>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {%- endfor -%}
 
-    {%- endif -%}
+  {%- endif -%}
   {%- endfor -%}
 </div>

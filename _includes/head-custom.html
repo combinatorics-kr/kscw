@@ -15,6 +15,14 @@
     }
   };
 </script>
-<script id="MathJax-script" async
+{%- if page.mathjax_manual -%}
+<script>
+  // Only these pages: we will typeset manually after DOM rewrite
+  window.MathJax = window.MathJax || {};
+  window.MathJax.startup = window.MathJax.startup || {};
+  window.MathJax.startup.typeset = false;
+</script>
+{%- endif -%}
+<script id="MathJax-script" defer
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>

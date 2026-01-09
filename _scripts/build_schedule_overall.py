@@ -17,6 +17,9 @@ STEP_MIN = 10  # 10-minute slots
 # This will be set in build_for_year(year)
 BASE_TIME = (0, 0)
 
+# Types that get counters, grouped by category
+COUNTER_CATEGORIES = ["invited-talk", "contributed-talk", "special-session"]
+
 
 def to_minutes(hhmm: str) -> int:
     h, m = hhmm.split(":")
@@ -80,6 +83,22 @@ def infer_type(title: str) -> str:
 
     return "default"
 
+def infer_short_title(title: str) -> str:
+    """Infer short title from its title"""
+    t = title.lower()
+
+    if "invited" in t:
+        return "IT"
+
+    if "special session" in t or "special talk" in t:
+        return "SS"
+
+    if "contributed" in t:
+        return "CT"
+
+    return "default"
+
+
 
 def load_yaml(path: Path):
     if not path.exists():
@@ -124,6 +143,8 @@ def build_for_year(year: str) -> None:
             print(f"WARNING: duplicate talk id '{tid}' in talks_{year}.yml; overriding previous.")
         talk_by_id[tid] = talk
 
+    counters = {k: 0 for k in COUNTER_CATEGORIES}
+    
     out_days = []
     for day in data:
         out_sessions = []
@@ -170,6 +191,14 @@ def build_for_year(year: str) -> None:
                 "title": title,
                 "type": etype,
             }
+
+            short_title = infer_short_title(title)
+            if short_title != "default":
+                out["short-title"] = short_title
+
+            if etype in COUNTER_CATEGORIES:
+                counters[etype] += 1
+                out["counter"] = counters[etype]
 
             # Keep id for linking from schedule → talk details
             if sess_id:

@@ -35,7 +35,7 @@
   abstract: |
     It is well-known that a tournament always contains a directed Hamilton path. Rosenfeld conjectured that if a tournament is sufficiently large, it contains a Hamilton path of any given orientation. This conjecture was approved by Thomason, and Havet and Thomassé completely resolved it by showing there are exactly three exceptions.
     
-    We generalized this result into a transversal setting. Let $\mathbf{T} = \\{T_1,\dots,T_{n-1}\\}$ be a collection of tournaments on a common vertex set $V$ of size $n$. We showed that if $n$ is sufficiently large, there is a Hamilton path on $V$ of any given orientation which is obtained by collecting exactly one arc from each $T_i$. Such a path is said to be *transversal*.
+    We generalized this result into a transversal setting. Let $\mathbf{T} = \\{T_1,\dots,T_{n-1}\\}$ be a collection of tournaments on a common vertex set $V$ of size $n$. We showed that if $n$ is sufficiently large, there is a Hamilton path on $V$ of any given orientation which is obtained by collecting exactly one arc from each $T_i$. Such a path is said to be \emph{transversal}.
     
     It is also a folklore that a strongly connected tournament always contains a directed Hamilton cycle. Rosenfeld made a conjecture for arbitrarily oriented Hamilton cycles in tournaments as well, which was approved by Thomason (for sufficiently large tournaments) and Zein (by specifying all the exceptions). We also showed a transversal version of this result. Together with the aforementioned result, it extends our previous research, which is on transversal generalizations of existence of directed paths and cycles in tournaments.
     
