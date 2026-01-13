@@ -71,54 +71,47 @@
   date: Feb 4 (Wed)
   time: 10:00–10:30
   type: contributed-talk
-  title: Random Cayley Hypergraphs and Iterated Sumsets
+  title: Random Cayley Hypergraphs and Random Iterated Sumsets
   speaker: Jihyo Chae
   affiliation: Yonsei University
   homepage: https://sites.google.com/yonsei.ac.kr/jihyochae
-  abstract: TBA
+  abstract: 'Given a finite abelian group $G$ of size $n$ and its subset $A$, define
+    its sumset as $A+A := \{ a_1+a_2: a_1, a_2 \in A\}$. Let $k$ be a positive integer.
+    As a generalization of sumsets, define the $k$-fold sumset of $A$ as $kA := \{
+    a_1+\cdots +a_k: a_1, \cdots, a_k \in A\}$. Green posed two questions on the statistics
+    of sumsets: Are all large sets sumsets? What is the size of the largest non-sumset?
+    The first question was positively answered by Green, and several quantitative
+    improvements followed afterwards.
+
+
+    Define $f_k(n)$ as the maximum integer such that every subset of size $n-f_k(n)$
+    is a $k$-fold sumset. Then the quantitative version of the two questions can be
+    interpreted as the question of bounding $f_2(n)$. Both questions were answered
+    by Green, Green-Gowers, and Alon-Pham with consecutive improvements on the bound.
+    We establish an analogous bound for $k$-fold sumsets by proving a result on $k$-uniform
+    hypergraphs. We prove that $\tilde{\Omega}(n^{1/k}) \leq f_k(n)\leq \tilde{O}(n^{(2k-1)/(4k-3)})
+    $ as a generalization of the result of Alon and Pham. Additionally, we provide
+    an upper bound on the independence number of random Cayley sum hypergraphs to
+    prove the main result.
+
+
+    This talk is based on the joint work with Hyunwoo Lee.'
   counter: 3
 - id: ct-myounghwanlee
   date: Feb 4 (Wed)
   time: 10:40–11:10
   type: contributed-talk
-  title: An efficient algorithm for $\mathcal{F}$-subgraph-free Edge Deletion on graphs
-    having a product structure
+  title: Graph modification problems on sparse graph classes and more
   speaker: Myounghwan Lee
   affiliation: Hanyang University
-  abstract: 'Given a family $\mathcal{F}$ of graphs, a graph is \emph{$\mathcal{F}$-subgraph-free}
-    if it has no subgraph isomorphic to a member of $\mathcal{F}$.
-
-    We present a fixed-parameter linear-time algorithm that decides whether a planar
-    graph can be made $\mathcal{F}$-subgraph-free by deleting at most $k$ vertices
-    or $k$ edges, where the parameters are $k$, $\lvert \mathcal{F} \rvert$, and the
-    maximum number of vertices in a member of $\mathcal{F}$.
-
-    The running time of our algorithm is double-exponential in the parameters, which
-    is faster than the algorithm obtained by applying the first-order model checking
-    result for graphs of bounded twin-width.
-
-
-    To obtain this result, we develop a unified framework for designing algorithms
-    for this problem on graphs with a ``product structure.''''
-
-    Using this framework, we also design algorithms for other graph classes that generalize
-    planar graphs.
-
-    Specifically, the problem admits a fixed-parameter linear time algorithm on disk
-    graphs of bounded local radius, and a fixed-parameter almost-linear time algorithm
-    on graphs of bounded genus.
-
-
-    Finally, we show that our result gives a tight fixed-parameter algorithm in the
-    following sense:
-
-    Even when $\mathcal{F}$ consists of a single graph $F$ and the input is restricted
-    to planar graphs, it is unlikely to drop any parameters $k$ and $\lvert V(F) \rvert$
-    while preserving fixed-parameter tractability, unless the Exponential-Time Hypothesis
-    fails.
-
-
-    This is a joint work with Shinwoo An, Seonghyuk Im, Seokbeom Kim.'
+  abstract: Graph modification problems ask if a graph can be modified to satisfy
+    desired properties by applying  allowed operations, such as vertex/edge deletions
+    or edge contractions. This problem generalizes several problems such as CLIQUE,
+    making it NP-hard and is unlikely to be fixed-parameter tractable in general.
+    In contrast, several modification problems are known to be solved in FPT time
+    when the input is restricted to sparse graphs, such as graphs of bounded treewidth.
+    In this talk, we provide a survey of the previous results and explain recent progress
+    on this topic.
   counter: 4
 - id: ct-minseokim
   date: Feb 4 (Wed)
@@ -186,13 +179,12 @@
   speaker: Mujin Choi
   affiliation: KAIST & IBS DIMAG
   homepage: https://dimag.ibs.re.kr/home/mujin/
-  abstract: TBA
-  counter: 2
   abstract: Adding suitable figures in your paper could help the readers to understand
     what you are trying to explain by visually simplifying a complex structure and
     highlighting the key features. In this talk, I will introduce how to use IPE,
     a drawing editor created by Professor Otfried Chung, to draw a figure for a math
     paper.
+  counter: 2
 - id: ct-jeonginlee
   date: Feb 5 (Thu)
   time: 11:30–12:00
