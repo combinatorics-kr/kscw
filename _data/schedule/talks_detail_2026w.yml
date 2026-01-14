@@ -20,24 +20,9 @@
     본 발표에서는 이러한 목표를 달성하기 위해 발표자가 유의해야 할 사항들을 소개합니다. 구체적으로는 발표 준비 단계, 발표 자료 제작 및 발표
     당일 준비 등 각 단계의 주요 착안점을 재구성된 사례와 함께 다룹니다.
   counter: 1
-- id: ct-jigangchoi
-  date: Feb 3 (Tue)
-  time: 15:00–15:30
-  type: contributed-talk
-  title: On Lower Bounds for Color-Avoiding Ramsey Numbers of Tight Monotone Paths
-  speaker: Jigang Choi
-  affiliation: KAIST & IBS DIMAG
-  abstract: "We consider the color-avoiding Ramsey number $A_k(n; r, s)$, defined\
-    \ as the least integer $N$ such that every $r$-coloring of the $k$-uniform hypergraph\
-    \ on the vertex set $[N]$ contains a tight monotone path of length $n$ utilizing\
-    \ at most $s$ colors. \n\nRecent work by Mulrenin, Pohoata, and Zakharov established\
-    \ upper bounds for $A_k(n; r, s)$. However, the lower bounds for this number remain\
-    \ unknown.  \n\nIn this talk, I will present why it is difficult to find the lower\
-    \ bound of this number and what the biggest obstruction is."
-  counter: 1
 - id: ct-yeonsuchang
   date: Feb 3 (Tue)
-  time: 15:40–16:10
+  time: 15:00–15:30
   type: contributed-talk
   title: Structural and Algorithmic properties of Reduced Component Max-Leaf
   speaker: Yeonsu Chang
@@ -66,6 +51,21 @@
     when a certifying contraction sequence is given. Furthermore, since the reduced
     component max-leaf is preserved under graph complementation, \textsc{Maximum Clique}
     is also solvable in polynomial time on these classes.'
+  counter: 1
+- id: ct-jigangchoi
+  date: Feb 3 (Tue)
+  time: 15:40–16:10
+  type: contributed-talk
+  title: On Lower Bounds for Color-Avoiding Ramsey Numbers of Tight Monotone Paths
+  speaker: Jigang Choi
+  affiliation: KAIST & IBS DIMAG
+  abstract: "We consider the color-avoiding Ramsey number $A_k(n; r, s)$, defined\
+    \ as the least integer $N$ such that every $r$-coloring of the $k$-uniform hypergraph\
+    \ on the vertex set $[N]$ contains a tight monotone path of length $n$ utilizing\
+    \ at most $s$ colors. \n\nRecent work by Mulrenin, Pohoata, and Zakharov established\
+    \ upper bounds for $A_k(n; r, s)$. However, the lower bounds for this number remain\
+    \ unknown.  \n\nIn this talk, I will present why it is difficult to find the lower\
+    \ bound of this number and what the biggest obstruction is."
   counter: 2
 - id: ct-jihyochae
   date: Feb 4 (Wed)

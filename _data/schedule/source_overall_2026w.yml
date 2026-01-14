@@ -37,12 +37,12 @@
     - start: "15:00"
       end:   "15:30"
       title: "Contributed talk"
-      id: ct-jigangchoi
+      id: ct-yeonsuchang
     
     - start: "15:40"
       end:   "16:10"
       title: "Contributed talk"
-      id: ct-yeonsuchang
+      id: ct-jigangchoi
 
     - start: "16:20"
       end:   "18:00"

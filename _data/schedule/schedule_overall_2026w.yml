@@ -61,9 +61,10 @@
     type: contributed-talk
     short-title: CT
     counter: 1
-    id: ct-jigangchoi
-    speaker: Jigang Choi
-    affiliation: KAIST & IBS DIMAG
+    id: ct-yeonsuchang
+    speaker: Yeonsu Chang
+    affiliation: Hanyang University
+    homepage: https://yeonsuchang.com/
   - slot: 35
     rowspan: 3
     time: 15:40–16:10
@@ -71,10 +72,9 @@
     type: contributed-talk
     short-title: CT
     counter: 2
-    id: ct-yeonsuchang
-    speaker: Yeonsu Chang
-    affiliation: Hanyang University
-    homepage: https://yeonsuchang.com/
+    id: ct-jigangchoi
+    speaker: Jigang Choi
+    affiliation: KAIST & IBS DIMAG
   - slot: 39
     rowspan: 10
     time: 16:20–18:00
