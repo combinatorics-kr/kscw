@@ -157,9 +157,20 @@ def build_for_year(year: str) -> None:
             # Base type from session title / explicit type
             etype = sess.get("type") or infer_type(title)
 
-            speaker = None # sess.get("speaker")
-            affiliation = None
-            homepage = None
+            # speaker = None # sess.get("speaker")
+            # affiliation = None
+            # homepage = None
+
+            s_idx = slot_index(start)
+            rs = rowspan(start, end)
+
+            out = {
+                "slot": s_idx,
+                "rowspan": rs,
+                "time": f"{start}–{end}",
+                "title": title,
+                "type": etype,
+            }
 
             # If this session is linked to a talk, use talk metadata
             if sess_id:
@@ -176,21 +187,13 @@ def build_for_year(year: str) -> None:
 
                     # Prefer explicit speaker in talk meta
                     if talk.get("speaker"):
-                        speaker = talk["speaker"]
-
-                    affiliation = talk.get("affiliation")
-                    homepage = talk.get("homepage")
-
-            s_idx = slot_index(start)
-            rs = rowspan(start, end)
-
-            out = {
-                "slot": s_idx,
-                "rowspan": rs,
-                "time": f"{start}–{end}",
-                "title": title,
-                "type": etype,
-            }
+                        out["speaker"] = talk.get("speaker")
+                    if talk.get("affiliation"):
+                        out["affiliation"] = talk.get("affiliation")
+                    if talk.get("title"):
+                        out["talk-title"] = talk.get("title")
+                    if talk.get("homepage"):
+                        out["homepage"] = talk.get("homepage")
 
             short_title = infer_short_title(title)
             if short_title != "default":
@@ -203,13 +206,6 @@ def build_for_year(year: str) -> None:
             # Keep id for linking from schedule → talk details
             if sess_id:
                 out["id"] = sess_id
-
-            if speaker:
-                out["speaker"] = speaker
-            if affiliation:
-                out["affiliation"] = affiliation
-            if homepage:
-                out["homepage"] = homepage
 
             out_sessions.append(out)
 

@@ -27,12 +27,13 @@
     time: 11:00–12:00
     title: Invited talk
     type: invited-talk
+    speaker: Minho Cho
+    affiliation: KIAS
+    talk-title: How do I find open problems
+    homepage: https://sites.google.com/view/minhocho-math/
     short-title: IT
     counter: 1
     id: it-minhocho
-    speaker: Minho Cho
-    affiliation: KIAS
-    homepage: https://sites.google.com/view/minhocho-math/
   - slot: 13
     rowspan: 9
     time: 12:00–13:30
@@ -43,12 +44,13 @@
     time: 13:30–14:30
     title: Special session
     type: special-session
+    speaker: Seokbeom Kim
+    affiliation: KAIST & IBS DIMAG
+    talk-title: 학술적 발표 준비 과정에서의 유의사항
+    homepage: https://dimag.ibs.re.kr/home/seokbeom/
     short-title: SS
     counter: 1
     id: ss-seokbeomkim
-    speaker: Seokbeom Kim
-    affiliation: KAIST & IBS DIMAG
-    homepage: https://dimag.ibs.re.kr/home/seokbeom/
   - slot: 28
     rowspan: 3
     time: 14:30–15:00
@@ -59,22 +61,25 @@
     time: 15:00–15:30
     title: Contributed talk
     type: contributed-talk
+    speaker: Yeonsu Chang
+    affiliation: Hanyang University
+    talk-title: Structural and Algorithmic properties of Reduced Component Max-Leaf
+    homepage: https://yeonsuchang.com/
     short-title: CT
     counter: 1
     id: ct-yeonsuchang
-    speaker: Yeonsu Chang
-    affiliation: Hanyang University
-    homepage: https://yeonsuchang.com/
   - slot: 35
     rowspan: 3
     time: 15:40–16:10
     title: Contributed talk
     type: contributed-talk
+    speaker: Jigang Choi
+    affiliation: KAIST & IBS DIMAG
+    talk-title: On Lower Bounds for Color-Avoiding Ramsey Numbers of Tight Monotone
+      Paths
     short-title: CT
     counter: 2
     id: ct-jigangchoi
-    speaker: Jigang Choi
-    affiliation: KAIST & IBS DIMAG
   - slot: 39
     rowspan: 10
     time: 16:20–18:00
@@ -92,22 +97,24 @@
     time: 10:00–10:30
     title: Contributed talk
     type: contributed-talk
+    speaker: Jihyo Chae
+    affiliation: Yonsei University
+    talk-title: Random Cayley Hypergraphs and Random Iterated Sumsets
+    homepage: https://sites.google.com/yonsei.ac.kr/jihyochae
     short-title: CT
     counter: 3
     id: ct-jihyochae
-    speaker: Jihyo Chae
-    affiliation: Yonsei University
-    homepage: https://sites.google.com/yonsei.ac.kr/jihyochae
   - slot: 5
     rowspan: 3
     time: 10:40–11:10
     title: Contributed talk
     type: contributed-talk
+    speaker: Myounghwan Lee
+    affiliation: Hanyang University
+    talk-title: Graph modification problems on sparse graph classes and more
     short-title: CT
     counter: 4
     id: ct-myounghwanlee
-    speaker: Myounghwan Lee
-    affiliation: Hanyang University
   - slot: 8
     rowspan: 2
     time: 11:10–11:30
@@ -118,11 +125,12 @@
     time: 11:30–12:00
     title: Contributed talk
     type: contributed-talk
+    speaker: Minseo Kim
+    affiliation: KAIST
+    talk-title: Berge Hamilton cycles in a random sparsification of dense hypergraphs
     short-title: CT
     counter: 5
     id: ct-minseokim
-    speaker: Minseo Kim
-    affiliation: KAIST
   - slot: 13
     rowspan: 9
     time: 12:00–13:30
@@ -133,12 +141,13 @@
     time: 13:30–14:30
     title: Invited talk
     type: invited-talk
+    speaker: Jae-baek Lee
+    affiliation: Yonsei University
+    talk-title: TBA
+    homepage: https://sites.google.com/view/jae-baeklee
     short-title: IT
     counter: 2
     id: it-jaebaeklee
-    speaker: Jae-baek Lee
-    affiliation: Yonsei University
-    homepage: https://sites.google.com/view/jae-baeklee
   - slot: 28
     rowspan: 3
     time: 14:30–15:00
@@ -149,11 +158,13 @@
     time: 15:00–15:30
     title: Contributed talk
     type: contributed-talk
+    speaker: Seongbin Park
+    affiliation: POSTECH
+    talk-title: An Exact Algorithm for the Minimum-Cost Edge Cover of Planar Points
+      with Bounded Integer Coordinates
     short-title: CT
     counter: 6
     id: ct-seongbinpark
-    speaker: Seongbin Park
-    affiliation: POSTECH
   - slot: 34
     rowspan: 15
     time: 15:30–18:00
@@ -171,12 +182,14 @@
     time: 10:00–11:00
     title: Special session
     type: special-session
+    speaker: Mujin Choi
+    affiliation: KAIST & IBS DIMAG
+    talk-title: Some tips on drawing math figures for paper and presentation by using
+      IPE
+    homepage: https://dimag.ibs.re.kr/home/mujin/
     short-title: SS
     counter: 2
     id: ss-mujinchoi
-    speaker: Mujin Choi
-    affiliation: KAIST & IBS DIMAG
-    homepage: https://dimag.ibs.re.kr/home/mujin/
   - slot: 7
     rowspan: 3
     time: 11:00–11:30
@@ -187,11 +200,12 @@
     time: 11:30–12:00
     title: Contributed talk
     type: contributed-talk
+    speaker: Jeongin Lee
+    affiliation: Hanyang University
+    talk-title: Erd\H{o}s-P\'osa property of induced subdivisions
     short-title: CT
     counter: 7
     id: ct-jeonginlee
-    speaker: Jeongin Lee
-    affiliation: Hanyang University
   - slot: 13
     rowspan: 9
     time: 12:00–13:30
@@ -202,21 +216,23 @@
     time: 13:30–14:00
     title: Contributed talk
     type: contributed-talk
+    speaker: Chanho Song
+    affiliation: POSTECH
+    talk-title: Matching Theory and Matching in Planar Graphs
     short-title: CT
     counter: 8
     id: ct-chanhosong
-    speaker: Chanho Song
-    affiliation: POSTECH
   - slot: 26
     rowspan: 3
     time: 14:10–14:40
     title: Contributed talk
     type: contributed-talk
+    speaker: Hyemi Park
+    affiliation: Hanyang University
+    talk-title: A coarse Erd\H{o}s-P\'{o}sa theorem for cycles with modulo constraints
     short-title: CT
     counter: 9
     id: ct-hyemipark
-    speaker: Hyemi Park
-    affiliation: Hanyang University
   - slot: 29
     rowspan: 3
     time: 14:40–15:10
@@ -227,22 +243,24 @@
     time: 15:10–15:40
     title: Contributed talk
     type: contributed-talk
+    speaker: Dohyeon Lee
+    affiliation: KAIST & IBS DIMAG
+    talk-title: Towards Cutting Lemma in Abstract Convexity Space
+    homepage: https://www.mathloveguy.com/
     short-title: CT
     counter: 10
     id: ct-dohyeonlee
-    speaker: Dohyeon Lee
-    affiliation: KAIST & IBS DIMAG
-    homepage: https://www.mathloveguy.com/
   - slot: 36
     rowspan: 3
     time: 15:50–16:20
     title: Contributed talk
     type: contributed-talk
+    speaker: Sanghwa Han
+    affiliation: POSTECH
+    talk-title: Range Counting Oracle for Extent problems
     short-title: CT
     counter: 11
     id: ct-sanghwahan
-    speaker: Sanghwa Han
-    affiliation: POSTECH
   - slot: 39
     rowspan: 10
     time: 16:20–18:00
@@ -260,11 +278,12 @@
     time: 10:00–10:30
     title: Contributed talk
     type: contributed-talk
+    speaker: Hyeonjun Shin
+    affiliation: POSTECH
+    talk-title: Fully Scalable MPC algorithms for WSPD in Euclidean Spaces
     short-title: CT
     counter: 12
     id: ct-hyeonjunshin
-    speaker: Hyeonjun Shin
-    affiliation: POSTECH
   - slot: 5
     rowspan: 8
     time: 10:40–12:00

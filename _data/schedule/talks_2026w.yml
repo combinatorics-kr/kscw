@@ -1,11 +1,11 @@
 - id: it-minhocho
   type: invited-talk
-  title: TBA
+  title: How do I find open problems
   speaker: Minho Cho
   affiliation: KIAS
   homepage: https://sites.google.com/view/minhocho-math/
   abstract: |
-    TBA
+    At the heart of combinatorics research are open problems. What is an efficient way to find "good" open problems, or at least problems that fit into one's interest and capability? How do we even recognize whether a question is open or not? Last but not least, what can we do other than solving them? This talk will show one response based on the speaker's experience.
 
 - id: it-jaebaeklee
   type: invited-talk

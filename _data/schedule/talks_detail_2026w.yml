@@ -2,11 +2,15 @@
   date: Feb 3 (Tue)
   time: 11:00–12:00
   type: invited-talk
-  title: TBA
+  title: How do I find open problems
   speaker: Minho Cho
   affiliation: KIAS
   homepage: https://sites.google.com/view/minhocho-math/
-  abstract: TBA
+  abstract: At the heart of combinatorics research are open problems. What is an efficient
+    way to find "good" open problems, or at least problems that fit into one's interest
+    and capability? How do we even recognize whether a question is open or not? Last
+    but not least, what can we do other than solving them? This talk will show one
+    response based on the speaker's experience.
   counter: 1
 - id: ss-seokbeomkim
   date: Feb 3 (Tue)
