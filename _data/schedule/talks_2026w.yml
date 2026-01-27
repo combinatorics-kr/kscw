@@ -9,7 +9,7 @@
 
 - id: it-jaebaeklee
   type: invited-talk
-  title: How I Ended Up Here ( An Interactive Session)
+  title: How I Ended Up Here (An Interactive Session)
   speaker: Jae-baek Lee
   affiliation: Yonsei University
   homepage: https://sites.google.com/view/jae-baeklee
@@ -45,7 +45,7 @@
     
     We introduce reduced component max-leaf, a new graph parameter defined via contraction sequence, and show that this parameter lies strictly between reduced bandwidth and rank-width. Moreover, we prove that it is incomparable with both stretch-width and mim-width. In particular, we show that 2-dimensional grids have unbounded reduced component max-leaf, which motivates us to find algorithmic applications of this parameter.
 
-    Given a finite set $\sigma \subseteq \mathbb{N}\cup \{0\}$, the $\sigma$-\textsc{Problem} asks for a subset $S \subseteq V(G)$ of maximum size of a graph $G = (V, E)$ such that $|N_G(v) \cap S| \in \sigma$ for every $v \in S$. This problem naturally captures \textsc{Maximum Independent Set}, \textsc{Maximum Induced Matching} and \textsc{Maximum Induced Subgraph of Max Degree at most $d$}. We show that $\sigma$-\textsc{Problem} can be solved in polynomial time on classes of bounded reduced component max-leaf, when a certifying contraction sequence is given. Furthermore, since the reduced component max-leaf is preserved under graph complementation, \textsc{Maximum Clique} is also solvable in polynomial time on these classes.
+    Given a finite set $\sigma \subseteq \mathbb{N}\cup \{0\}$, the $\sigma$-\textsc{Problem} asks for a subset $S \subseteq V(G)$ of maximum size of a graph $G = (V, E)$ such that $|N_G(v) \cap S| \in \sigma$ for every $v \in S$. This problem naturally captures \textsc{Maximum Independent Set}, \textsc{Maximum Induced Matching} and \textsc{Maximum Induced Subgraph of Max Degree at most} $d$. We show that $\sigma$-\textsc{Problem} can be solved in polynomial time on classes of bounded reduced component max-leaf, when a certifying contraction sequence is given. Furthermore, since the reduced component max-leaf is preserved under graph complementation, \textsc{Maximum Clique} is also solvable in polynomial time on these classes.
 
 - id: ct-myounghwanlee
   type: contributed-talk

@@ -50,7 +50,7 @@
     asks for a subset $S \subseteq V(G)$ of maximum size of a graph $G = (V, E)$ such
     that $|N_G(v) \cap S| \in \sigma$ for every $v \in S$. This problem naturally
     captures \textsc{Maximum Independent Set}, \textsc{Maximum Induced Matching} and
-    \textsc{Maximum Induced Subgraph of Max Degree at most $d$}. We show that $\sigma$-\textsc{Problem}
+    \textsc{Maximum Induced Subgraph of Max Degree at most} $d$. We show that $\sigma$-\textsc{Problem}
     can be solved in polynomial time on classes of bounded reduced component max-leaf,
     when a certifying contraction sequence is given. Furthermore, since the reduced
     component max-leaf is preserved under graph complementation, \textsc{Maximum Clique}
@@ -147,7 +147,7 @@
   date: Feb 4 (Wed)
   time: 13:30–14:30
   type: invited-talk
-  title: How I Ended Up Here ( An Interactive Session)
+  title: How I Ended Up Here (An Interactive Session)
   speaker: Jae-baek Lee
   affiliation: Yonsei University
   homepage: https://sites.google.com/view/jae-baeklee
