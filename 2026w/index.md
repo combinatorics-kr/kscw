@@ -22,7 +22,7 @@ hero_tab: overview
 
 <a id="program"></a>
 # 일정
-[일정](./schedule) 페이지에서 시간표 및 강연 정보를 확인하실 수 있습니다. 추후 변경될 수 있습니다.
+[일정](./schedule) 페이지에서 시간표 및 강연 정보를 확인하실 수 있습니다.
 
 - 박사후연구원들의 초청 강연
 - 참가자들의 기여 강연과 특별 세션
@@ -35,7 +35,7 @@ hero_tab: overview
   <a class="register-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScAjdwBXYlZV7-EF2zfpM6bhiM0KGCQDe1rDiB-QoVsrDyrOA/viewform">등록 (Google form)</a>
 </p>
 
-**등록 기한: 2025년 12월 31일**
+**등록 기한: 2025년 12월 31일** (등록이 마감되었습니다.)
 
 - 신청 인원이 예상 수를 초과할 경우 조기 마감될 수 있습니다.
 - 신청하신 분들께 메일로 참석 가능 여부를 추후 안내해드립니다.

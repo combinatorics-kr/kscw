@@ -9,12 +9,12 @@
 
 - id: it-jaebaeklee
   type: invited-talk
-  title: TBA
+  title: How I Ended Up Here ( An Interactive Session)
   speaker: Jae-baek Lee
   affiliation: Yonsei University
   homepage: https://sites.google.com/view/jae-baeklee
   abstract: |
-    TBA
+    I will start by sharing my own path as a human who is doing mathematics, including studying and living abroad, and some of the uncertainties I faced along the way. Then, I hope to invite questions from the audience and turn the session into an open conversation about different ways of living including doing mathematics. These reflections are not meant to be prescriptive, but rather to show that there is no single correct way to live or to find one’s way while doing mathematics.
 
 - id: ss-seokbeomkim
   type: special-session
