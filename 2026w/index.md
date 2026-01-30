@@ -28,6 +28,8 @@ hero_tab: overview
 - 참가자들의 기여 강연과 특별 세션
 - Open problem 공유 세션
 
+[워크샵 책자](../assets/booklets/KSCW2026W_booklet.pdf)에서 세부 사항을 확인하실 수 있습니다.
+
 
 <a id="registration"></a>
 # 등록
