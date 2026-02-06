@@ -13,7 +13,7 @@ hero_tab: overview
 
 **조합론 학생 워크샵(Korean Student Combinatorics Workshop; KSCW)**은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 연구 분야를 공유하며 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
 
-**2026년 동계 조합론 학생 워크샵(KSCW 2026 Winter)**은 [IBS ECOPRO](https://www.ibs.re.kr/ecopro/)의 지원을 받아 **2026년 2월 2~6일 신라스테이 여수**에서 진행됩니다.
+**2026년 동계 조합론 학생 워크샵(KSCW 2026 Winter)**은 [IBS ECOPRO](https://www.ibs.re.kr/ecopro/)의 지원을 받아 **2월 2~6일 신라스테이 여수**에서 진행됩니다.
 
 
 ![KSCW 2026 Winter photo]({{ site.baseurl }}/assets/images/photos/kscw2026w.jpg){: .align-center}
@@ -53,7 +53,7 @@ hero_tab: overview
 ---
 
 # 조직위원
-- [서재현](https://sites.google.com/yonsei.ac.kr/jseomath), 연세대학교
+- [서재현](https://jaehyeonseo.com), 연세대학교
 - [이현우](https://sites.google.com/view/hyunwoo-lee/), KAIST / IBS ECOPRO
 - [임성혁](https://seonghyukim.github.io/), KAIST / IBS ECOPRO
 
