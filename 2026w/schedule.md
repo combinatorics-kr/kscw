@@ -13,8 +13,6 @@ mathjax_manual: true
 
 # 일정
 
-세부사항은 변경될 수 있습니다.
-
 {% include schedule_overall.html
    data = site.data.schedule.schedule_overall_2026w
    slots = site.data.schedule.slots_2026w %}
