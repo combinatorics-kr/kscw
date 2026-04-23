@@ -41,7 +41,7 @@ hero_tab: overview
 
 # 조직위원
 - [김석범](https://dimag.ibs.re.kr/home/seokbeom/), KAIST / IBS DIMAG
-- [서재현](https://sites.google.com/yonsei.ac.kr/jseomath), 연세대학교
+- [서재현](https://jaehyeonseo.com), 연세대학교
 - [이현우](https://sites.google.com/view/hyunwoo-lee/), KAIST / IBS ECOPRO
 - [조경진](https://jkj8944.github.io/), POSTECH
 
