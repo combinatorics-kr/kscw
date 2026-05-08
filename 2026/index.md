@@ -55,7 +55,7 @@ hero_tab: overview
 
 # 조직위원
 - [김석범](https://dimag.ibs.re.kr/home/seokbeom/), KAIST / IBS DIMAG
-- [신현준], POSTECH
+- 신현준, POSTECH
 - [장연수](https://yeonsuchang.com/), Hanyang University
 - [최무진](https://dimag.ibs.re.kr/home/mujin/), KAIST / IBS DIMAG
 
