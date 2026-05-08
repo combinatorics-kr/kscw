@@ -4,7 +4,7 @@ title: 2026년 조합론 학생 워크샵
 show_hero: true
 hero_kicker: Korean Student Combinatorics Workshop 2026
 hero_title: 2026년 조합론 학생 워크샵
-hero_meta: 공주 한옥마을 · 2026년 7월 27~31일
+hero_meta: 공주한옥마을 · 2026년 7월 27~31일
 hero_year_key: 2026
 hero_tab: overview
 ---
@@ -13,7 +13,7 @@ hero_tab: overview
 
 **조합론 학생 워크샵(Korean Student Combinatorics Workshop; KSCW)**은 조합론을 공부하는 한국 대학원생, 학부생 및 박사후연구원들이 서로 친목을 다지고 연구 분야를 공유하며 공동 연구를 진행할 수 있는 기틀을 마련하는 것을 목적으로 합니다.
 
-**2026년 조합론 학생 워크샵(KSCW 2026)**은 [IBS DIMAG](https://dimag.ibs.re.kr/)의 지원을 받아 **7월 27~31일 공주 한옥마을**에서 진행됩니다.
+**2026년 조합론 학생 워크샵(KSCW 2026)**은 [IBS DIMAG](https://dimag.ibs.re.kr/)의 지원을 받아 **7월 27~31일 공주한옥마을**에서 진행됩니다.
 
 
 <!-- ![KSCW 2026 photo]({{ site.baseurl }}/assets/images/photos/kscw2026.jpg){: .align-center} -->
@@ -55,7 +55,7 @@ hero_tab: overview
 
 # 조직위원
 - [김석범](https://dimag.ibs.re.kr/home/seokbeom/), KAIST / IBS DIMAG
-- [신현준](), POSTECH
+- [신현준], POSTECH
 - [장연수](https://yeonsuchang.com/), Hanyang University
 - [최무진](https://dimag.ibs.re.kr/home/mujin/), KAIST / IBS DIMAG
 
