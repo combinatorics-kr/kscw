@@ -36,7 +36,7 @@ hero_tab: overview
   <a class="register-btn" href="https://indico.ibs.re.kr/event/1304/">등록 (Indico)</a>
 </p>
 
-**등록 기한: 2026년 6월 8일(월)*
+**등록 기한: 2026년 6월 8일(월)**
 
 - 신청 인원이 예상 수를 초과할 경우 조기 마감될 수 있습니다.
 - 신청하신 분들께 메일로 참석 가능 여부를 추후 안내해드립니다.
