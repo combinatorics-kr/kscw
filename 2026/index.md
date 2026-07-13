@@ -21,7 +21,7 @@ hero_tab: overview
 
 <a id="program"></a>
 # 일정
-<!-- [일정](./schedule) 페이지에서 시간표 및 강연 정보를 확인하실 수 있습니다. -->
+[일정](./schedule) 페이지에서 시간표 및 강연 정보를 확인하실 수 있습니다.
 
 - Open problem 공유 및 토의 세션
 - 박사후연구원들의 초청 강연
