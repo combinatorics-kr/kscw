@@ -1,0 +1,173 @@
+- date: Jul 27 (Mon)
+  sessions:
+  - slot: 25
+    rowspan: 3
+    time: 13:00–15:00
+    title: Registration
+    type: registration
+  - slot: 37
+    rowspan: 8
+    time: 15:00–16:00
+    title: Self-introduction
+    type: plenary
+  - slot: 43
+    rowspan: 8
+    time: 16:00–18:00
+    title: Open problem session
+    type: plenary
+  - slot: 55
+    rowspan: 12
+    time: 18:00–20:00
+    title: Dinner
+    type: meal
+- date: Jul 28 (Tue)
+  sessions:
+  - slot: 4
+    rowspan: 8
+    time: 09:30–10:10
+    title: Contributed talk
+    type: contributed-talk
+    short-title: CT
+    counter: 1
+    id: ct-hyungukim
+    speaker: Hyungu Kim
+    affiliation: KAIST / IBS DIMAG
+  - slot: 9
+    rowspan: 9
+    time: 10:20–12:00
+    title: Group discussion
+    type: problem
+  - slot: 19
+    rowspan: 9
+    time: 12:00–14:00
+    title: Lunch
+    type: meal
+  - slot: 31
+    rowspan: 5
+    time: 14:00–14:50
+    title: Invited talk
+    type: invited-talk
+    short-title: IT
+    counter: 1
+    id: it-shinwooan
+    speaker: Shinwoo An
+    affiliation: Bar-Ilan University
+    homepage: https://www.shinwooan.com/
+  - slot: 37
+    rowspan: 9
+    time: 15:00–18:00
+    title: Group discussion
+    type: problem
+  - slot: 55
+    rowspan: 12
+    time: 18:00–20:00
+    title: Dinner
+    type: meal
+- date: Jul 29 (Wed)
+  sessions:
+  - slot: 4
+    rowspan: 8
+    time: 09:30–10:50
+    title: Contributed talk
+    type: contributed-talk
+    short-title: CT
+    counter: 1
+    id: ct-seojinyoon
+    speaker: Seojin Yoon
+    affiliation: POSTECH
+  - slot: 10
+    rowspan: 9
+    time: 10:30–12:00
+    title: Group discussion
+    type: problem
+  - slot: 19
+    rowspan: 9
+    time: 12:00–14:00
+    title: Lunch
+    type: meal
+  - slot: 31
+    rowspan: 5
+    time: 14:00–14:50
+    title: Invited talk
+    type: invited-talk
+    short-title: IT
+    counter: 1
+    id: it-hyeminkwon
+    speaker: Hyemin Kwon
+    affiliation: KIAS
+    homepage: https://sites.google.com/view/hyemin-kwon
+  - slot: 37
+    rowspan: 9
+    time: 15:00–18:00
+    title: Group discussion
+    type: problem
+  - slot: 55
+    rowspan: 12
+    time: 18:00–20:00
+    title: Dinner
+    type: meal
+- date: Jul 30 (Thu)
+  sessions:
+  - slot: 4
+    rowspan: 5
+    time: 09:30–10:20
+    title: Invited talk
+    type: invited-talk
+    short-title: IT
+    counter: 1
+    id: it-sangiloum
+    speaker: Sang-il Oum
+    affiliation: IBS DIMAG
+    homepage: https://sangil.dimag.kr/
+  - slot: 10
+    rowspan: 9
+    time: 10:30–12:00
+    title: Group discussion
+    type: problem
+  - slot: 19
+    rowspan: 9
+    time: 12:00–14:00
+    title: Lunch
+    type: meal
+  - slot: 43
+    rowspan: 17
+    time: 16:00–18:50
+    title: Excursion
+    type: excursion
+  - slot: 55
+    rowspan: 12
+    time: 18:00–20:00
+    title: Dinner
+    type: meal
+- date: Jul 31 (Fri)
+  sessions:
+  - slot: 4
+    rowspan: 8
+    time: 09:30–10:10
+    title: Contributed talk
+    type: contributed-talk
+    short-title: CT
+    counter: 1
+    id: ct-jeongwanbyon
+    speaker: Jeongwan Byon
+    affiliation: Hanyang-university
+  - slot: 9
+    rowspan: 8
+    time: 10:20–11:00
+    title: Contributed talk
+    type: contributed-talk
+    short-title: CT
+    counter: 1
+    id: ct-seongbinpark
+    speaker: Seongbin Park
+    affiliation: POSTECH
+  - slot: 12
+    rowspan: 5
+    time: 10:50–11:40
+    title: Progress report
+    type: problem
+  - slot: 19
+    rowspan: 12
+    time: 12:00–14:00
+    title: Lunch
+    type: meal

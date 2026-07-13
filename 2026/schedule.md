@@ -14,10 +14,10 @@ mathjax_manual: true
 # 일정
 
 {% include schedule_overall.html
-   data = site.data.schedule.schedule_overall_2026s
-   slots = site.data.schedule.slots_2026s %}
+   data = site.data.schedule.schedule_overall_2026
+   slots = site.data.schedule.slots_2026 %}
 
 ## 강연 세부 정보
 
 {% include talks_detail.html
-   data = site.data.schedule.talks_detail_2026s %}
+   data = site.data.schedule.talks_detail_2026 %}

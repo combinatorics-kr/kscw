@@ -1,0 +1,98 @@
+- id: ct-hyungukim
+  date: Jul 28 (Tue)
+  time: 09:30–10:10
+  type: contributed-talk
+  title: Extension theorems for arrangements of pseudolines and pseudocircles
+  speaker: Hyungu Kim
+  affiliation: KAIST / IBS DIMAG
+  abstract: 
+    A pseudoline is a curve in the plane that need not be straight but behaves like a line in one essential way; any two pseudolines cross exactly once. A finite collection of them forms a pseudoline arrangement, a combinatorial relaxation of straight line arrangements. Peudocircles are pretty much the same, but they imitate circles instead of lines. In this talk I will introduce their non-realizability results and extension theorems to show how these curves both defy and imitate their straight and round counterparts.
+
+    Levi's extension lemma guarantees that through any two points one can always add a new pseudoline compatible with the arrangement. Snoeyink and Hershberger showed the pseudocircle counterpart of the lemma. Goodman, Pollack, Wenger, and Zamfirescu proved that every pseudoline arrangement extends to a topological plane, a geometry whose "lines" may be curved, but in which any two points still lie on exactly one. I will sketch these results and close with work in progress carrying this topological plane extension over to arrangements that also contain pseudocircles. This is a joint work with Andreas Holmsen.
+
+  counter: 1
+
+- id: it-shinwooan
+  date: Jul 28 (Tue)
+  time: 14:00–14:50
+  type: invited-talk
+  title: 'VC Dimension Theory and Distance-Related Problems'
+  speaker: Shinwoo An
+  affiliation: Bar-Ilan University
+  homepage: https://www.shinwooan.com/
+  abstract: 
+    Vapnik–Chervonenkis dimension (VC dimension) is usually viewed as a measure of complexity for set systems, with many applications in extremal combinatorics, discrete geometry, and learning theory.
+    In this talk, I will explain how the same language can be used to study distances in graphs. Given a graph, natural set systems arise from metric balls and distance ranges; bounding their VC dimension gives an efficient way to capture how complicated the graph metric is.
+
+    I will discuss on how this perspective connects to distance-related problems such as computing the graph diameter and constructing distance oracles in minor-free graphs.
+    In particular, I will focus on a recent result of Le and Wulff-Nilsen on VC set systems in minor-free graphs and digraphs. Their work shows that carefully chosen set systems arising from distances can have bounded VC dimension even for directed graphs, and uses this structure to obtain applications to diameter and distance oracles. 
+    Lastly, I will briefly mention my own result on approximating the diameter of planar digraphs, as a further example of how the idea of capturing graph metric can inform efficient distance-related algorithms.
+
+  counter: 2
+
+- id: ct-seojinyoon
+  date: Jul 29 (Wed)
+  time: 09:30–10:10
+  type: contributed-talk
+  title: Subquadratic-Time Algorithm for Diameter in Disk Graphs
+  speaker: Seojin Yoon
+  affiliation: POSTECH
+  abstract: 
+    The diameter of a graph is the maximum shortest-path distance between any pair of vertices and is one of the most fundamental graph parameters. While computing the diameter of general graphs is known to require essentially quadratic time under widely believed complexity assumptions, faster algorithms are possible for restricted graph classes.
+    In this talk, I present the first truly subquadratic-time algorithm for computing the diameter of disk graphs. Given a set of n disks in the plane, we compute the diameter of their intersection graph in Õ(n^{2−1/20}) time, resolving a recent open problem. The algorithm also improves the best-known running time for unit disk graphs to Õ(n^{2−1/16}) and extends to intersection graphs of balls under any Lp metric with 1 < p < ∞.
+    The main idea is to revisit a recent framework for geometric diameter computation and replace one of its key geometric reductions with a simpler approach based on farthest-color Voronoi diagrams, leading to improved algorithms for both disk graphs and unit disk graphs.
+
+  counter: 3
+
+- id: it-hyeminkwon
+  date: Jul 29 (Wed)
+  time: 14:00–14:50
+  type: invited-talk
+  title: From graduate student to researcher
+  speaker: Hyemin Kwon
+  affiliation: KIAS
+  homepage: https://sites.google.com/view/hyemin-kwon
+  abstract:
+    In this talk, I will share my personal experiences from both my time as a graduate student and my subsequent career in academia. The talk will conclude with an open question-and-answer session. I hope that these experiences and reflections will offer useful perspectives to current graduate students as they consider their own future careers.
+
+  counter: 4
+
+- id: it-sangiloum
+  date: Jul 30 (Thu)
+  time: 09:30–10:20
+  type: invited-talk
+  title: TBD
+  speaker: Sang-il Oum
+  affiliation: IBS DIMAG
+  homepage: https://sangil.dimag.kr/
+  abstract: TBD
+
+  counter: 5
+
+- id: ct-jeongwanbyon
+  date: Jul 31 (Fri)
+  time: 09:30–10:10
+  type: contributed-talk
+  title: Bounds of the Antibandwidth on Various Triangular Grid Graph Structures
+  speaker: Jeongwan Byon
+  affiliation: Hanyang University
+  abstract: 
+    The antibandwidth problem is to find a labeling of graph vertices that maximizes the minimum label difference between adjacent vertices. This problem is known to be NP-complete. In this talk, we explore the antibandwidth of triangular grid graphs, focusing on two distinct structural variations; the regular triangular shape ($T_n$) and the regular hexagon shape ($H_n$). First, we review the established upper and lower bounds for $T_n$, where the gap between the bounds is shown to be $\lfloor n/6 \rfloor$, implying that the exact values are determined when $n \le 5$. Building upon these foundational concepts, we introduce new upper and lower bounds for the hexagon-shaped triangular grid graph $H_n$, proving that the gap between them is $\lfloor n/3 \rfloor$. By comparing the labeling strategies and structural properties of these two variations, this presentation is expected to contribute to a deeper understanding of labeling problems in triangular grid graphs with complex structures.
+
+  counter: 6
+
+- id: ct-seongbinpark
+  date: Jul 31 (Fri)
+  time: 10:20–11:00
+  type: contributed-talk
+  title: Exact Subquadratic Algorithm for Many-to-Many Matching on Planar Point Sets with Integer Coordinates
+  speaker: Seongbin Park
+  affiliation: POSTECH
+  abstract: 
+    We study the many-to-many matching problem on planar point sets with integer coordinates;
+    Given two disjoint sets $R,B \subset [\Delta]^2$ with $|R|+|B|=n$, the goal is to select a set of edges between $R$ and $B$ so that every point is incident to at least one edge and the total Euclidean length is minimized.
+    In the general case that $R$ and $B$ are point sets in the plane, the best-known algorithm for the many-to-many matching problem takes $\tilde{O}(n^2)$ time. 
+    We present an exact $\tilde{O}(n^{1.5} \log \Delta)$ time algorithm for point sets in $[\Delta]^2$. 
+    To the best of our knowledge, this is the first subquadratic exact algorithm for planar many-to-many matching under bounded integer coordinates.
+
+  counter: 7
