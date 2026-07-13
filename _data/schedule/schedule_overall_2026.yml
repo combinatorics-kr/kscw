@@ -66,8 +66,8 @@
 - date: Jul 29 (Wed)
   sessions:
   - slot: 4
-    rowspan: 5
-    time: 09:30–10:20
+    rowspan: 4
+    time: 09:30–10:10
     title: Contributed talk
     type: contributed-talk
     short-title: CT
@@ -76,8 +76,8 @@
     speaker: Seojin Yoon
     affiliation: POSTECH
   - slot: 10
-    rowspan: 9
-    time: 10:30–12:00
+    rowspan: 10
+    time: 10:20–12:00
     title: Group discussion
     type: problem
   - slot: 19
