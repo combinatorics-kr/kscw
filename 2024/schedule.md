@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 2024년 조합론 학생 워크샵
+title: 2024년 조합론 학생 워크샵 – 일정
 show_hero: true
 hero_kicker: Korean Student Combinatorics Workshop 2024
 hero_title: 2024년 조합론 학생 워크샵

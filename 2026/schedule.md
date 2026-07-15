@@ -5,7 +5,7 @@ show_hero: true
 hero_kicker: Korean Student Combinatorics Workshop 2026 Summer
 hero_title: 2026년 하계 조합론 학생 워크샵
 hero_meta: 공주 한옥마을 · 2026년 7월 27~31일
-hero_year_key: 2026s
+hero_year_key: 2026
 hero_tab: schedule
 mathjax_manual: true
 ---
